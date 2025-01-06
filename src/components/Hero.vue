@@ -3,69 +3,84 @@
 </script>
 
 <template>
-  <section class="relative min-h-screen bg-beige"> <!-- Background color sesuaikan -->
-    <!-- Background Image dengan Arch -->
-    <div class="absolute inset-0 flex justify-center items-center">
-      <div class="relative
+  <section class="bg-beige">
+    <div class="relative min-h-screen bg-beige max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <!-- Background Image dengan Arch -->
+      <div class="md:absolute inset-0 flex justify-center items-center display-none">
+        <div class="relative
               w-[200px] h-[300px]
               md:w-[300px] md:h-[400px]
               xl:w-[400px] xl:h-[500px]">
-        <div class="absolute inset-0 md:rounded-t-[300px]"></div>
-        <img
-            src="/public/hero_image.png"
-            alt="Hero Image"
-            class="absolute inset-0 w-full h-full object-cover
+          <div class="absolute inset-0 md:rounded-t-[300px]"></div>
+          <img
+              src="/public/hero_image.png"
+              alt="Hero Image"
+              class="absolute inset-0 w-full h-full object-cover
                 md:rounded-t-[200px]"
-        />
-      </div>
-    </div>
-
-    <!-- Content Container -->
-    <div class="container mx-auto px-4 md:px-8 lg:px-16 relative">
-      <div class="flex justify-between items-start md:items-center min-h-screen flex-col md:flex-row ">
-        <!-- Left Content -->
-        <div class="max-w-xl">
-          <h1 class="text-4xl md:text-7xl lg:text-7xl font-extrabold font-cormorant text-darkBeige mb-6 text-wrap md:text-nowrap">
-            Hadiah spesial untuk
-            <br>anda dan orang tercinta
-          </h1>
-          <p class="text-lightBeige mb-8 w-full">
-            Shelby Florist Bandung Memperkenalkan<br>Bunga Indah Untuk Momen Spesial Anda
-          </p>
-          <div class="flex gap-4">
-            <button class="btn bg-darkBeige text-white hover:bg-opacity-90 rounded-none">
-              Get Started Now
-            </button>
-            <button class="btn btn-ghost text-[#4F583D] rounded-none">
-              How it works →
-            </button>
-          </div>
+          />
         </div>
+      </div>
 
-        <!-- Right Stats -->
-        <div class="space-x-2 md:space-y-4 flex md:flex-col flex-row">
-          <div class="flex md:flex-row flex-col items-center gap-4 p-4 rounded-lg">
-            <div class="p-3 bg-white rounded">🌸</div>
-            <div>
-              <div class="text-2xl font-semibold text-darkBeige">290</div>
-              <div class="text-sm text-darkBeige">Kind of flower</div>
+      <!-- Content Container -->
+      <div class="container mx-auto px-4 md:px-8 lg:px-16 relative">
+        <div class="flex justify-between items-start md:items-center min-h-screen flex-col md:flex-row ">
+          <!-- Left Content -->
+          <div class="max-w-xl">
+            <h1 class="text-4xl md:text-7xl lg:text-7xl font-extrabold font-cormorant text-darkBeige mb-6 text-wrap md:text-nowrap mt-6 md:mt-0">
+              Bunga spesial
+              <br>untuk anda
+            </h1>
+            <p class="text-lightBeige mb-8 w-full">
+              Shelby Florist Bandung Memperkenalkan<br>Bunga Indah Untuk Momen Spesial Anda
+            </p>
+            <div class="flex gap-4">
+              <button class="btn bg-darkBeige text-white hover:bg-opacity-90 rounded-none">
+                Get Started Now
+              </button>
+              <button class="btn btn-ghost text-[#4F583D] rounded-none">
+                How it works →
+              </button>
             </div>
           </div>
 
-          <div class="flex md:flex-row flex-col items-center gap-4 p-4 rounded-lg">
-            <div class="p-3 bg-white rounded">✨</div>
-            <div>
-              <div class="text-2xl font-semibold text-darkBeige">500+</div>
-              <div class="text-sm text-darkBeige">Unique style</div>
-            </div>
-          </div>
+          <!-- Right Stats -->
+          <div class="md:space-y-4 flex md:flex-col flex-row">
 
-          <div class="flex md:flex-row flex-col items-center gap-4  p-4 rounded-lg">
-            <div class="p-3 bg-white rounded">⭐</div>
-            <div>
-              <div class="text-2xl font-semibold text-darkBeige">1M</div>
-              <div class="text-sm text-darkBeige">Happy customer</div>
+            <!-- Stat 1 -->
+            <!--            <div class="flex md:flex-row flex-col items-center gap-4 p-4 rounded-lg">-->
+            <!--              <div class="p-3 bg-white rounded">🌸</div>-->
+            <!--              <div>-->
+            <!--                <div class="text-2xl font-semibold text-darkBeige">290</div>-->
+            <!--                <div class="text-sm text-darkBeige">Kind of flower</div>-->
+            <!--              </div>-->
+            <!--            </div>-->
+            <div class="flex md:flex-row flex-col items-center gap-4 p-4 rounded-lg">
+              <div class="p-3 bg-white rounded">🌸</div>
+              <div>
+                <div class="text-2xl font-semibold text-darkBeige">500+</div>
+                <div class="text-sm text-darkBeige">Unique style</div>
+              </div>
             </div>
+
+            <!-- Stat 2 -->
+            <div class="flex md:flex-row flex-col items-center gap-4 p-4 rounded-lg">
+              <div class="p-3 bg-white rounded">✨</div>
+              <div>
+                <div class="text-2xl font-semibold text-darkBeige">500+</div>
+                <div class="text-sm text-darkBeige">Unique style</div>
+              </div>
+            </div>
+
+            <!-- Stat 3 -->
+            <div class="flex md:flex-row flex-col items-center gap-4  p-4 rounded-lg">
+              <div class="p-3 bg-white rounded">⭐</div>
+              <div>
+                <div class="text-2xl font-semibold text-darkBeige">1M</div>
+                <div class="text-sm text-darkBeige">Happy customer</div>
+              </div>
+            </div>
+
+
           </div>
         </div>
       </div>
