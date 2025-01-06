@@ -3,7 +3,6 @@
 </script>
 
 <template>
-
   <section class="bg-beige">
     <nav class="border-b max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="navbar">
@@ -27,12 +26,12 @@
             </div>
             <ul
                 tabindex="0"
-                class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[10] mt-3 w-52 p-2 shadow">
               <li><a>Beranda</a></li>
-              <li>
+              <li >
                 <details>
                   <summary>Produk Kami</summary>
-                  <ul class="p-2">
+                  <ul class="p-2 z-10">
                     <li><a>Karangan Bunga</a></li>
                     <li><a>Bouquet</a></li>
                     <li><a>Standing Flower</a></li>
@@ -49,24 +48,6 @@
             <span>Shelby Florist 💐</span>
           </a>
         </div>
-
-        <!--  Navbar md, lg, xl atau Ukuran Laptop dan desktop  -->
-        <!--    <div class="navbar-center hidden lg:flex">-->
-        <!--      <ul class="menu menu-horizontal px-1">-->
-        <!--        <li><a>Beranda</a></li>-->
-        <!--        <li>-->
-        <!--          <details>-->
-        <!--            <summary>Produk Kami</summary>-->
-        <!--            <ul class="p-2">-->
-        <!--              <li><a class="text-nowrap">Karangan Bunga</a></li>-->
-        <!--              <li><a class="text-nowrap">Bouquet</a></li>-->
-        <!--              <li><a class="text-nowrap">Standing Flower</a></li>-->
-        <!--            </ul>-->
-        <!--          </details>-->
-        <!--        </li>-->
-        <!--        <li><a>Kontak Kami</a></li>-->
-        <!--      </ul>-->
-        <!--    </div>-->
 
         <div class="navbar-center hidden lg:flex">
           <ul class="flex gap-8">

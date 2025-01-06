@@ -59,8 +59,9 @@
         </div>
       </div>
     </div>
-  </section>
+  </section>>
 </template>
+
 
 <style scoped>
 .category-section:hover {
