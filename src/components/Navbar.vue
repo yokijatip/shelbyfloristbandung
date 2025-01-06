@@ -41,9 +41,9 @@
       </div>
 
       <!-- Title & Logo -->
-      <a class="text-xl md:text-2xl normal-case font-cormorant font-extrabold text-darkBeige text-nowrap w-full text-center lg:text-left flex items-center justify-center lg:justify-start gap-1">
-        🪴 <!-- Spacing antara emoji dan text -->
-        <span>Shelby Florist</span>
+      <a class="text-xl md:text-2xl normal-case font-cormorant font-semibold text-darkBeige text-nowrap w-full text-center lg:text-left flex items-center justify-center lg:justify-start gap-1">
+         <!-- Spacing antara emoji dan text -->
+        <span>Shelby Florist 💐</span>
       </a>
     </div>
 
@@ -71,7 +71,7 @@
         <li class="relative group">
           <a class="hover:text-darkBeige cursor-pointer text-sm">Produk Kami</a>
           <!-- Dropdown menu -->
-          <ul class="absolute hidden group-hover:block bg-white shadow-lg rounded-md mt-2 py-2 w-48">
+          <ul class="absolute hidden group-hover:block bg-white shadow-lg rounded-md mt-2 py-2 w-48 z-[99]">
             <li><a class="text-sm block px-4 py-2 hover:bg-gray-100">Karangan Bunga</a></li>
             <li><a class="text-sm block px-4 py-2 hover:bg-gray-100">Bouquet</a></li>
             <li><a class="text-sm block px-4 py-2 hover:bg-gray-100">Standing Flower</a></li>

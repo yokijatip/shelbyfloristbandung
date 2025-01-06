@@ -4,9 +4,9 @@ import Hero from "./components/Hero.vue";
 </script>
 
 <template>
-  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 bg-beige">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
     <Navbar />
-    <Hero/>
+    <Hero />
   </div>
 </template>
 
