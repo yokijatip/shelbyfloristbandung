@@ -2,66 +2,77 @@
 
 <template>
   <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 my-6">
-<h1 class="text-4xl font-bold text-center my-12">Produk Kami</h1>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+      <div>
+        <h1 class="text-4xl font-bold mt-12 font-cormorant text-center md:text-start">Produk Kami</h1>
+        <p class="font-poppins text-slate-500">
+          Bunga untuk momen spesial anda, jangan sampai ketinggalan!
+        </p>
+      </div>
+      <div>
+        <p class="md:mt-12 mt-2 font-poppins text-slate-500">
+          Kami Memahami Bahwa Mencari Bunga Yang tepat Untuk Momen Spesial Anda Bisa Menjadi Tantangan. Oleh Karena Itu, Kami Ingin Memperkenalkan Penawaran Bunga Spesial Dari Shelby Florist Yang Akan Membuat Momen Anda Semakin Berkesan.
+        </p>
+        <button
+          class="bg-darkBeige text-white text-center rounded-lg font-poppins py-2 px-4 mb-8 mt-4"
+        >
+          Lihat Semua
+        </button>
+      </div>
+    </div>
 
-<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
       <!-- Kategori 1: Bouquet -->
       <div class="category-section">
-        <h2 class="text-2xl font-semibold mb-4 text-center">Bouquet</h2>
-        <div class="bg-white rounded-lg shadow-lg overflow-hidden">
-          <img 
-            src="/public/hero_image.png" 
-            alt="Bunga Papan" 
-            class="w-full h-64 object-cover"
+        <div class="overflow-hidden">
+          <img
+            src="/public/hero_image.png"
+            alt="Bunga Papan"
+            class="inset-0 w-full h-full object-cover md:rounded-t-[200px] "
           />
           <div class="p-4">
-            <p class="text-gray-600">Koleksi bunga papan untuk berbagai acara</p>
-            <button class="mt-4 bg-pink-500 text-white px-4 py-2 rounded-md hover:bg-pink-600 transition-colors">
-              Lihat Semua
-            </button>
+            <h2 class="text-2xl font-semibold mb-4 text-center font-cormorant">
+              Bouquet
+            </h2>
           </div>
         </div>
       </div>
 
       <!-- Kategori 2: karangan bunga -->
       <div class="category-section">
-        <h2 class="text-2xl font-semibold mb-4 text-center">Karangan Bunga</h2>
-        <div class="bg-white rounded-lg shadow-lg overflow-hidden">
-          <img 
-            src="/public/hero_image.png" 
-            alt="Bunga Meja" 
-            class="w-full h-64 object-cover"
+        <div class="overflow-hidden">
+          <img
+            src="/public/hero_image.png"
+            alt="Bunga Meja"
+            class="inset-0 w-full h-full object-cover md:rounded-t-[200px] "
           />
           <div class="p-4">
-            <p class="text-gray-600">Rangkaian bunga segar untuk meja</p>
-            <button class="mt-4 bg-pink-500 text-white px-4 py-2 rounded-md hover:bg-pink-600 transition-colors">
-              Lihat Semua
-            </button>
+            <h2 class="text-2xl font-semibold mb-4 text-center font-cormorant">
+              Karangan Bunga
+            </h2>
           </div>
         </div>
       </div>
 
-      <!-- Kategori 3: Hand Bouquet -->
+      <!-- Kategori 3: standing flower -->
       <div class="category-section">
-        <h2 class="text-2xl font-semibold mb-4 text-center">Standing Flower</h2>
-        <div class="bg-white rounded-lg shadow-lg overflow-hidden">
-          <img 
-            src="/public/hero_image.png" 
-            alt="Hand Bouquet" 
-            class="w-full h-64 object-cover"
+        <div class=" overflow-hidden">
+          <img
+            src="/public/hero_image.png"
+            alt="Hand Bouquet"
+            class="inset-0 w-full h-full object-cover md:rounded-t-[200px] "
           />
           <div class="p-4">
-            <p class="text-gray-600">Buket bunga untuk momen spesial</p>
-            <button class="mt-4 bg-pink-500 text-white px-4 py-2 rounded-md hover:bg-pink-600 transition-colors">
-              Lihat Semua
-            </button>
+            <h2 class="text-2xl font-semibold mb-4 text-center font-cormorant">
+              Standing Flower
+            </h2>
           </div>
         </div>
       </div>
     </div>
-  </section>>
+  </section>
+  >
 </template>
-
 
 <style scoped>
 .category-section:hover {
