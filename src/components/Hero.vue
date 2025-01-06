@@ -15,7 +15,7 @@
             src="/public/hero_image.png"
             alt="Hero Image"
             class="absolute inset-0 w-full h-full object-cover
-               rounded-full md:rounded-t-[300px]"
+                md:rounded-t-[200px]"
         />
       </div>
     </div>
@@ -43,8 +43,8 @@
         </div>
 
         <!-- Right Stats -->
-        <div class="space-y-6 md:space-y-4">
-          <div class="flex items-center gap-4 p-4 rounded-lg">
+        <div class="space-x-2 md:space-y-4 flex md:flex-col flex-row">
+          <div class="flex md:flex-row flex-col items-center gap-4 p-4 rounded-lg">
             <div class="p-3 bg-white rounded">🌸</div>
             <div>
               <div class="text-2xl font-semibold text-darkBeige">290</div>
@@ -52,7 +52,7 @@
             </div>
           </div>
 
-          <div class="flex items-center gap-4 p-4 rounded-lg">
+          <div class="flex md:flex-row flex-col items-center gap-4 p-4 rounded-lg">
             <div class="p-3 bg-white rounded">✨</div>
             <div>
               <div class="text-2xl font-semibold text-darkBeige">500+</div>
@@ -60,7 +60,7 @@
             </div>
           </div>
 
-          <div class="flex items-center gap-4  p-4 rounded-lg">
+          <div class="flex md:flex-row flex-col items-center gap-4  p-4 rounded-lg">
             <div class="p-3 bg-white rounded">⭐</div>
             <div>
               <div class="text-2xl font-semibold text-darkBeige">1M</div>

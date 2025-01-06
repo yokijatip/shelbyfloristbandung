@@ -3,7 +3,9 @@
 </script>
 
 <template>
+  <nav class="border-b">
   <div class="navbar">
+
     <div class="navbar-start">
 
       <!--  Navbar sm atau untuk ukuran mobile  -->
@@ -101,7 +103,9 @@
         <span class="hidden md:inline-flex">Whatsapp</span>
       </a>
     </div>
+
   </div>
+  </nav>
 </template>
 
 <style scoped>
