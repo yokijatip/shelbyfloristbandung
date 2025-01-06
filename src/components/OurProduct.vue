@@ -4,17 +4,24 @@
   <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 my-6">
     <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
       <div>
-        <h1 class="text-4xl font-bold mt-12 font-cormorant text-center md:text-start">Produk Kami</h1>
-        <p class="font-poppins text-slate-500">
-          Bunga untuk momen spesial anda, jangan sampai ketinggalan!
+        <p
+          class="text-lg font-cormorant tracking-widest text-slate-500 mt-12"
+        >
+          Produk Kami
+        </p>
+        <p class="font-cormorant traking-wide font-semibold text-2xl text-slate-700">
+          Bunga untuk momen spesial anda, <br />jangan sampai ketinggalan!
         </p>
       </div>
       <div>
-        <p class="md:mt-12 mt-2 font-poppins text-slate-500">
-          Kami Memahami Bahwa Mencari Bunga Yang tepat Untuk Momen Spesial Anda Bisa Menjadi Tantangan. Oleh Karena Itu, Kami Ingin Memperkenalkan Penawaran Bunga Spesial Dari Shelby Florist Yang Akan Membuat Momen Anda Semakin Berkesan.
+        <p class="md:mt-12 mt-2 text-slate-500">
+          Kami Memahami Bahwa Mencari Bunga Yang tepat Untuk Momen Spesial Anda
+          Bisa Menjadi Tantangan. Oleh Karena Itu, Kami Ingin Memperkenalkan
+          Penawaran Bunga Spesial Dari Shelby Florist Yang Akan Membuat Momen
+          Anda Semakin Berkesan.
         </p>
         <button
-          class="bg-darkBeige text-white text-center rounded-lg font-poppins py-2 px-4 mb-8 mt-4"
+          class="btn bg-darkBeige text-white hover:bg-opacity-90 rounded-none mb-20 mt-4"
         >
           Lihat Semua
         </button>
@@ -28,7 +35,7 @@
           <img
             src="/public/hero_image.png"
             alt="Bunga Papan"
-            class="inset-0 w-full h-full object-cover md:rounded-t-[200px] "
+            class="inset-0 w-full h-full object-cover md:rounded-t-[200px]"
           />
           <div class="p-4">
             <h2 class="text-2xl font-semibold mb-4 text-center font-cormorant">
@@ -44,7 +51,7 @@
           <img
             src="/public/hero_image.png"
             alt="Bunga Meja"
-            class="inset-0 w-full h-full object-cover md:rounded-t-[200px] "
+            class="inset-0 w-full h-full object-cover md:rounded-t-[200px]"
           />
           <div class="p-4">
             <h2 class="text-2xl font-semibold mb-4 text-center font-cormorant">
@@ -56,11 +63,11 @@
 
       <!-- Kategori 3: standing flower -->
       <div class="category-section">
-        <div class=" overflow-hidden">
+        <div class="overflow-hidden">
           <img
             src="/public/hero_image.png"
             alt="Hand Bouquet"
-            class="inset-0 w-full h-full object-cover md:rounded-t-[200px] "
+            class="inset-0 w-full h-full object-cover md:rounded-t-[200px]"
           />
           <div class="p-4">
             <h2 class="text-2xl font-semibold mb-4 text-center font-cormorant">
