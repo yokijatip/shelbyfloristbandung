@@ -4,7 +4,7 @@
 
 <template>
   <section class="bg-beige">
-    <nav class="border-b   border-lightBeige max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <nav class="border-b border-lightBeige max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="navbar">
         <div class="navbar-start">
 
