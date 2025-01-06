@@ -2,6 +2,7 @@
 
 <template>
   <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 my-6">
+
     <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
       <div>
         <p
@@ -9,7 +10,7 @@
         >
           Produk Kami
         </p>
-        <p class="font-cormorant traking-wide font-semibold text-2xl text-slate-700">
+        <p class="font-cormorant traking-wide font-semibold text-2xl md:text-4xl text-slate-700">
           Bunga untuk momen spesial anda, <br />jangan sampai ketinggalan!
         </p>
       </div>
@@ -77,9 +78,13 @@
         </div>
       </div>
     </div>
+    
   </section>
-  >
+
+
 </template>
+
+
 
 <style scoped>
 .category-section:hover {
