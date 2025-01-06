@@ -1,13 +1,12 @@
 <script setup>
 import Navbar from './components/Navbar.vue'
+import Hero from "./components/Hero.vue";
 </script>
 
 <template>
-  <div>
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 bg-beige">
     <Navbar />
-    <a href="https://vuejs.org/" target="_blank">
-      <img src="./assets/vue.svg" class="logo vue" alt="Vue logo" />
-    </a>
+    <Hero/>
   </div>
 </template>
 
