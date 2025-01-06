@@ -2,29 +2,18 @@
 import Navbar from './components/Navbar.vue'
 import Hero from "./components/Hero.vue";
 import OurProduct from "./components/OurProduct.vue";
+import BestSeller from "./components/BestSeller.vue";
 </script>
 
 <template>
   <div>
     <Navbar />
     <Hero />
+    <BestSeller/>
     <OurProduct />
   </div>
 </template>
 
 <style scoped>
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
 
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-
-.logo.vue:hover {
-  filter: drop-shadow(0 0 2em #42b883aa);
-}
 </style>
