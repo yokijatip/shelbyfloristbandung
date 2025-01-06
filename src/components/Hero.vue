@@ -26,8 +26,8 @@
         <!-- Left Content -->
         <div class="max-w-xl">
           <h1 class="text-4xl md:text-7xl lg:text-7xl font-extrabold font-cormorant text-darkBeige mb-6 text-wrap md:text-nowrap">
-            YOKI KONTOL
-            <br>for you
+            Hadiah spesial untuk
+            <br>anda dan orang tercinta
           </h1>
           <p class="text-lightBeige mb-8 w-full">
             Shelby Florist Bandung Memperkenalkan<br>Bunga Indah Untuk Momen Spesial Anda
