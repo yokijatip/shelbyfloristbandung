@@ -18,8 +18,7 @@ export default {
                 cormorant: ['Cormorant Garamond', 'serif'],
                 poppins: ['Poppins', 'sans-serif'],
             },
-        },
-
+        }
     },
     variants: {
         extend: {},
