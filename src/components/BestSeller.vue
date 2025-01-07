@@ -1,5 +1,8 @@
 <script setup>
 import {onMounted, onUnmounted, ref} from "vue";
+import SubTitleSection from "./elements/text/SubTitleSection.vue";
+import TitleSection from "./elements/text/TitleSection.vue";
+import HeadingSection from "./elements/text/HeadingSection.vue";
 
 
 // Auto Scroll START
@@ -192,23 +195,24 @@ const bestSellers = [
 
 <template>
   <section class="bg-white">
-    <div class="min-h-screen max-w-7xl mx-auto px-0 sm:px-6 lg:px-0 bg-white py-8">
+    <div class="min-h-screen max-w-0xl mx-auto px-0 sm:px-6 lg:px-0 bg-white py-8">
       <!--  Title  -->
-      <div class="flex flex-col mb-16">
-        <p class="text-gray-600 uppercase tracking-wider text-md mb-4 text-center">produk best seller</p>
-        <h1 class="text-3xl md:text-5xl font-extrabold font-cormorant text-darkBeige text-center">Top Bouquet, Karangan
+      <div class="flex flex-col mb-8 md:mb-16 px-8">
+        <SubTitleSection>
+          Produk best seller
+        </SubTitleSection>
+        <TitleSection>
+          Top Bouquet, Karangan
           Bunga &
-          Standing Flower</h1>
-        <h2 class="text-sm md:text-2xl font-extrabold font-cormorant text-lightBeige text-center mt-6">Produk yang kami
-          tawarkan berkualitas, indah sehingga memenuhi kebutuhan anda</h2>
+          Standing Flower
+        </TitleSection>
+        <HeadingSection>
+          Produk yang kami tawarkan berkualitas, indah sehingga memenuhi kebutuhan anda
+        </HeadingSection>
       </div>
 
       <!--  Best Seller Content  -->
-      <!--
-      Disini harusnya isi dari content yang bisa di slide dengan 2 Baris atas 10 content dan bawah 10 content
-      -->
       <!-- Scrollable 2-Column Grid -->
-      <!-- Scrollable Rows -->
       <!-- Scrollable Rows -->
       <div class="space-y-8">
         <!-- Top Row -->

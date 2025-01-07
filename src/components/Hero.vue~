@@ -127,8 +127,6 @@ import CommonButton from "./elements/button/CommonButton.vue";
               </div>
             </div>
           </div>
-
-
         </div>
       </div>
     </div>

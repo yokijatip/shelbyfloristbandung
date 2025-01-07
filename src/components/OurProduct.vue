@@ -1,17 +1,19 @@
-<script setup></script>
+<script setup>
+import CommonButton from "./elements/button/CommonButton.vue";
+import SubTitleSection from "./elements/text/SubTitleSection.vue";
+import TitleSection from "./elements/text/TitleSection.vue";
+</script>
 
 <template>
-  <section class="min-h-screen max-w-7xl mx-auto px-8 sm:px-6 bg-white py-8">
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+  <section class="min-h-screen px-8 max-w-7xl mx-auto bg-white py-8 md:pt-16 md:px-0 lg:px-7 xl:px-32">
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
       <div>
-        <p
-            class="text-lg font-cormorant tracking-widest text-slate-500 mt-12"
-        >
+        <SubTitleSection class="text-start">
           Produk Kami
-        </p>
-        <p class="font-cormorant traking-wide font-semibold text-2xl md:text-4xl text-slate-700">
-          Bunga untuk momen spesial anda, <br/>jangan sampai ketinggalan!
-        </p>
+        </SubTitleSection>
+        <TitleSection class="text-start">
+          Bunga indah kami sediakan<br/>jangan sampai ketinggalan!
+        </TitleSection>
       </div>
       <div>
         <p class="md:mt-12 mt-2 text-slate-500">
@@ -20,20 +22,19 @@
           Penawaran Bunga Spesial Dari Shelby Florist Yang Akan Membuat Momen
           Anda Semakin Berkesan.
         </p>
-        <button
-            class="btn bg-darkBeige text-white hover:bg-opacity-90 rounded-none mb-20 mt-4"
-        >
+
+        <CommonButton class="btn bg-darkBeige text-white rounded-none mb-20 mt-4">
           Lihat Semua
-        </button>
+        </CommonButton>
       </div>
     </div>
 
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-8">
       <!-- Kategori 1: Bouquet -->
       <div class="category-section">
         <div class="overflow-hidden">
           <img
-              src="/public/hero_image.png"
+              src="https://m.media-amazon.com/images/I/61F7fu4cFQL._AC_UF1000,1000_QL80_.jpg"
               alt="Bunga Papan"
               class="inset-0 w-full h-full object-cover md:rounded-t-[200px]"
           />
@@ -49,9 +50,9 @@
       <div class="category-section">
         <div class="overflow-hidden">
           <img
-              src="/public/hero_image.png"
+              src="https://smesta.kemenkopukm.go.id/storage/company/0093fe2eedeb098315bf9251da1a5f03/product/images/PbYnr6CVk8E0pfhnNhn7FnSr4l8w8NASEhsWzZgM.jpg"
               alt="Bunga Meja"
-              class="inset-0 w-full h-full object-cover md:rounded-t-[200px]"
+              class="inset-0 w-full h-1/2 object-cover md:rounded-t-[200px]"
           />
           <div class="p-4">
             <h2 class="text-2xl font-semibold mb-4 text-center font-cormorant">
@@ -65,7 +66,7 @@
       <div class="category-section">
         <div class="overflow-hidden">
           <img
-              src="/public/hero_image.png"
+              src="https://jefeflower.com/wp-content/uploads/2020/04/IMG_20191227_143142_508-1-scaled.jpg"
               alt="Hand Bouquet"
               class="inset-0 w-full h-full object-cover md:rounded-t-[200px]"
           />
