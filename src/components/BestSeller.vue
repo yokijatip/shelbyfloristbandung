@@ -192,10 +192,10 @@ const bestSellers = [
 
 <template>
   <section class="bg-white">
-    <div class="min-h-screen max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 bg-white py-8">
+    <div class="min-h-screen max-w-7xl mx-auto px-0 sm:px-6 lg:px-0 bg-white py-8">
       <!--  Title  -->
       <div class="flex flex-col mb-16">
-        <p class="text-sm md:text-lg mb-4 text-gray-500 text-center ">Produk Best Seller</p>
+        <p class="text-gray-600 uppercase tracking-wider text-md mb-4 text-center">produk best seller</p>
         <h1 class="text-3xl md:text-5xl font-extrabold font-cormorant text-darkBeige text-center">Top Bouquet, Karangan
           Bunga &
           Standing Flower</h1>
