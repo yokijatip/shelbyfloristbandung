@@ -6,7 +6,7 @@ import TitleSection from "./elements/text/TitleSection.vue";
 
 <template>
   <section id="ourProduct" class="min-h-screen px-8 max-w-7xl mx-auto bg-white py-8 md:pt-16 md:px-0 lg:px-7 xl:px-32">
-  <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
       <div>
         <SubTitleSection class="text-start">
           Produk Kami
@@ -29,7 +29,6 @@ import TitleSection from "./elements/text/TitleSection.vue";
       </div>
     </div>
 
-    
 
     <div class="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-8">
       <!-- Kategori 1: Bouquet -->
@@ -80,15 +79,6 @@ import TitleSection from "./elements/text/TitleSection.vue";
         </div>
       </div>
     </div>
-
-    <!-- Gambar Variasi-->
-     <div class="relative">
-     <img
-      src="/public/variasi.png"
-      alt="Left Corner SVG"
-      class="absolute h-80 -bottom-10 -left-40 md:-bottom-10 md:-left-64 rotate-45 md:w-80 md:h-80"
-    />
-  </div>
   </section>
 
 
