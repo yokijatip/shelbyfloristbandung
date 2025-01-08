@@ -11,19 +11,19 @@ export default defineComponent({
 </script>
 
 <template>
-  <div class="container mx-auto lg:pb-8 pb-16 md:py-12">
+  <div class=" mx-auto lg:pb-8 pb-16 md:py-12 text-end">
     
     <div class="flex flex-col lg:flex-row gap-8 ps-8">
       <!-- Text Content - akan muncul di atas pada mobile -->
-      <div class=" lg:w-1/3 mb-8 lg:mb-0">
+      <div class=" lg:w-1/3 mb-8 lg:mb-0 pe-8">
         <div class="lg:pl-8">
-          <SubTitleSection class="text-start">
+          <SubTitleSection class="text-end">
             Karangan Bunga
           </SubTitleSection>
-          <TitleSection class="text-start md:mb-12">
+          <TitleSection class="text-end md:mb-12">
             Ucapan Selamat & Suka Cita
           </TitleSection>
-          <p class="text-gray-600 leading-relaxed mb-6">
+          <p class="text-gray-600 leading-relaxed my-6 text-end">
             We're passionate about capturing the essence of your unique love story and turning it into a timeless collection 
             of photographs. From your initial engagement to your eagerly anticipated wedding day, we are committed to 
             preserving every precious moment along the way.

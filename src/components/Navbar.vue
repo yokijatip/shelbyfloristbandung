@@ -51,9 +51,9 @@
 
         <div class="navbar-center hidden lg:flex">
           <ul class="flex gap-8">
-            <li><a class="text-sm hover:text-darkBeige">Beranda</a></li>
+            <li><a class=" text-sm cursor-pointer hover:text-darkBeige">Beranda</a></li>
             <li class="relative group">
-              <a class="hover:text-darkBeige cursor-pointer text-sm">Produk Kami</a>
+              <a href="" class="hover:text-darkBeige  cursor-pointer text-sm">Produk Kami</a>
               <!-- Dropdown menu -->
               <ul class="absolute hidden group-hover:block bg-white shadow-lg rounded-md mt-2 py-2 w-48 z-[99]">
                 <li><a class="text-sm block px-4 py-2 hover:bg-gray-100">Karangan Bunga</a></li>
@@ -61,8 +61,8 @@
                 <li><a class="text-sm block px-4 py-2 hover:bg-gray-100">Standing Flower</a></li>
               </ul>
             </li>
-            <li><a class="hover:text-darkBeige text-sm ">Kontak</a></li>
-            <li><a class="hover:text-darkBeige text-sm ">Tentang Kami</a></li>
+            <li><a class="hover:text-darkBeige text-sm cursor-pointer ">Kontak</a></li>
+            <li><a class="hover:text-darkBeige text-sm cursor-pointer ">Tentang Kami</a></li>
           </ul>
         </div>
 

@@ -5,7 +5,7 @@
 <template>
   <!-- FAB WhatsApp -->
   <a
-      href="https://wa.me/628123456789"
+      href="https://wa.me/6281904520743"
       target="_blank"
       class="fixed bottom-4 right-4 bg-green-500 text-white rounded-full p-4 shadow-lg hover:bg-green-600 transition sm:hidden"
       aria-label="Chat with us on WhatsApp"

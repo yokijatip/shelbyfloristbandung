@@ -6,11 +6,11 @@ import CommonButton from "./elements/button/CommonButton.vue";
 </script>
 
 <template>
-  <div class="container mx-auto lg:pb-8 pb-16 md:py-12">
+  <div class=" mx-auto lg:pb-8  md:ps-0 pb-16 md:py-12">
 
-    <div class="flex flex-col lg:flex-row gap-8">
+    <div class="flex flex-col lg:flex-row gap-8 pe-0 md:pe-8">
       <!-- Text Content - akan muncul di atas pada mobile -->
-      <div class="lg:order-last lg:w-1/3 mb-8 lg:mb-0 pe-8">
+      <div class="lg:order-last lg:w-1/3 mb-4 lg:mb-0 ps-8">
         <div class="lg:pl-8">
           <SubTitleSection class="text-start">
             Standing Flower
@@ -18,7 +18,7 @@ import CommonButton from "./elements/button/CommonButton.vue";
           <TitleSection class="text-start md:mb-12">
             Hiasan bunga disegala situasi
           </TitleSection>
-          <p class="text-gray-600 leading-relaxed mb-6">
+          <p class="text-gray-600 leading-relaxed my-6">
             We're passionate about capturing the essence of your unique love story and turning it into a timeless
             collection
             of photographs. From your initial engagement to your eagerly anticipated wedding day, we are committed to
@@ -31,7 +31,7 @@ import CommonButton from "./elements/button/CommonButton.vue";
       </div>
 
       <!-- Images Container -->
-      <div class="lg:w-2/3 grid grid-cols-2 gap-4">
+      <div class="lg:w-2/3 grid grid-cols-2 gap-4 pe-8">
         <div class="aspect-[4/5] overflow-hidden">
           <img
               src="https://filebroker-cdn.lazada.co.id/kf/S36e4083e666341b5925a58268e419367k.jpg"
