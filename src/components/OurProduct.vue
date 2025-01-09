@@ -80,17 +80,7 @@ import TitleSection from "./elements/text/TitleSection.vue";
         </div>
       </div>
     </div>
-
-    <!-- Gambar Variasi-->
-     <div class="relative">
-     <img
-      src="/public/variasi.png"
-      alt="Left Corner SVG"
-      class="absolute h-80 -bottom-10 -left-40 md:-bottom-10 md:-left-64 rotate-45 md:w-80 md:h-80"
-    />
-  </div>
   </section>
-
 
 </template>
 
