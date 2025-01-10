@@ -14,7 +14,14 @@ const router = createRouter({
             path: '/AllProduct',
             name: 'AllProduct',
             component: () => import('../views/AllProduct.vue')
-        }
+        },
+
+        {
+            path: '/AllKaranganBunga',
+            name: 'AllKaranganBunga',
+            component: () => import('../views/AllKaranganBunga.vue')
+        },
+
         
     ]
 })

@@ -5,6 +5,13 @@ const router = useRouter();
 function goToAllProduct() {
   router.push("/AllProduct");
 }
+function goToAllKaranganBunga() {
+  router.push("/AllKaranganBunga");
+}
+function goToBeranda() {
+  router.push("/");
+}
+
 </script>
 
 <template>
@@ -41,7 +48,7 @@ function goToAllProduct() {
                 <details>
                   <summary>Produk Kami</summary>
                   <ul class="p-2 z-10">
-                    <li><a>Karangan Bunga</a></li>
+                    <li><a @click="goToAllKaranganBunga()">Karangan Bunga</a></li>
                     <li><a>Bouquet</a></li>
                     <li><a>Standing Flower</a></li>
                   </ul>
@@ -63,7 +70,7 @@ function goToAllProduct() {
         <div class="navbar-center hidden lg:flex">
           <ul class="flex gap-8">
             <li>
-              <a class="text-sm cursor-pointer hover:text-darkBeige">Beranda</a>
+              <a @click="goToBeranda" class="text-sm cursor-pointer hover:text-darkBeige">Beranda</a>
             </li>
             <li class="relative group">
               <a
@@ -76,7 +83,7 @@ function goToAllProduct() {
                 class="absolute hidden group-hover:block bg-white shadow-lg rounded-md mt-2 py-2 w-48 z-[99]"
               >
                 <li>
-                  <a class="text-sm block px-4 py-2 hover:bg-gray-100"
+                  <a @click="goToAllKaranganBunga()" class="text-sm block px-4 py-2 hover:bg-gray-100"
                     >Karangan Bunga</a
                   >
                 </li>
