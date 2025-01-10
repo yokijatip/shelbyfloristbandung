@@ -81,7 +81,6 @@ import TitleSection from "./elements/text/TitleSection.vue";
     </div>
   </section>
 
-
 </template>
 
 
