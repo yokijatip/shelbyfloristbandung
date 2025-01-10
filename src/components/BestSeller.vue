@@ -52,6 +52,7 @@ const bestSellers = [
     name: "White Rose Bouquet",
     image: "https://down-id.img.susercontent.com/file/d8b7e890630548a8abf772f8cbe3e405",
     subTitle: "Birthday Special",
+    subCategory: "002",
     price: "850.000",
   },
   {
@@ -59,6 +60,7 @@ const bestSellers = [
     name: "Red Rose Bouquet",
     image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQU_wTXdNt5f93AyKIRPVgrawctACKBum-w3Q&s",
     subTitle: "Birthday Special",
+    subCategory: "002",
     price: "850.000",
 
   },
@@ -67,6 +69,7 @@ const bestSellers = [
     name: "Pink Tulip Arrangement",
     image: "https://i.pinimg.com/736x/07/03/24/0703248d0d184d65d0b361e3b5b23d21.jpg",
     subTitle: "Birthday Special",
+    subCategory: "002",
     price: "850.000",
   },
   {
@@ -74,6 +77,7 @@ const bestSellers = [
     name: "Sunflower Basket",
     image: "https://images.tokopedia.net/img/cache/700/VqbcmM/2022/9/8/10c119fa-ed8e-465a-a43e-5dfba5be6aba.jpg",
     subTitle: "Birthday Special",
+    subCategory: "002",
     price: "850.000",
   },
   {
@@ -81,6 +85,7 @@ const bestSellers = [
     name: "Orchid Vase",
     image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzt1sVEHGCeRMh9Z9zvw1sRnqJXSfcw13ltw&s",
     subTitle: "Birthday Special",
+    subCategory: "002",
     price: "850.000",
   },
   {
@@ -88,6 +93,7 @@ const bestSellers = [
     name: "Lavender Basket",
     image: "https://media.istockphoto.com/id/501027375/photo/basket-of-lavender.jpg?s=612x612&w=0&k=20&c=ziFazjDWmE338n-qcOPCjVCYWDsaNgVF5bfbuEdHrpM=",
     subTitle: "Birthday Special",
+    subCategory: "002",
     price: "850.000",
   },
   {
@@ -95,6 +101,7 @@ const bestSellers = [
     name: "Daisy Mixed Bouquet",
     image: "https://www.salamagreenhouse.com/cdn/shop/products/mixed_daisy_grande.jpg?v=1391039243",
     subTitle: "Birthday Special",
+    subCategory: "002",
     price: "850.000",
   },
   {
@@ -102,6 +109,7 @@ const bestSellers = [
     name: "Carnation Bouquet",
     image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvLkHFm8HNRZqPOGM2bHER6Cwwfjohce_HZQ&s",
     subTitle: "Birthday Special",
+    subCategory: "002",
     price: "850.000",
   },
   {
@@ -109,6 +117,7 @@ const bestSellers = [
     name: "Peony Basket",
     image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSh-UurIn_X0bhFls4zOCOl4dBBVAY-n1A3SQ&s",
     subTitle: "Birthday Special",
+    subCategory: "002",
     price: "850.000",
   },
   {
@@ -116,6 +125,7 @@ const bestSellers = [
     name: "Calla Lily Arrangement",
     image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMgyKLzqfzPQCL_htyG_fcchcO1PaM345NTw&s",
     subTitle: "Birthday Special",
+    subCategory: "002",
     price: "850.000",
   },
   {
@@ -123,6 +133,7 @@ const bestSellers = [
     name: "Mixed Seasonal Flowers",
     image: "https://olliesbloomsandplants.com.au/cdn/shop/products/WeeklyBloomSpecialFlowersPink2.jpg?v=1639559584",
     subTitle: "Birthday Special",
+    subCategory: "002",
     price: "850.000",
   },
   {
@@ -130,6 +141,7 @@ const bestSellers = [
     name: "Hydrangea Bouquet",
     image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRK9m1YlQq1IBzEluagG2nMnI1EICaDjORUBw&s",
     subTitle: "Birthday Special",
+    subCategory: "002",
     price: "850.000",
   },
   {
@@ -137,6 +149,7 @@ const bestSellers = [
     name: "Yellow Lily Bouquet",
     image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3rEomIGQzRx_eooHpf83cCOGUkH-ismAneQ&s",
     subTitle: "Birthday Special",
+    subCategory: "002",
     price: "850.000",
   },
   {
@@ -144,6 +157,7 @@ const bestSellers = [
     name: "Pastel Roses",
     image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTb0rHdBuOhCjIeSIT0aBrqhB8uZ8HPKuaqlQ&s",
     subTitle: "Birthday Special",
+    subCategory: "002",
     price: "850.000",
   },
   {
@@ -151,6 +165,7 @@ const bestSellers = [
     name: "Cherry Blossom Vase",
     image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8R1q_dbfWIgvbx1_jUmGr8Y18D32q1oT4_w&s",
     subTitle: "Birthday Special",
+    subCategory: "002",
     price: "850.000",
   },
   {
@@ -158,6 +173,7 @@ const bestSellers = [
     name: "Marigold Garland",
     image: "https://images.tokopedia.net/img/cache/500-square/VqbcmM/2023/1/10/8317803c-766b-4c10-bcfa-4052b2134a0d.jpg",
     subTitle: "Birthday Special",
+    subCategory: "002",
     price: "850.000",
   },
   {
@@ -165,6 +181,7 @@ const bestSellers = [
     name: "Exotic Flower Arrangement",
     image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVjEMXr-erHjB6jphsjPNcvqtl6xaOLCmCFQ&s",
     subTitle: "Birthday Special",
+    subCategory: "002",
     price: "850.000",
   },
   {
@@ -172,6 +189,7 @@ const bestSellers = [
     name: "Romantic Rose Box",
     image: "https://vipfloral.com/wp-content/uploads/2024/01/IMG_8212.jpg",
     subTitle: "Birthday Special",
+    subCategory: "002",
     price: "850.000",
   },
   {
@@ -179,6 +197,7 @@ const bestSellers = [
     name: "Blue Orchid Vase",
     image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT77qBVEHoSoXF0k8oOxGIOczjo0HzyYsUTWA&s",
     subTitle: "Birthday Special",
+    subCategory: "002",
     price: "850.000",
   },
   {
@@ -186,6 +205,7 @@ const bestSellers = [
     name: "Garden Fresh Mixed Bouquet",
     image: "https://enjoyflowers.com/cdn/shop/products/FFM1.jpg?v=1649796341&width=416",
     subTitle: "Birthday Special",
+    subCategory: "002",
     price: "850.000",
   },
 ];
@@ -212,7 +232,6 @@ const bestSellers = [
       </div>
 
       <!--  Best Seller Content  -->
-      <!-- Scrollable 2-Column Grid -->
       <!-- Scrollable Rows -->
       <div class="space-y-8">
         <!-- Top Row -->
@@ -222,7 +241,7 @@ const bestSellers = [
                  class="w-40 md:w-72 flex-shrink-0 bg-white rounded-lg">
               <img :src="item.image" :alt="item.name"
                    class="w-full h-40 md:h-72 object-cover">
-              <div class="p-4">
+              <div class="py-4">
                 <h3 class="font-cormorant text-xl font-bold text-darkBeige">{{ item.name }}</h3>
                 <p class="text-sm text-lightBeige">{{ item.subTitle }}</p>
                 <p class="text-darkBeige font-semibold mt-2">Rp {{ item.price }}</p>
