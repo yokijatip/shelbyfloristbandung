@@ -9,6 +9,31 @@ import StandingFlower from "../components/StandingFlower.vue"
 import FloatingActionButtonWhatsapp from "../components/elements/button/FloatingActionButtonWhatsapp.vue";
 import ContactUs from "../components/ContactUs.vue";
 import AboutUs from "../components/Footer.vue";
+import Product from "../components/card/Product.vue";
+
+const products = [
+  {
+    id: 1,
+    image: "https://res.cloudinary.com/dvffsa6kt/image/upload/v1736506831/450_zn4wux.jpg",
+    title: "Sunflower Basket",
+    subtitle: "Birthday Special",
+    price: 850000
+  },
+  {
+    id: 2,
+    image: "https://res.cloudinary.com/dvffsa6kt/image/upload/v1736506829/850_gjvulv.jpg",
+    title: "Orchid Vase",
+    subtitle: "Birthday Special",
+    price: 850000
+  },
+  {
+    id: 3,
+    image: "https://res.cloudinary.com/dvffsa6kt/image/upload/v1736506828/800-2_xqzkvs.jpg",
+    title: "Lavender Basket",
+    subtitle: "Birthday Special",
+    price: 850000
+  }
+]
 </script>
 
 <template>
@@ -17,9 +42,9 @@ import AboutUs from "../components/Footer.vue";
     <Hero/>
     <BestSeller/>
     <OurProduct/>
-    <Bouquet />
+    <Bouquet/>
     <KaranganBunga/>
-    <StandingFlower />
+    <StandingFlower/>
     <ContactUs/>
     <AboutUs/>
     <!-- FAB WhatsApp -->
