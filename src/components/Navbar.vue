@@ -11,6 +11,9 @@ function goToAllKaranganBunga() {
 function goToBeranda() {
   router.push("/");
 }
+function goToAllBouquet() {
+  router.push("/AllBouquet");
+}
 
 </script>
 
@@ -49,7 +52,7 @@ function goToBeranda() {
                   <summary>Produk Kami</summary>
                   <ul class="p-2 z-10">
                     <li><a @click="goToAllKaranganBunga()">Karangan Bunga</a></li>
-                    <li><a>Bouquet</a></li>
+                    <li><a @click="goToAllBouquet()">Bouquet</a></li>
                     <li><a>Standing Flower</a></li>
                   </ul>
                 </details>
@@ -88,7 +91,7 @@ function goToBeranda() {
                   >
                 </li>
                 <li>
-                  <a class="text-sm block px-4 py-2 hover:bg-gray-100"
+                  <a @click="goToAllBouquet()" class="text-sm block px-4 py-2 hover:bg-gray-100"
                     >Bouquet</a
                   >
                 </li>

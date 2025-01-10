@@ -3,7 +3,7 @@ import Navbar from "../components/Navbar.vue";
 import TitleSection from "../components/elements/text/TitleSection.vue";
 import SubTitleSection from "../components/elements/text/SubTitleSection.vue";
 
-// Mengambil data Json 
+// Mengambil data Json
 import { ref } from "vue";
 import HandBouquet from "../assets/data/hand_bouquet.json";
 import KBdukaCita from "../assets/data/karangan_bunga_duka_cita.json";
@@ -11,12 +11,12 @@ import KBselamatSukses from "../assets/data/karangan_bunga_selamat_dan_sukses.js
 import KBhappyWedding from "../assets/data/karangan_bunga_happy_wedding.json";
 
 // Menggabungkan semua data produk
-const allProduct = ref ([
-    ...HandBouquet.products,
-    ...KBdukaCita.products,
-    ...KBselamatSukses.products,
-    ...KBhappyWedding.products,
-])
+const allProduct = ref([
+  ...HandBouquet.products,
+  ...KBdukaCita.products,
+  ...KBselamatSukses.products,
+  ...KBhappyWedding.products,
+]);
 
 // Format price to IDR
 const formatPrice = (price) => {
@@ -43,7 +43,9 @@ const orderViaWA = (product) => {
     class="min-h-screen px-8 max-w-7xl mx-auto bg-white py-8 md:pt-16 md:px-0 lg:px-7 xl:px-32"
   >
     <div class="mb-12">
-      <TitleSection class="text-center"> Produk Kami </TitleSection>
+      <TitleSection class="text-center mb-4 lg:mb-8">
+        Produk Kami
+      </TitleSection>
       <SubTitleSection class="text-gray-600 max-w-2xl mx-auto">
         Temukan berbagai produk pilihan dengan kualitas terbaik untuk memenuhi
         kebutuhan Anda
@@ -77,7 +79,9 @@ const orderViaWA = (product) => {
           </div>
 
           <!-- Harga -->
-          <p class="text-xl font-bold text-green-600 mb-4">Rp {{ formatPrice(product.price) }}</p>
+          <p class="text-xl font-bold text-green-600 mb-4">
+            Rp {{ formatPrice(product.price) }}
+          </p>
 
           <!-- Tombol Order -->
           <button

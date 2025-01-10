@@ -39,7 +39,7 @@ const orderViaWA = (product) => {
 
   <section class="min-h-screen px-8 max-w-7xl mx-auto bg-white py-8 md:pt-16 md:px-0 lg:px-7 xl:px-32">
     <div class="mb-12">
-      <TitleSection class="text-center"> Karangan Bunga </TitleSection>
+      <TitleSection class="text-center mb-4 lg:mb-8"> Karangan Bunga </TitleSection>
       <SubTitleSection class="text-gray-600 max-w-2xl mx-auto">
         Temukan berbagai produk Karangan Bunga pilihan dengan kualitas terbaik untuk memenuhi
         kebutuhan Anda
