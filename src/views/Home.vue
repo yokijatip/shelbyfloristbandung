@@ -8,6 +8,7 @@ import KaranganBunga from "../components/KaranganBunga.vue";
 import StandingFlower from "../components/StandingFlower.vue"
 import FloatingActionButtonWhatsapp from "../components/elements/button/FloatingActionButtonWhatsapp.vue";
 import ContactUs from "../components/ContactUs.vue";
+import AboutUs from "../components/Footer.vue";
 </script>
 
 <template>
@@ -20,9 +21,9 @@ import ContactUs from "../components/ContactUs.vue";
     <KaranganBunga/>
     <StandingFlower />
     <ContactUs/>
+    <AboutUs/>
     <!-- FAB WhatsApp -->
     <FloatingActionButtonWhatsapp/>
-
   </div>
 </template>
 

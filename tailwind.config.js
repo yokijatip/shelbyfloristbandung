@@ -11,6 +11,7 @@ export default {
                 beige: "#f5f0e0",
                 lightBeige: "#7a7766",
                 darkBeige: "#504d43",
+                veryDarkBeige: "#3a3931",
                 golden: "#a17137",
                 white: "#ffffff"
             },
