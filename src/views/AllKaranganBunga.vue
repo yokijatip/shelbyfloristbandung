@@ -3,19 +3,18 @@ import Navbar from "../components/Navbar.vue";
 import TitleSection from "../components/elements/text/TitleSection.vue";
 import SubTitleSection from "../components/elements/text/SubTitleSection.vue";
 
-// Mengambil data Json 
 import { ref } from "vue";
-import HandBouquet from "../assets/data/hand_bouquet.json";
+// Mengambil data Json 
+
 import KBdukaCita from "../assets/data/karangan_bunga_duka_cita.json";
 import KBselamatSukses from "../assets/data/karangan_bunga_selamat_dan_sukses.json";
 import KBhappyWedding from "../assets/data/karangan_bunga_happy_wedding.json";
 
-// Menggabungkan semua data produk
-const allProduct = ref ([
-    ...HandBouquet.products,
+//menggabungkan semua data karangan bunga
+const karanganBunga = ref([
     ...KBdukaCita.products,
-    ...KBselamatSukses.products,
     ...KBhappyWedding.products,
+    ...KBselamatSukses.products,
 ])
 
 // Format price to IDR
@@ -34,18 +33,15 @@ const orderViaWA = (product) => {
 </script>
 
 <template>
-  <nav>
+    <nav>
     <Navbar />
   </nav>
 
-  <!-- Section Produk -->
-  <section
-    class="min-h-screen px-8 max-w-7xl mx-auto bg-white py-8 md:pt-16 md:px-0 lg:px-7 xl:px-32"
-  >
+  <section class="min-h-screen px-8 max-w-7xl mx-auto bg-white py-8 md:pt-16 md:px-0 lg:px-7 xl:px-32">
     <div class="mb-12">
-      <TitleSection class="text-center"> Produk Kami </TitleSection>
+      <TitleSection class="text-center"> Karangan Bunga </TitleSection>
       <SubTitleSection class="text-gray-600 max-w-2xl mx-auto">
-        Temukan berbagai produk pilihan dengan kualitas terbaik untuk memenuhi
+        Temukan berbagai produk Karangan Bunga pilihan dengan kualitas terbaik untuk memenuhi
         kebutuhan Anda
       </SubTitleSection>
     </div>
@@ -54,7 +50,7 @@ const orderViaWA = (product) => {
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
       <!-- Card Produk -->
       <div
-        v-for="product in allProduct"
+        v-for="product in karanganBunga "
         :key="product.id"
         class="bg-white rounded-lg shadow-md overflow-hidden"
       >
@@ -90,4 +86,6 @@ const orderViaWA = (product) => {
       </div>
     </div>
   </section>
+
+
 </template>
