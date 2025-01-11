@@ -3,6 +3,7 @@
 import SubTitleSection from "./elements/text/SubTitleSection.vue";
 import TitleSection from "./elements/text/TitleSection.vue";
 import CommonButton from "./elements/button/CommonButton.vue";
+import { RouterLink } from "vue-router";
 </script>
 
 <template>
@@ -25,7 +26,7 @@ import CommonButton from "./elements/button/CommonButton.vue";
             preserving every precious moment along the way.
           </p>
           <CommonButton>
-            Lihat Semua
+            <RouterLink to="/StandingFlower"> Lihat Semua </RouterLink>
           </CommonButton>
         </div>
       </div>

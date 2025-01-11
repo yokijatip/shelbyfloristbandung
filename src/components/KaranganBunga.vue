@@ -4,6 +4,7 @@ import {defineComponent} from "vue";
 import TitleSection from "./elements/text/TitleSection.vue";
 import SubTitleSection from "./elements/text/SubTitleSection.vue";
 import CommonButton from "./elements/button/CommonButton.vue";
+import { RouterLink } from "vue-router";
 
 export default defineComponent({
   components: {CommonButton, SubTitleSection, TitleSection}
@@ -29,7 +30,7 @@ export default defineComponent({
             preserving every precious moment along the way.
           </p>
           <CommonButton>
-            Lihat Semua
+            <RouterLink to="/AllKaranganBunga"> Lihat Semua </RouterLink>
           </CommonButton>
         </div>
       </div>

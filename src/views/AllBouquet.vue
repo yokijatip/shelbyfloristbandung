@@ -1,5 +1,4 @@
 <script setup>
-import Navbar from "../components/Navbar.vue"
 import TitleSection from "../components/elements/text/TitleSection.vue";
 import HeadingSection from "../components/elements/text/HeadingSection.vue";
 
@@ -32,9 +31,6 @@ const orderViaWA = (product) => {
 </script>
 
 <template>
-    <nav>
-        <Navbar/>
-    </nav>
 
     <div class="bg-beige">
     <section class="py-8 md:py-12 bg-beige px-2 md:px-0">

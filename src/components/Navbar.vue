@@ -1,22 +1,5 @@
 <script setup>
-import { useRouter } from "vue-router";
-
-const router = useRouter();
-function goToAllProduct() {
-  router.push("/AllProduct");
-}
-function goToAllKaranganBunga() {
-  router.push("/AllKaranganBunga");
-}
-function goToBeranda() {
-  router.push("/");
-}
-function goToAllBouquet() {
-  router.push("/AllBouquet");
-}
-function goToAllStandingFlower(){
-  router.push("/StandingFlower")
-}
+import { RouterLink } from "vue-router";
 
 </script>
 
@@ -49,18 +32,22 @@ function goToAllStandingFlower(){
               tabindex="0"
               class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[10] mt-3 w-52 p-2 shadow"
             >
-              <li><a @click="goToBeranda">Beranda</a></li>
+              <li><RouterLink to="/">Beranda</RouterLink></li>
               <li>
                 <details>
-                  <summary>Produk Kami</summary>
+                  <summary><RouterLink to="/AllProduct">Produk Kami</RouterLink></summary>
                   <ul class="p-2 z-10">
-                    <li><a @click="goToAllKaranganBunga()">Karangan Bunga</a></li>
-                    <li><a @click="goToAllBouquet()">Bouquet</a></li>
-                    <li><a @click="goToAllStandingFlower()">Standing Flower</a></li>
+                    <li>
+                      <RouterLink to="/AllKaranganBunga">Karangan Bunga</RouterLink>
+                    </li>
+                    <li><RouterLink to="/AllBouquet">Bouquet</RouterLink></li>
+                    <li>
+                      <RouterLink to="/StandingFlower">Standing Flower</RouterLink>
+                    </li>
                   </ul>
                 </details>
               </li>
-              <li><a>Kontak Kami</a></li>
+              <li><a href="">Kontak Kami</a></li>
             </ul>
           </div>
 
@@ -76,40 +63,50 @@ function goToAllStandingFlower(){
         <div class="navbar-center hidden lg:flex">
           <ul class="flex gap-8">
             <li>
-              <a @click="goToBeranda" class="text-sm cursor-pointer hover:text-darkBeige">Beranda</a>
+              <RouterLink to="/"
+                class="link-style"
+                active-class="link-active"
+                >Beranda</RouterLink
+              >
             </li>
             <li class="relative group">
-              <a
-                @click="goToAllProduct"
-                class="hover:text-darkBeige cursor-pointer text-sm"
-                >Produk Kami</a
+              <RouterLink to="/AllProduct"
+                class="link-style"
+                active-class="link-active"
+                >Produk Kami</RouterLink
               >
               <!-- Dropdown menu -->
               <ul
                 class="absolute hidden group-hover:block bg-white shadow-lg rounded-md w-48 z-[99] cursor-pointer"
               >
                 <li>
-                  <a @click="goToAllKaranganBunga()" class="text-sm block px-4 py-2 hover:bg-gray-100"
-                    >Karangan Bunga</a
+                  <RouterLink to="/AllKaranganBunga"
+                    class="link-focus link-style block px-4 py-2 hover:bg-gray-100 "
+                    active-class="link-active"
+                    >Karangan Bunga</RouterLink
                   >
                 </li>
                 <li>
-                  <a @click="goToAllBouquet()" class="text-sm block px-4 py-2 hover:bg-gray-100"
-                    >Bouquet</a
+                  <RouterLink to="/AllBouquet"
+                    class="link-focus link-style block px-4 py-2 hover:bg-gray-100"
+                    active-class="link-active"
+                    >Bouquet</RouterLink
                   >
                 </li>
                 <li>
-                  <a @click="goToAllStandingFlower()" class="text-sm block px-4 py-2 hover:bg-gray-100"
-                    >Standing Flower</a
+                  <RouterLink to="/StandingFlower"
+                    class="link-focus link-style block px-4 py-2 hover:bg-gray-100"
+                    active-class="link-active"
+                    >Standing Flower</RouterLink
                   >
                 </li>
               </ul>
             </li>
             <li>
-              <a class="hover:text-darkBeige text-sm cursor-pointer">Kontak</a>
+              <a class="link-focus link-style">Kontak</a>
             </li>
             <li>
-              <a class="hover:text-darkBeige text-sm cursor-pointer"
+              <a class="link-focus link-style"
                 >Tentang Kami</a
               >
             </li>
@@ -143,4 +140,6 @@ function goToAllStandingFlower(){
   </section>
 </template>
 
-<style scoped></style>
+<style scoped>
+
+</style>

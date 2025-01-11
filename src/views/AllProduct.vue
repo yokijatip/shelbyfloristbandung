@@ -1,5 +1,4 @@
 <script setup>
-import Navbar from "../components/Navbar.vue";
 import TitleSection from "../components/elements/text/TitleSection.vue";
 
 // Mengambil data Json
@@ -66,9 +65,6 @@ const orderViaWA = (product) => {
 </script>
 
 <template>
-  <nav>
-    <Navbar/>
-  </nav>
 
   <div class="bg-beige">
     <!-- Section Produk -->

@@ -38,7 +38,6 @@ const products = [
 
 <template>
   <div>
-    <Navbar/>
     <Hero/>
     <BestSeller/>
     <OurProduct/>

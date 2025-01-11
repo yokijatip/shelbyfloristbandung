@@ -2,6 +2,7 @@
 import CommonButton from "./elements/button/CommonButton.vue";
 import SubTitleSection from "./elements/text/SubTitleSection.vue";
 import TitleSection from "./elements/text/TitleSection.vue";
+import { RouterLink } from "vue-router";
 </script>
 
 <template>
@@ -24,7 +25,7 @@ import TitleSection from "./elements/text/TitleSection.vue";
         </p>
 
         <CommonButton class="btn bg-darkBeige text-white rounded-none mb-20 mt-4">
-          Lihat Semua
+          <RouterLink to="/AllProduct"> Lihat Semua </RouterLink>
         </CommonButton>
       </div>
     </div>

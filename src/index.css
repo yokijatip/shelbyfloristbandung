@@ -2,3 +2,14 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.link-style {
+  @apply text-sm cursor-pointer transition-all duration-300 ease-in-out hover:text-darkBeige hover:border-b-2 hover:border-darkBeige;
+}
+
+.link-focus {
+  @apply focus:border-b-2 focus:border-darkBeige;
+}
+.link-active {
+  @apply text-darkBeige border-b-2 border-darkBeige;
+}
