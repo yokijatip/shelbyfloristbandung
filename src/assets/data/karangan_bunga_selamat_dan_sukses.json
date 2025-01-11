@@ -167,6 +167,22 @@
       "category": "Selamat & Sukses",
       "imageUrl": "https://res.cloudinary.com/dvffsa6kt/image/upload/v1736506829/850_gjvulv.jpg",
       "type": "Karangan Bunga"
+    },
+    {
+      "id": 22,
+      "price": 3000000,
+      "code": "022",
+      "category": "Selamat & Sukses",
+      "imageUrl": "https://res.cloudinary.com/dvffsa6kt/image/upload/v1736576219/selamat3jt_tcysfm.jpg",
+      "type": "Karangan Bunga"
+    },
+    {
+      "id": 23,
+      "price": 3000000,
+      "code": "023",
+      "category": "Selamat & Sukses",
+      "imageUrl": "https://res.cloudinary.com/dvffsa6kt/image/upload/v1736576236/selamat3jt2_v7oi6y.jpg",
+      "type": "Karangan Bunga"
     }
   ]
 }

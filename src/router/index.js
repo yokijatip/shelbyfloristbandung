@@ -25,6 +25,11 @@ const router = createRouter({
             path: '/AllBouquet',
             name: 'AllBouquet',
             component: () => import ('../views/AllBouquet.vue')
+        },
+        {
+            path: '/StandingFlower',
+            name: 'StandingFlower',
+            component: () => import ('../views/AllStandingFlower.vue')
         }
 
         

@@ -14,6 +14,9 @@ function goToBeranda() {
 function goToAllBouquet() {
   router.push("/AllBouquet");
 }
+function goToAllStandingFlower(){
+  router.push("/StandingFlower")
+}
 
 </script>
 
@@ -46,14 +49,14 @@ function goToAllBouquet() {
               tabindex="0"
               class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[10] mt-3 w-52 p-2 shadow"
             >
-              <li><a>Beranda</a></li>
+              <li><a @click="goToBeranda">Beranda</a></li>
               <li>
                 <details>
                   <summary>Produk Kami</summary>
                   <ul class="p-2 z-10">
                     <li><a @click="goToAllKaranganBunga()">Karangan Bunga</a></li>
                     <li><a @click="goToAllBouquet()">Bouquet</a></li>
-                    <li><a>Standing Flower</a></li>
+                    <li><a @click="goToAllStandingFlower()">Standing Flower</a></li>
                   </ul>
                 </details>
               </li>
@@ -96,7 +99,7 @@ function goToAllBouquet() {
                   >
                 </li>
                 <li>
-                  <a class="text-sm block px-4 py-2 hover:bg-gray-100"
+                  <a @click="goToAllStandingFlower()" class="text-sm block px-4 py-2 hover:bg-gray-100"
                     >Standing Flower</a
                   >
                 </li>
@@ -116,7 +119,7 @@ function goToAllBouquet() {
         <!--  Button Whatsapp  -->
         <div class="navbar-end">
           <a
-            href="https://wa.me/628xxxxxxxxxx"
+            href="https://wa.me/6281904520743"
             target="_blank"
             class="btn btn-success text-white md:btn-sm rounded-full md:rounded-full"
           >
