@@ -86,7 +86,7 @@ function goToAllStandingFlower(){
               >
               <!-- Dropdown menu -->
               <ul
-                class="absolute hidden group-hover:block bg-white shadow-lg rounded-md w-48 z-[99]"
+                class="absolute hidden group-hover:block bg-white shadow-lg rounded-md w-48 z-[99] cursor-pointer"
               >
                 <li>
                   <a @click="goToAllKaranganBunga()" class="text-sm block px-4 py-2 hover:bg-gray-100"
