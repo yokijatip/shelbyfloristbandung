@@ -8,47 +8,60 @@ import handBouquet from "../assets/data/hand_bouquet.json"
 
 const products = handBouquet.products
 // Bagi products menjadi dua bagian
-const firstHalf = products.slice(0, products.length / 2)
-const secondHalf = products.slice(products.length / 2)
+// Bagi products menjadi dua bagian seimbang
+const firstHalf = products.slice(0, Math.ceil(products.length / 2));
+const secondHalf = products.slice(Math.ceil(products.length / 2));
 
+// Refs untuk scroll container
+const topRowRef = ref(null);
+const bottomRowRef = ref(null);
+
+// Fungsi scroll manual dengan mouse wheel
+const handleWheel = (event, ref) => {
+  if (ref && ref.value) {
+    ref.value.scrollLeft += event.deltaY;
+    // Prevent page scroll
+    event.preventDefault();
+  }
+};
 // Auto Scroll START
-const topRowRef = ref(null)
-const bottomRowRef = ref(null)
-let topScrollInterval = null
-let bottomScrollInterval = null
+// const topRowRef = ref(null)
+// const bottomRowRef = ref(null)
+// let topScrollInterval = null
+// let bottomScrollInterval = null
 
-const startAutoScroll = () => {
-  topScrollInterval = setInterval(() => {
-    if (topRowRef.value) {
-      topRowRef.value.scrollLeft += 1
-      if (topRowRef.value.scrollLeft >= topRowRef.value.scrollWidth / 2) {
-        topRowRef.value.scrollLeft = 0
-      }
-    }
-  }, 20)
+// const startAutoScroll = () => {
+//   topScrollInterval = setInterval(() => {
+//     if (topRowRef.value) {
+//       topRowRef.value.scrollLeft += 1
+//       if (topRowRef.value.scrollLeft >= topRowRef.value.scrollWidth / 2) {
+//         topRowRef.value.scrollLeft = 0
+//       }
+//     }
+//   }, 20)
 
-  bottomScrollInterval = setInterval(() => {
-    if (bottomRowRef.value) {
-      bottomRowRef.value.scrollLeft -= 1
-      if (bottomRowRef.value.scrollLeft <= 0) {
-        bottomRowRef.value.scrollLeft = bottomRowRef.value.scrollWidth / 2
-      }
-    }
-  }, 20)
-}
+//   bottomScrollInterval = setInterval(() => {
+//     if (bottomRowRef.value) {
+//       bottomRowRef.value.scrollLeft -= 1
+//       if (bottomRowRef.value.scrollLeft <= 0) {
+//         bottomRowRef.value.scrollLeft = bottomRowRef.value.scrollWidth / 2
+//       }
+//     }
+//   }, 20)
+// }
 
-const stopAutoScroll = () => {
-  clearInterval(topScrollInterval)
-  clearInterval(bottomScrollInterval)
-}
+// const stopAutoScroll = () => {
+//   clearInterval(topScrollInterval)
+//   clearInterval(bottomScrollInterval)
+// }
 
-onMounted(() => {
-  startAutoScroll()
-})
+// onMounted(() => {
+//   startAutoScroll()
+// })
 
-onUnmounted(() => {
-  stopAutoScroll()
-})
+// onUnmounted(() => {
+//   stopAutoScroll()
+// })
 //   Auto Scroll End
 
 
@@ -74,35 +87,44 @@ onUnmounted(() => {
 
       <!--  Best Seller Content  -->
       <!-- Untuk Sementara pake data hand bouquet dulu -->
-      <!-- Scrollable Rows -->
+      <!--  Best Seller Content  -->
       <div class="space-y-8">
         <!-- Top Row -->
-        <div class="overflow-x-auto group">
-          <div class="flex gap-8 pb-6 animate-scroll group-hover:pause-animation">
+        <div 
+          ref="topRowRef"
+          @wheel="(e) => handleWheel(e, topRowRef)"
+          class="overflow-x-auto scroll-smooth group"
+        >
+          <div class="flex gap-8 pb-6">
             <Product
-                v-for="product in [...firstHalf, ...firstHalf]"
-                :key="`first-${product.id}`"
-                :category="product.category"
-                :code="product.code"
-                :price="product.price"
-                :imageUrl="product.imageUrl"
-                :type="product.type"
+              v-for="product in firstHalf"
+              :key="`first-${product.id}`"
+              :category="product.category"
+              :code="product.code"
+              :price="product.price"
+              :imageUrl="product.imageUrl"
+              :type="product.type"
+              class="flex-shrink-0 w-[300px]"
             />
           </div>
         </div>
 
-
         <!-- Bottom Row -->
-        <div class="overflow-x-auto group">
-          <div class="flex gap-8 pb-6 animate-scroll-reverse group-hover:pause-animation">
+        <div 
+          ref="bottomRowRef"
+          @wheel="(e) => handleWheel(e, bottomRowRef)"
+          class="overflow-x-auto scroll-smooth group"
+        >
+          <div class="flex gap-8 pb-6">
             <Product
-                v-for="product in [...secondHalf, ...secondHalf]"
-                :key="`second-${product.id}`"
-                :category="product.category"
-                :code="product.code"
-                :price="product.price"
-                :imageUrl="product.imageUrl"
-                :type="product.type"
+              v-for="product in secondHalf"
+              :key="`second-${product.id}`"
+              :category="product.category"
+              :code="product.code"
+              :price="product.price"
+              :imageUrl="product.imageUrl"
+              :type="product.type"
+              class="flex-shrink-0 w-[300px]"
             />
           </div>
         </div>
@@ -113,37 +135,6 @@ onUnmounted(() => {
 
 <style scoped>
 /* Custom scrollbar styling */
-@keyframes scroll {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-50%);
-  }
-}
-
-@keyframes scroll-reverse {
-  0% {
-    transform: translateX(-50%);
-  }
-  100% {
-    transform: translateX(0);
-  }
-}
-
-.animate-scroll {
-  animation: scroll 30s linear infinite;
-}
-
-.animate-scroll-reverse {
-  animation: scroll-reverse 30s linear infinite;
-}
-
-.group:hover .pause-animation {
-  animation-play-state: paused;
-}
-
-/* Scrollbar styling tetap sama */
 .overflow-x-auto {
   scrollbar-width: thin;
   scrollbar-color: #504d43 #ffffff;
@@ -161,5 +152,11 @@ onUnmounted(() => {
 .overflow-x-auto::-webkit-scrollbar-thumb {
   background-color: #504d43;
   border-radius: 3px;
+  cursor: pointer;
+}
+
+/* Smooth scroll behavior */
+.scroll-smooth {
+  scroll-behavior: smooth;
 }
 </style>
