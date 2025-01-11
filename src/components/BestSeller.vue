@@ -3,7 +3,6 @@ import {onMounted, onUnmounted, ref} from "vue";
 import SubTitleSection from "./elements/text/SubTitleSection.vue";
 import TitleSection from "./elements/text/TitleSection.vue";
 import HeadingSection from "./elements/text/HeadingSection.vue";
-import Product from "./card/Product.vue";
 import handBouquet from "../assets/data/hand_bouquet.json"
 
 const products = handBouquet.products
@@ -52,6 +51,16 @@ onUnmounted(() => {
 //   Auto Scroll End
 
 
+// Handle WhatsApp orderl
+const orderViaWA = (product) => {
+  const message = `Halo, saya ingin memesan *${product.category}* kode *${product.code}* dengan harga tertera adalah *Rp ${product.price.toLocaleString("id-ID")}*`;
+  const whatsappUrl = `https://wa.me/6281904520743?text=${encodeURIComponent(
+      message
+  )}`;
+  window.open(whatsappUrl, "_blank");
+};
+
+
 </script>
 
 <template>
@@ -73,73 +82,28 @@ onUnmounted(() => {
       </div>
 
       <!--  Best Seller Content  -->
-      <!-- Untuk Sementara pake data hand bouquet dulu -->
-      <!-- Scrollable Rows -->
-      <div class="space-y-8">
-        <!-- Top Row -->
-        <div class="overflow-x-auto group">
-          <div class="flex gap-8 pb-6 animate-scroll group-hover:pause-animation">
-            <Product
-                v-for="product in [...firstHalf, ...firstHalf]"
-                :key="`first-${product.id}`"
-                :category="product.category"
-                :code="product.code"
-                :price="product.price"
-                :imageUrl="product.imageUrl"
-                :type="product.type"
-            />
-          </div>
-        </div>
 
 
-        <!-- Bottom Row -->
-        <div class="overflow-x-auto group">
-          <div class="flex gap-8 pb-6 animate-scroll-reverse group-hover:pause-animation">
-            <Product
-                v-for="product in [...secondHalf, ...secondHalf]"
-                :key="`second-${product.id}`"
-                :category="product.category"
-                :code="product.code"
-                :price="product.price"
-                :imageUrl="product.imageUrl"
-                :type="product.type"
-            />
-          </div>
-        </div>
-      </div>
     </div>
   </section>
 </template>
 
 <style scoped>
-/* Custom scrollbar styling */
-@keyframes scroll {
+@keyframes infinite-scroll {
   0% {
     transform: translateX(0);
   }
   100% {
-    transform: translateX(-50%);
+    transform: translateX(calc(-100% / 3)); /* Sesuaikan dengan jumlah set yang diduplikasi */
   }
 }
 
-@keyframes scroll-reverse {
-  0% {
-    transform: translateX(-50%);
-  }
-  100% {
-    transform: translateX(0);
-  }
+.animate-infinite-scroll {
+  animation: infinite-scroll 60s linear infinite;
 }
 
-.animate-scroll {
-  animation: scroll 30s linear infinite;
-}
-
-.animate-scroll-reverse {
-  animation: scroll-reverse 30s linear infinite;
-}
-
-.group:hover .pause-animation {
+/* Hover untuk pause */
+.animate-infinite-scroll:hover {
   animation-play-state: paused;
 }
 

@@ -39,11 +39,11 @@ const handleOrder = () => {
 <template>
   <div
       class="w-full md:w-72 flex md:flex-col bg-white rounded-lg overflow-hidden hover:shadow-lg flex-row transition-shadow">
-    <div class="md:w-full aspect-square overflow-hidden ">
+    <div class="md:w-full aspect-square overflow-hidden">
       <img
           :src="imageUrl"
           :alt="category"
-          class="w-full h-full md:w-full md:h-full object-cover transition-transform duration-300 hover:scale-105"
+          class="w-full h-full object-cover transition-transform duration-300 hover:scale-105"
       >
     </div>
 
@@ -58,7 +58,6 @@ const handleOrder = () => {
           Rp {{ price.toLocaleString() }}
         </p>
         <CommonButtonOrderWhatsapp class="mt-2 md:mt-0" @click="handleOrder">
-
           Beli langsung
         </CommonButtonOrderWhatsapp>
       </div>

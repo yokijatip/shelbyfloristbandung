@@ -5,7 +5,7 @@ import TitleSection from "./elements/text/TitleSection.vue";
 </script>
 
 <template>
-  <section id="ourProduct" class="min-h-screen px-8 max-w-7xl mx-auto bg-white py-8 md:pt-16 md:px-0 lg:px-7 xl:px-32">
+  <section id="ourProduct" class="min-h-screen px-8 max-w-7xl mx-auto bg-white md:pt-16 md:px-0 lg:px-7 xl:px-32">
     <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
       <div>
         <SubTitleSection class="text-start">
