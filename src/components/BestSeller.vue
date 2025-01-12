@@ -24,6 +24,14 @@ const handleWheel = (event, ref) => {
     event.preventDefault();
   }
 };
+
+const orderViaWA = (product) => {
+  const message = `Halo anjing, saya ingin memesan *${product.category}* kode *${product.code}* dengan harga tertera adalah *Rp ${product.price.toLocaleString("id-ID")}*`;
+  const whatsappUrl = `https://wa.me/6281904520743?text=${encodeURIComponent(
+      message
+  )}`;
+  window.open(whatsappUrl, "_blank");
+};
 // Auto Scroll START
 // const topRowRef = ref(null)
 // const bottomRowRef = ref(null)
@@ -104,6 +112,7 @@ const handleWheel = (event, ref) => {
               :price="product.price"
               :imageUrl="product.imageUrl"
               :type="product.type"
+              @order="orderViaWA"
               class="flex-shrink-0 w-[300px]"
             />
           </div>
@@ -124,6 +133,7 @@ const handleWheel = (event, ref) => {
               :price="product.price"
               :imageUrl="product.imageUrl"
               :type="product.type"
+              @order="orderViaWA"
               class="flex-shrink-0 w-[300px]"
             />
           </div>

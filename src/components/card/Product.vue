@@ -53,7 +53,7 @@ const handleOrder = () => {
         <p class="text-sm text-lightBeige">Code: {{ code }}</p>
       </div>
 
-      <div class="flex flex-wrap justify-between items-center md:mt-6 mt-0">
+      <div class="flex flex-wrap justify-between items-center mt-4 md:mt-6">
         <p class="text-darkBeige font-semibold text-sm">
           Rp {{ price.toLocaleString() }}
         </p>
