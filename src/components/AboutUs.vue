@@ -55,7 +55,7 @@ import SubTitleSection from "./elements/text/SubTitleSection.vue";
         <div class="max-w-0xl px-8 sm:px-6 md:px-12">
           <ul class="timeline timeline-vertical">
             <li>
-              <div class="timeline-start timeline-box">Terpercaya</div>
+              <div class="timeline-start timeline-box rounded-none">Terpercaya</div>
               <div class="timeline-middle">
                 <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -84,12 +84,12 @@ import SubTitleSection from "./elements/text/SubTitleSection.vue";
                       clip-rule="evenodd" />
                 </svg>
               </div>
-              <div class="timeline-end timeline-box">Hasil Terjamin</div>
+              <div class="timeline-end timeline-box rounded-none">Hasil Terjamin</div>
               <hr />
             </li>
             <li>
               <hr />
-              <div class="timeline-start timeline-box">Harga Terjangkau</div>
+              <div class="timeline-start timeline-box rounded-none">Harga Terjangkau</div>
               <div class="timeline-middle">
                 <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -118,12 +118,12 @@ import SubTitleSection from "./elements/text/SubTitleSection.vue";
                       clip-rule="evenodd" />
                 </svg>
               </div>
-              <div class="timeline-end timeline-box">Pengiriman Cepat</div>
+              <div class="timeline-end timeline-box rounded-none">Pengiriman Cepat</div>
               <hr />
             </li>
             <li>
               <hr />
-              <div class="timeline-start timeline-box">Gratis Ongkir</div>
+              <div class="timeline-start timeline-box rounded-none">Gratis Ongkir</div>
               <div class="timeline-middle">
                 <svg
                     xmlns="http://www.w3.org/2000/svg"
