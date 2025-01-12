@@ -8,8 +8,11 @@
 }
 
 .link-focus {
-  @apply focus:border-b-2 focus:border-darkBeige;
+  @apply focus:border-b-[1px] focus:border-darkBeige;
 }
 .link-active {
-  @apply text-darkBeige border-b-2 border-darkBeige;
+  @apply text-darkBeige border-b-[1px] border-darkBeige;
+}
+html {
+  scroll-behavior : smooth;
 }

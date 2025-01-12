@@ -1,8 +1,9 @@
 <script setup>
 import TitleSection from "../components/elements/text/TitleSection.vue";
 import HeadingSection from "../components/elements/text/HeadingSection.vue";
+import CommonButton from "../components/elements/button/CommonButton.vue";
 
-import { ref } from "vue";
+import { ref, computed } from "vue";
 // Mengambil data Json 
 
 import KBdukaCita from "../assets/data/karangan_bunga_duka_cita.json";
@@ -16,6 +17,50 @@ const karanganBunga = ref([
     ...KBhappyWedding.products,
     ...KBselamatSukses.products,
 ])
+
+// State untuk filter kategori
+const selectedCategory = ref('Semua');
+const categories = [
+  'Semua',
+  'Duka Cita',
+  'Selamat & Sukses',
+  'Happy Wedding',
+];
+
+// Filter products berdasarkan types
+const filteredProducts = computed(() => {
+  if (selectedCategory.value === 'Semua') {
+    return karanganBunga.value;
+  }
+  return karanganBunga.value.filter(product => product.category === selectedCategory.value);
+});
+
+// Function untuk mengganti kategori
+const changeCategory = (category) => {
+  selectedCategory.value = category;
+  currentPage.value = 1; // Reset page ke awal saat ganti kategori
+};
+
+// untuk menampilkan beberapa halaman dulu
+// Pagination state
+const itemsPerPage = ref(12); // Jumlah item per halaman
+const currentPage = ref(1); // Halaman saat ini
+
+// Menghitung produk yang ditampilkan dengan filter dan pagination
+const displayedProducts = computed(() => {
+  const endIndex = currentPage.value * itemsPerPage.value;
+  return filteredProducts.value.slice(0, endIndex);
+});
+
+// Cek apakah masih ada produk yang bisa ditampilkan
+const hasMore = computed(() => {
+  return displayedProducts.value.length < filteredProducts.value.length;
+});
+
+// Function untuk menambah jumlah produk yang ditampilkan
+const showMore = () => {
+  currentPage.value += 1;
+};
 
 // Format price to IDR
 const formatPrice = (price) => {
@@ -44,11 +89,28 @@ const orderViaWA = (product) => {
       </HeadingSection>
     </div>
 
+    <!-- Filter Categories -->
+        <div class="mb-8 flex flex-wrap justify-center gap-3">
+          <button
+            v-for="category in categories"
+            :key="category"
+            @click="changeCategory(category)"
+            :class="[
+              'px-4 py-2 rounded-lg text-sm font-medium transition-all duration-300',
+              selectedCategory === category
+                ? 'bg-darkBeige text-white shadow-md'
+                : 'bg-white text-gray-700 hover:bg-primary/10'
+            ]"
+          >
+            {{ category }}
+          </button>
+        </div>
+
     <!-- Grid Produk -->
     <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-6 justify-items-center">
       <!-- Card Produk -->
       <Product
-              v-for="product in karanganBunga"
+              v-for="product in displayedProducts"
               :key="`first-${product.id}`"
               :category="product.category"
               :code="product.code"
@@ -59,6 +121,14 @@ const orderViaWA = (product) => {
               @order="orderViaWA"
           />
     </div>
+    <!-- Tombol Show More -->
+        <div v-if="hasMore" class="my-8 text-center">
+          <CommonButton
+              @click="showMore"
+          >
+            Tampilkan Lebih Banyak
+          </CommonButton>
+        </div>
     </div>
   </section>
   </div>

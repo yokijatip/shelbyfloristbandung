@@ -6,7 +6,7 @@
         "code": "001",
         "category": "Standing Flower",
         "imageUrl": "https://res.cloudinary.com/dvffsa6kt/image/upload/v1736576826/sf850_tw2fuk.jpg",
-        "type": "Flower"
+        "type": "Standing Flower"
       },
       {
         "id": 2,
@@ -14,7 +14,7 @@
         "code": "002",
         "category": "Standing Flower",
         "imageUrl": "https://res.cloudinary.com/dvffsa6kt/image/upload/v1736576825/sf850b_mimyru.jpg",
-        "type": "Flower"
+        "type": "Standing Flower"
       },
       {
         "id": 3,
@@ -22,7 +22,7 @@
         "code": "003",
         "category": "Standing Flower",
         "imageUrl": "https://res.cloudinary.com/dvffsa6kt/image/upload/v1736576826/sf900_tqozqj.jpg",
-        "type": "Flower"
+        "type": "Standing Flower"
       }
     ]
 }

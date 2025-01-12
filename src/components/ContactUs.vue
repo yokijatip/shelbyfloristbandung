@@ -30,8 +30,8 @@ onMounted(() => {
 </script>
 
 <template>
-  <div class="bg-darkBeige">
-    <section class="px-8 max-w-7xl mx-auto md:mt-16 py-8 md:py-16 md:px-0 lg:px-7 xl:px-32">
+  <div  class="bg-darkBeige">
+    <section id="contactUs" class="px-8 max-w-7xl mx-auto md:mt-16 py-8 md:py-16 md:px-0 lg:px-7 xl:px-32">
       <div class="max-w-7xl mx-auto sm:px-6">
         <!-- Section Header -->
         <div class="text-center mb-12">
