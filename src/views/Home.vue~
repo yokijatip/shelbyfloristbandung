@@ -9,7 +9,6 @@ import FloatingActionButtonWhatsapp from "../components/elements/button/Floating
 import ContactUs from "../components/ContactUs.vue";
 import Footer from "../components/Footer.vue";
 import WhyChooseUs from "../components/WhyChooseUs.vue";
-import AboutUs from "../components/AboutUs.vue";
 
 const products = [
   {

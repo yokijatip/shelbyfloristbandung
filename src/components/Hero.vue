@@ -45,9 +45,6 @@ import CommonButton from "./elements/button/CommonButton.vue";
               <button class="btn bg-darkBeige text-white hover:bg-opacity-90 rounded-none">
                 Get Started Now
               </button>
-              <button class="btn btn-ghost text-white rounded-none">
-                How it works →
-              </button>
             </div>
           </div>
 
@@ -95,9 +92,6 @@ import CommonButton from "./elements/button/CommonButton.vue";
               <CommonButton>
                 Get Started Now
               </CommonButton>
-              <button class="btn btn-ghost text-darkBeige rounded-none">
-                How it works →
-              </button>
             </div>
           </div>
 
