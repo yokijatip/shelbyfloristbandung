@@ -6,7 +6,7 @@ import { RouterLink } from "vue-router";
 <template>
   <section class="bg-beige">
     <nav
-      class="border-b border-lightBeige max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"
+      class=" border-b border-lightBeige max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"
     >
       <div class="navbar">
         <div class="navbar-start">
@@ -47,16 +47,16 @@ import { RouterLink } from "vue-router";
                   </ul>
                 </details>
               </li>
-              <li><a href="">Kontak Kami</a></li>
+              <li><RouterLink :to="{ name: 'home', hash: '#contactUs' }">Kontak Kami</RouterLink></li>
             </ul>
           </div>
 
           <!-- Title & Logo -->
           <a
-            class="text-xl md:text-2xl normal-case font-cormorant font-semibold text-darkBeige text-nowrap w-full text-center lg:text-left flex items-center justify-center lg:justify-start gap-1"
+            class="text-xl md:text-2xl normal-case font-inter font-semibold text-darkBeige text-nowrap w-full text-center lg:text-left flex items-center justify-center lg:justify-start gap-1"
           >
             <!-- Spacing antara emoji dan text -->
-            <span>Shelby Florist 💐</span>
+            <span class="tracking-wide">Shelby Florist 💐</span>
           </a>
         </div>
 
@@ -103,11 +103,11 @@ import { RouterLink } from "vue-router";
               </ul>
             </li>
             <li>
-              <a class="link-focus link-style">Kontak</a>
+              <RouterLink :to="{ name: 'home', hash: '#contactUs' }" class="link-focus link-style">Kontak</RouterLink>
             </li>
             <li>
-              <a class="link-focus link-style"
-                >Tentang Kami</a
+              <RouterLink :to="{ name: 'home', hash: '#aboutUs' }" class="link-focus link-style"
+                >Tentang Kami</RouterLink
               >
             </li>
           </ul>

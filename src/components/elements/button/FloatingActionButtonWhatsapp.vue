@@ -7,7 +7,7 @@
   <a
       href="https://wa.me/6281904520743"
       target="_blank"
-      class="fixed bottom-4 right-4 bg-green-500 text-white rounded-full p-4 shadow-lg hover:bg-green-600 transition sm:hidden"
+      class="fixed bottom-4 right-4 bg-green-500 text-white rounded-full p-4 shadow-lg hover:bg-green-600 transition md:mr-10"
       aria-label="Chat with us on WhatsApp"
   >
     <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="w-6 h-6" viewBox="0 0 16 16">

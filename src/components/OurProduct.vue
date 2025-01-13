@@ -36,9 +36,9 @@ import { RouterLink } from "vue-router";
       <div class="category-section">
         <div class="overflow-hidden h-80 ">
           <img
-              src="https://m.media-amazon.com/images/I/61F7fu4cFQL._AC_UF1000,1000_QL80_.jpg"
+              src="https://res.cloudinary.com/dvffsa6kt/image/upload/v1736363171/275_qx7gs9.jpg"
               alt="Bunga Papan"
-              class="inset-0 w-full h-full object-cover md:rounded-t-[200px] rounded-t-[200px]"
+              class="inset-0 w-full h-full object-cover md:rounded-t-[200px] rounded-t-[200px] border-[1px] border-darkBeige" 
           />
         </div>
         <div class="p-4">
@@ -52,9 +52,9 @@ import { RouterLink } from "vue-router";
       <div class="category-section">
         <div class="overflow-hidden h-80">
           <img
-              src="https://smesta.kemenkopukm.go.id/storage/company/0093fe2eedeb098315bf9251da1a5f03/product/images/PbYnr6CVk8E0pfhnNhn7FnSr4l8w8NASEhsWzZgM.jpg"
-              alt="Bunga Meja"
-              class="inset-0 w-full h-full object-cover md:rounded-t-[200px] rounded-t-[200px]"
+              src="https://res.cloudinary.com/dvffsa6kt/image/upload/v1736504992/1000_i2ttzu.jpg"
+              alt="Karangan Bunga"
+              class="inset-0 w-full h-full object-cover md:rounded-t-[200px] rounded-t-[200px] border-[1px] border-darkBeige"
           />
         </div>
         <div class="p-4">
@@ -66,11 +66,11 @@ import { RouterLink } from "vue-router";
 
       <!-- Kategori 3: standing flower -->
       <div class="category-section">
-        <div class="overflow-hidden h-80">
+        <div class="overflow-hidden h-80 ">
           <img
-              src="https://jefeflower.com/wp-content/uploads/2020/04/IMG_20191227_143142_508-1-scaled.jpg"
-              alt="Hand Bouquet"
-              class="inset-0 w-full h-full object-cover md:rounded-t-[200px] rounded-t-[200px]"
+              src="https://res.cloudinary.com/dvffsa6kt/image/upload/v1736576826/sf900_tqozqj.jpg"
+              alt="Standing Flower"
+              class="inset-0 w-full h-full object-cover md:rounded-t-[200px] rounded-t-[200px] border-[1px] border-darkBeige"
           />
         </div>
         <div class="p-4">

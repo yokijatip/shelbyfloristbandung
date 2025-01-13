@@ -1,5 +1,4 @@
 <script setup>
-
 import CommonButton from "./elements/button/CommonButton.vue";
 </script>
 
@@ -9,20 +8,24 @@ import CommonButton from "./elements/button/CommonButton.vue";
       <!-- Background Image untuk Mobile -->
       <div class="md:hidden absolute inset-0">
         <img
-            src="/public/hero_image_mobile.jpg"
-            alt="Hero Image"
-            class="w-full h-full object-cover brightness-50"
+          src="/public/hero_image_mobile.jpg"
+          alt="Hero Image"
+          class="w-full h-full object-cover brightness-50"
         />
       </div>
 
       <!-- Background Image dengan Arch (Desktop) -->
-      <div class="md:absolute inset-0 md:flex justify-center items-center hidden">
-        <div class="relative md:w-[300px] md:h-[400px] xl:w-[400px] xl:h-[500px]">
+      <div
+        class="md:absolute inset-0 md:flex justify-center items-center hidden"
+      >
+        <div
+          class="relative md:w-[300px] md:h-[400px] xl:w-[400px] xl:h-[500px]"
+        >
           <div class="absolute inset-0 md:rounded-t-[300px]"></div>
           <img
-              src="/public/hero_image_mobile.jpg"
-              alt="Hero Image"
-              class="absolute inset-0 w-full h-full object-cover md:rounded-t-[200px]"
+            src="/public/hero_image_mobile.jpg"
+            alt="Hero Image"
+            class="absolute inset-0 w-full h-full object-cover md:rounded-t-[200px]"
           />
         </div>
       </div>
@@ -35,14 +38,16 @@ import CommonButton from "./elements/button/CommonButton.vue";
           <div class="relative">
             <h1 class="text-4xl font-extrabold font-cormorant text-white mb-6">
               Bunga spesial
-              <br>untuk anda
+              <br />untuk anda
             </h1>
             <p class="text-white mb-8">
-              Shelby Florist Bandung Memperkenalkan<br>
+              Shelby Florist Bandung Memperkenalkan<br />
               Bunga Indah Untuk Momen Spesial Anda
             </p>
             <div class="flex gap-4">
-              <button class="btn bg-darkBeige text-white hover:bg-opacity-90 rounded-none">
+              <button
+                class="btn bg-darkBeige text-white hover:bg-opacity-90 rounded-none"
+              >
                 Get Started Now
               </button>
             </div>
@@ -53,7 +58,7 @@ import CommonButton from "./elements/button/CommonButton.vue";
             <div class="flex flex-col items-center text-center">
               <div class="p-3 bg-white rounded">🌸</div>
               <div>
-                <div class="text-xl font-semibold text-white">290+</div>
+                <div class="text-xl font-semibold text-white">89+</div>
                 <div class="text-xs text-white">Kind of flower</div>
               </div>
             </div>
@@ -61,7 +66,7 @@ import CommonButton from "./elements/button/CommonButton.vue";
             <div class="flex flex-col items-center text-center">
               <div class="p-3 bg-white rounded">✨</div>
               <div>
-                <div class="text-xl font-semibold text-white">500+</div>
+                <div class="text-xl font-semibold text-white">250+</div>
                 <div class="text-xs text-white">Unique style</div>
               </div>
             </div>
@@ -77,43 +82,51 @@ import CommonButton from "./elements/button/CommonButton.vue";
         </div>
 
         <!-- Desktop Layout -->
-        <div class="hidden md:flex justify-between items-start md:items-center min-h-screen md:flex-row">
+        <div
+          class="hidden md:flex justify-between items-start md:items-center min-h-screen md:flex-row"
+        >
           <!-- Left Content for Desktop -->
           <div class="max-w-xl relative">
-            <h1 class="text-7xl font-extrabold font-cormorant text-darkBeige mb-6 text-nowrap">
+            <h1
+              class="text-7xl font-extrabold font-cormorant text-darkBeige mb-6 text-nowrap"
+            >
               Bunga spesial
-              <br>untuk anda
+              <br />untuk anda
             </h1>
             <p class="text-lightBeige mb-8 w-full">
-              Shelby Florist Bandung Memperkenalkan<br>
+              Shelby Florist Bandung Memperkenalkan<br />
               Bunga Indah Untuk Momen Spesial Anda
             </p>
             <div class="flex gap-4">
-              <CommonButton>
-                Get Started Now
-              </CommonButton>
+              <CommonButton> Get Started Now </CommonButton>
             </div>
           </div>
 
           <!-- Desktop Stats -->
           <div class="md:space-y-4 md:flex md:flex-col">
-            <div class="flex md:flex-row flex-col items-center gap-4 p-0 md:p-4 rounded-lg">
+            <div
+              class="flex md:flex-row flex-col items-center gap-4 p-0 md:p-4 rounded-lg"
+            >
               <div class="p-3 bg-white rounded">🌸</div>
               <div>
-                <div class="text-2xl font-semibold text-darkBeige">290+</div>
+                <div class="text-2xl font-semibold text-darkBeige">89+</div>
                 <div class="text-sm text-darkBeige">Kind of flower</div>
               </div>
             </div>
 
-            <div class="flex md:flex-row flex-col items-center gap-4 p-0 md:p-4 rounded-lg">
+            <div
+              class="flex md:flex-row flex-col items-center gap-4 p-0 md:p-4 rounded-lg"
+            >
               <div class="p-3 bg-white rounded">✨</div>
               <div>
-                <div class="text-2xl font-semibold text-darkBeige">500+</div>
+                <div class="text-2xl font-semibold text-darkBeige">250+</div>
                 <div class="text-sm text-darkBeige">Unique style</div>
               </div>
             </div>
 
-            <div class="flex md:flex-row flex-col items-center gap-4 p-0 md:p-4 rounded-lg">
+            <div
+              class="flex md:flex-row flex-col items-center gap-4 p-0 md:p-4 rounded-lg"
+            >
               <div class="p-3 bg-white rounded">⭐</div>
               <div>
                 <div class="text-2xl font-semibold text-darkBeige">1M</div>
@@ -121,13 +134,10 @@ import CommonButton from "./elements/button/CommonButton.vue";
               </div>
             </div>
           </div>
-
-
         </div>
       </div>
     </div>
   </section>
 </template>
 
-<style scoped>
-</style>
+<style scoped></style>

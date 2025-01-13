@@ -7,7 +7,7 @@ import SubTitleSection from "./elements/text/SubTitleSection.vue";
 </script>
 
 <template>
-  <section class="flex flex-col gap-12 pb-12 mb-12 bg-beige">
+  <section id="aboutUs" class="flex flex-col gap-12 pb-12 mb-12 bg-beige">
 
     <div class="flex flex-col gap-8 md:gap-12">
       <!-- Top Section -->
@@ -19,9 +19,9 @@ import SubTitleSection from "./elements/text/SubTitleSection.vue";
           </TitleSection>
 
           <CommonButton class="mt-12 bg-white">
-          <span class="px-8 text-darkBeige font-semibold">
+          <a href="https://wa.me/6281904520743" target="_blank" class="px-8 text-darkBeige font-semibold">
             Pesan
-          </span>
+          </a>
           </CommonButton>
         </div>
       </div>
