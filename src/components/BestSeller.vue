@@ -26,7 +26,7 @@ const handleWheel = (event, ref) => {
 };
 
 const orderViaWA = (product) => {
-  const message = `Halo anjing, saya ingin memesan *${product.category}* kode *${product.code}* dengan harga tertera adalah *Rp ${product.price.toLocaleString("id-ID")}*`;
+  const message = `Halo Admin, saya ingin memesan *${product.category}* kode *${product.code}* dengan harga tertera adalah *Rp ${product.price.toLocaleString("id-ID")}*`;
   const whatsappUrl = `https://wa.me/6281904520743?text=${encodeURIComponent(
       message
   )}`;
