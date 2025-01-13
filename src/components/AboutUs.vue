@@ -4,6 +4,12 @@ import TitleSection from "./elements/text/TitleSection.vue";
 import CommonButton from "./elements/button/CommonButton.vue";
 import HeadingSection from "./elements/text/HeadingSection.vue";
 import SubTitleSection from "./elements/text/SubTitleSection.vue";
+
+// whatsapp
+const phoneNumber = "6281904520743";
+const message = "Hallo shelbyflorist Mau Pesan Bunga Buat Hari Ini";
+
+const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
 </script>
 
 <template>
@@ -19,7 +25,7 @@ import SubTitleSection from "./elements/text/SubTitleSection.vue";
           </TitleSection>
 
           <CommonButton class="mt-12 bg-white">
-          <a href="https://wa.me/6281904520743" target="_blank" class="px-8 text-darkBeige font-semibold">
+          <a :href="whatsappUrl" target="_blank" class="px-8 text-darkBeige font-semibold">
             Pesan
           </a>
           </CommonButton>

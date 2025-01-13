@@ -44,13 +44,6 @@ import CommonButton from "./elements/button/CommonButton.vue";
               Shelby Florist Bandung Memperkenalkan<br />
               Bunga Indah Untuk Momen Spesial Anda
             </p>
-            <div class="flex gap-4">
-              <button
-                class="btn bg-darkBeige text-white hover:bg-opacity-90 rounded-none"
-              >
-                Get Started Now
-              </button>
-            </div>
           </div>
 
           <!-- Mobile Stats -->
@@ -97,9 +90,6 @@ import CommonButton from "./elements/button/CommonButton.vue";
               Shelby Florist Bandung Memperkenalkan<br />
               Bunga Indah Untuk Momen Spesial Anda
             </p>
-            <div class="flex gap-4">
-              <CommonButton> Get Started Now </CommonButton>
-            </div>
           </div>
 
           <!-- Desktop Stats -->
