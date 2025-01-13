@@ -163,7 +163,8 @@ onMounted(() => {
 
 
           <!-- Map -->
-          <div class="lg:w-full h-[360px] rounded-lg overflow-hidden z-10">
+          <!-- Map -->
+          <div class="lg:w-full h-[360px] rounded-lg overflow-hidden z-20">
             <l-map
                 v-model:zoom="zoom"
                 :center="center"

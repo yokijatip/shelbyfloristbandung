@@ -21,10 +21,7 @@ export default defineComponent({
             Ucapan Duka Cita & Suka Cita
           </TitleSection>
           <p class="text-gray-600 leading-relaxed my-6 text-end">
-            We're passionate about capturing the essence of your unique love
-            story and turning it into a timeless collection of photographs. From
-            your initial engagement to your eagerly anticipated wedding day, we
-            are committed to preserving every precious moment along the way.
+            Kami dengan sepenuh hati menghadirkan karangan bunga yang dirancang khusus untuk menyampaikan perasaan Anda, baik dalam momen duka cita maupun suka cita. Setiap rangkaian bunga kami mencerminkan keindahan dan makna yang mendalam, menjadi simbol penghormatan dan cinta di setiap kesempatan spesial.
           </p>
           <CommonButton>
             <RouterLink to="/AllKaranganBunga"> Lihat Semua </RouterLink>

@@ -14,7 +14,8 @@
       "code": "002",
       "category": "Duka Cita",
       "imageUrl": "https://res.cloudinary.com/dvffsa6kt/image/upload/v1736506795/450-2_nkfxe3.jpg",
-      "type": "Karangan Bunga"
+      "type": "Karangan Bunga",
+      "bestseller":true
     },
     {
       "id": 3,
@@ -22,7 +23,8 @@
       "code": "003",
       "category": "Duka Cita",
       "imageUrl": "https://res.cloudinary.com/dvffsa6kt/image/upload/v1736506796/550_a3qkb5.jpg",
-      "type": "Karangan Bunga"
+      "type": "Karangan Bunga",
+      "bestseller":true
     },
     {
       "id": 4,
@@ -102,7 +104,8 @@
       "code": "013",
       "category": "Duka Cita",
       "imageUrl": "https://res.cloudinary.com/dvffsa6kt/image/upload/v1736506786/750_io2aec.jpg",
-      "type": "Karangan Bunga"
+      "type": "Karangan Bunga",
+      "bestseller":true
     },
     {
       "id": 14,
