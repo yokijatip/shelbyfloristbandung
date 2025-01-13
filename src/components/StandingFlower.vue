@@ -20,10 +20,7 @@ import { RouterLink } from "vue-router";
             Hiasan bunga disegala situasi
           </TitleSection>
           <p class="text-gray-600 leading-relaxed my-6">
-            We're passionate about capturing the essence of your unique love story and turning it into a timeless
-            collection
-            of photographs. From your initial engagement to your eagerly anticipated wedding day, we are committed to
-            preserving every precious moment along the way.
+            Kami dengan sepenuh hati menghadirkan standing flower yang memancarkan keindahan dan kesan elegan untuk setiap momen spesial Anda. Baik untuk merayakan kebahagiaan, menyampaikan penghormatan, atau mempercantik suasana, rangkaian bunga kami dirancang untuk menciptakan kehangatan dan makna di setiap kesempatan.
           </p>
           <CommonButton>
             <RouterLink to="/StandingFlower"> Lihat Semua </RouterLink>

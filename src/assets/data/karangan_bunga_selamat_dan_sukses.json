@@ -22,7 +22,8 @@
       "code": "003",
       "category": "Selamat & Sukses",
       "imageUrl": "https://res.cloudinary.com/dvffsa6kt/image/upload/v1736506813/450-3_bfyhby.jpg",
-      "type": "Karangan Bunga"
+      "type": "Karangan Bunga",
+      "bestseller":true
     },
     {
       "id": 4,
@@ -54,7 +55,8 @@
       "code": "007",
       "category": "Selamat & Sukses",
       "imageUrl": "https://res.cloudinary.com/dvffsa6kt/image/upload/v1736506812/500_ctrfqo.jpg",
-      "type": "Karangan Bunga"
+      "type": "Karangan Bunga",
+      "bestseller":true
     },
     {
       "id": 8,
@@ -70,7 +72,8 @@
       "code": "009",
       "category": "Selamat & Sukses",
       "imageUrl": "https://res.cloudinary.com/dvffsa6kt/image/upload/v1736506815/550-2_vprnxj.jpg",
-      "type": "Karangan Bunga"
+      "type": "Karangan Bunga",
+      "bestseller":true
     },
     {
       "id": 10,
@@ -94,7 +97,8 @@
       "code": "012",
       "category": "Selamat & Sukses",
       "imageUrl": "https://res.cloudinary.com/dvffsa6kt/image/upload/v1736506821/600-2_uj3mml.jpg",
-      "type": "Karangan Bunga"
+      "type": "Karangan Bunga",
+      "bestseller":true
     },
     {
       "id": 13,
@@ -126,7 +130,8 @@
       "code": "016",
       "category": "Selamat & Sukses",
       "imageUrl": "https://res.cloudinary.com/dvffsa6kt/image/upload/v1736506821/750-2_bxwqlr.jpg",
-      "type": "Karangan Bunga"
+      "type": "Karangan Bunga",
+      "bestseller": true
     },
     {
       "id": 17,
@@ -142,7 +147,8 @@
       "code": "018",
       "category": "Selamat & Sukses",
       "imageUrl": "https://res.cloudinary.com/dvffsa6kt/image/upload/v1736506827/800_x4kh88.jpg",
-      "type": "Karangan Bunga"
+      "type": "Karangan Bunga",
+      "bestseller": true
     },
     {
       "id": 19,

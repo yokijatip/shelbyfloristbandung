@@ -17,13 +17,10 @@ import { RouterLink } from "vue-router";
             Bouquet
           </SubTitleSection>
           <TitleSection class="text-start md:mb-12">
-            Wedding & Engagement
+            Pernikahan & Pertunangan
           </TitleSection>
           <p class="text-gray-600 leading-relaxed my-6">
-            We're passionate about capturing the essence of your unique love story and turning it into a timeless
-            collection
-            of photographs. From your initial engagement to your eagerly anticipated wedding day, we are committed to
-            preserving every precious moment along the way.
+            Kami dengan sepenuh hati menghadirkan rangkaian bunga yang indah untuk melengkapi kisah cinta Anda. Mulai dari pertunangan yang penuh makna hingga hari pernikahan yang Anda impikan, rangkaian bunga kami dirancang untuk mengabadikan keindahan di setiap momen berharga Anda.
           </p>
           <CommonButton>
             <RouterLink to="/AllBouquet"> Lihat Semua </RouterLink>

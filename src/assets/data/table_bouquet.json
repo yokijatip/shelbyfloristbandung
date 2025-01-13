@@ -30,7 +30,8 @@
         "code": "004",
         "category": "Table Bouquet",
         "imageUrl": "https://res.cloudinary.com/dvffsa6kt/image/upload/v1736576786/tb850_fbzm1a.jpg",
-        "type": "Bouquet"
+        "type": "Bouquet",
+        "bestseller": true
       },
       {
         "id": 5,
@@ -46,7 +47,8 @@
         "code": "006",
         "category": "Table Bouquet",
         "imageUrl": "https://res.cloudinary.com/dvffsa6kt/image/upload/v1736576789/tb1000_bpsvjp.jpg",
-        "type": "Bouquet"
+        "type": "Bouquet",
+        "bestseller": true
       },
       {
         "id": 7,

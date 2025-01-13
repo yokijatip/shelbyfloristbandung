@@ -5,12 +5,23 @@ import TitleSection from "./elements/text/TitleSection.vue";
 import HeadingSection from "./elements/text/HeadingSection.vue";
 import Product from "./card/Product.vue";
 import handBouquet from "../assets/data/hand_bouquet.json"
+import tableBouquet from "../assets/data/table_bouquet.json"
+import KBdukaCita from "../assets/data/karangan_bunga_duka_cita.json"
+import KBselamatSukses from "../assets/data/karangan_bunga_selamat_dan_sukses.json"
+import KBhappyWedding from "../assets/data/karangan_bunga_happy_wedding.json"
 
-const products = handBouquet.products
+const products =[ ...handBouquet.products,
+...tableBouquet.products,
+  ...KBdukaCita.products,
+  ...KBhappyWedding.products,
+  ...KBselamatSukses.products
+ ]
+
+ const bestsellers = products.filter(product => product.bestseller);
 // Bagi products menjadi dua bagian
 // Bagi products menjadi dua bagian seimbang
-const firstHalf = products.slice(0, Math.ceil(products.length / 2));
-const secondHalf = products.slice(Math.ceil(products.length / 2));
+const firstHalf = bestsellers.slice(0, Math.ceil(bestsellers.length / 2));
+const secondHalf = bestsellers.slice(Math.ceil(bestsellers.length / 2));
 
 // Refs untuk scroll container
 const topRowRef = ref(null);

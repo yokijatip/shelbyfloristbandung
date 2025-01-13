@@ -30,7 +30,8 @@
       "code": "004",
       "category": "Hand Bouquet",
       "imageUrl": "https://res.cloudinary.com/dvffsa6kt/image/upload/v1736363171/275_qx7gs9.jpg",
-      "type": "Bouquet"
+      "type": "Bouquet",
+      "bestseller":true
     },
     {
       "id": 5,
@@ -46,7 +47,8 @@
       "code": "006",
       "category": "Hand Bouquet",
       "imageUrl": "https://res.cloudinary.com/dvffsa6kt/image/upload/v1736363175/280_zukaoq.jpg",
-      "type": "Bouquet"
+      "type": "Bouquet",
+      "bestseller": true
     },
     {
       "id": 7,
@@ -118,7 +120,8 @@
       "code": "015",
       "category": "Hand Bouquet",
       "imageUrl": "https://res.cloudinary.com/dvffsa6kt/image/upload/v1736363152/350-5_ulm16d.jpg",
-      "type": "Bouquet"
+      "type": "Bouquet",
+      "bestseller": true
     },
     {
       "id": 16,
@@ -133,7 +136,8 @@
       "code": "017",
       "category": "Hand Bouquet",
       "imageUrl": "https://res.cloudinary.com/dvffsa6kt/image/upload/v1736363156/375_yzvxp0.jpg",
-      "type": "Bouquet"
+      "type": "Bouquet",
+      "bestseller":true
     },
     {
       "id": 18,
@@ -141,7 +145,8 @@
       "code": "018",
       "category": "Hand Bouquet",
       "imageUrl": "https://res.cloudinary.com/dvffsa6kt/image/upload/v1736363157/700_yle8xt.jpg",
-      "type": "Bouquet"
+      "type": "Bouquet",
+      "bestseller":true
     },
     {
       "id": 19,
@@ -179,7 +184,8 @@
       "code": "023",
       "category": "Hand Bouquet",
       "imageUrl": "https://res.cloudinary.com/dvffsa6kt/image/upload/v1736363164/1300_c8r8xc.jpg",
-      "type": "Bouquet"
+      "type": "Bouquet",
+      "bestseller": true
     }
   ]
 }
