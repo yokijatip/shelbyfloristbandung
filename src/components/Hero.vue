@@ -8,9 +8,9 @@ import CommonButton from "./elements/button/CommonButton.vue";
       <!-- Background Image untuk Mobile -->
       <div class="md:hidden absolute inset-0">
         <img
-          src="/public/hero_image_mobile.jpg"
+          src="https://res.cloudinary.com/dvffsa6kt/image/upload/v1736823975/hero2_pivvs6.jpg"
           alt="Hero Image"
-          class="w-full h-full object-cover brightness-50"
+          class="w-full h-full object-cover brightness-50 object-[60%]"
         />
       </div>
 
@@ -23,9 +23,9 @@ import CommonButton from "./elements/button/CommonButton.vue";
         >
           <div class="absolute inset-0 md:rounded-t-[300px]"></div>
           <img
-            src="/public/hero_image_mobile.jpg"
+            src="https://res.cloudinary.com/dvffsa6kt/image/upload/v1736823975/hero2_pivvs6.jpg"
             alt="Hero Image"
-            class="absolute inset-0 w-full h-full object-cover md:rounded-t-[200px]"
+            class="absolute inset-0 w-full h-full object-cover object-[70%] md:rounded-t-[200px] "
           />
         </div>
       </div>
@@ -51,7 +51,7 @@ import CommonButton from "./elements/button/CommonButton.vue";
             <div class="flex flex-col items-center text-center">
               <div class="p-3 bg-white rounded">🌸</div>
               <div>
-                <div class="text-xl font-semibold text-white">89+</div>
+                <div class="text-xl font-semibold text-white">100+</div>
                 <div class="text-xs text-white">Kind of flower</div>
               </div>
             </div>
@@ -99,7 +99,7 @@ import CommonButton from "./elements/button/CommonButton.vue";
             >
               <div class="p-3 bg-white rounded">🌸</div>
               <div>
-                <div class="text-2xl font-semibold text-darkBeige">89+</div>
+                <div class="text-2xl font-semibold text-darkBeige">100+</div>
                 <div class="text-sm text-darkBeige">Kind of flower</div>
               </div>
             </div>
@@ -130,4 +130,8 @@ import CommonButton from "./elements/button/CommonButton.vue";
   </section>
 </template>
 
-<style scoped></style>
+<style scoped>
+.custom-img {
+  object-position: center -20px; /* Menggeser gambar 20px ke kiri */
+}
+</style>
