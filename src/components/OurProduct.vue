@@ -36,7 +36,7 @@ import { RouterLink } from "vue-router";
       <div class="category-section">
         <div class="overflow-hidden h-80 ">
           <img
-              src="https://res.cloudinary.com/dvffsa6kt/image/upload/v1736363171/275_qx7gs9.jpg"
+              src="https://res.cloudinary.com/dvffsa6kt/image/upload/v1736363161/850_jvoztc.jpg"
               alt="Bunga Papan"
               class="inset-0 w-full h-full object-cover md:rounded-t-[200px] rounded-t-[200px] border-[1px] border-darkBeige" 
           />

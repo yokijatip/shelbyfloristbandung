@@ -1,6 +1,11 @@
 <script setup>
 import { RouterLink } from "vue-router";
 
+const phoneNumber = "6281904520743";
+const message = "Hallo shelbyflorist Mau Pesan Bunga Buat Hari Ini";
+
+const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+
 </script>
 
 <template>
@@ -53,10 +58,10 @@ import { RouterLink } from "vue-router";
 
           <!-- Title & Logo -->
           <a
-            class="text-xl md:text-2xl normal-case font-inter font-semibold text-darkBeige text-nowrap w-full text-center lg:text-left flex items-center justify-center lg:justify-start gap-1"
+            class="text-xl md:text-2xl normal-case font-poppins font-semibold text-darkBeige text-nowrap w-full text-center lg:text-left flex items-center justify-center lg:justify-start gap-1"
           >
             <!-- Spacing antara emoji dan text -->
-            <span class="tracking-wide">Shelby Florist 💐</span>
+            <span class="tracking-wider">SHELBY FLORIST💐</span>
           </a>
         </div>
 
@@ -118,7 +123,7 @@ import { RouterLink } from "vue-router";
           <!--  Button Whatsapp  -->
           <div>
             <a
-                href="https://wa.me/6281904520743"
+                :href="whatsappUrl"
                 target="_blank"
                 class="btn btn-success text-white md:btn-sm rounded-full md:rounded-full invisible md:visible"
             >
@@ -140,9 +145,9 @@ import { RouterLink } from "vue-router";
 
           <div>
             <a
-                href="https://wa.me/6281904520743"
+                href="tel:+6281904520743"
                 target="_blank"
-                class="btn bg-darkBeige text-white md:btn-md rounded-full md:rounded-full ms-4"
+                class="btn bg-darkBeige text-white md:btn-md rounded-full md:rounded-full ms-4 md:hidden"
             >
               <!-- WhatsApp Icon -->
               <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="white">

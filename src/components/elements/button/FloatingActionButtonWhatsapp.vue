@@ -1,11 +1,14 @@
 <script setup>
+const phoneNumber = "6281904520743";
+const message = "Hallo shelbyflorist Mau Pesan Bunga Buat Hari Ini";
 
+const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
 </script>
 
 <template>
   <!-- FAB WhatsApp -->
   <a
-      href="https://wa.me/6281904520743"
+      :href="whatsappUrl"
       target="_blank"
       class="fixed bottom-4 right-4 bg-green-500 text-white rounded-full p-4 shadow-lg hover:bg-green-600 transition md:mr-10"
       aria-label="Chat with us on WhatsApp"
