@@ -12,7 +12,7 @@ import KBselamatSukses from "../assets/data/karangan_bunga_selamat_dan_sukses.js
 import KBhappyWedding from "../assets/data/karangan_bunga_happy_wedding.json";
 import TableBouquet from "../assets/data/table_bouquet.json";
 import StandingFlower from "../assets/data/standing_flower.json"
-
+import { RouterLink } from "vue-router";
 
 
 // Menggabungkan semua data produk
@@ -25,44 +25,22 @@ const allProduct = ref([
   ...StandingFlower.products,
 ]);
 
-// State untuk filter kategori
-const selectedType = ref('Semua');
-const types = [
-  'Semua',
-  'Bouquet',
-  'Karangan Bunga',
-  'Standing Flower'
-];
-
-// Filter products berdasarkan types
-const filteredProducts = computed(() => {
-  if (selectedType.value === 'Semua') {
-    return allProduct.value;
-  }
-  return allProduct.value.filter(product => product.type === selectedType.value);
-});
-
 // untuk menampilkan beberapa halaman dulu
 // Pagination state
 const itemsPerPage = ref(12); // Jumlah item per halaman
 const currentPage = ref(1); // Halaman saat ini
 
-// Menghitung produk yang ditampilkan dengan filter dan pagination
+// menghitung property untuk produk yang ditampilkan
 const displayedProducts = computed(() => {
+  const startIndex = 0;
   const endIndex = currentPage.value * itemsPerPage.value;
-  return filteredProducts.value.slice(0, endIndex);
+  return allProduct.value.slice(startIndex, endIndex);
 });
 
-/// Cek apakah masih ada produk yang bisa ditampilkan
+// menghitung property untuk mengecek apakah masih ada produk yang bisa ditampilkan
 const hasMore = computed(() => {
-  return displayedProducts.value.length < filteredProducts.value.length;
+  return displayedProducts.value.length < allProduct.value.length;
 });
-
-// Function untuk mengganti kategori
-const changeType = (type) => {
-  selectedType.value = type;
-  currentPage.value = 1; // Reset page ke awal saat ganti kategori
-};
 
 // Function untuk menambah jumlah produk yang ditampilkan
 const showMore = () => {
@@ -108,19 +86,21 @@ const orderViaWA = (product) => {
 
         <!-- Filter Categories -->
         <div class="mb-8 flex flex-wrap justify-center gap-3">
-          <button
-            v-for="type in types"
-            :key="type"
-            @click="changeType(type)"
-            :class="[
-              'px-4 py-2 rounded-lg text-sm font-medium transition-all duration-300',
-              selectedType === type
-                ? 'bg-darkBeige text-white shadow-md'
-                : 'bg-white text-gray-700 hover:bg-primary/10'
-            ]"
-          >
-            {{ type }}
-          </button>
+          <RouterLink to="/AllBouquet">
+            <CommonButton>
+              Hand Bouquet
+            </CommonButton>
+          </RouterLink>
+          <RouterLink to="/AllKaranganBunga">
+            <CommonButton>
+              Karangan Bunga
+            </CommonButton>
+          </RouterLink>
+          <RouterLink to="/StandingFlower">
+            <CommonButton>
+              Standing Flower
+            </CommonButton>
+          </RouterLink>
         </div>
 
         <!-- Grid Produk -->

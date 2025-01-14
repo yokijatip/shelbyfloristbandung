@@ -7,7 +7,7 @@ import { RouterLink } from "vue-router";
 </script>
 
 <template>
-  <div class=" mx-auto lg:pb-8  md:ps-0 pb-16 md:py-12">
+  <div class=" bg-white mx-auto lg:pb-8  md:ps-0 pb-16 md:py-12">
 
     <div class="flex flex-col lg:flex-row gap-8 pe-0 md:pe-8">
       <!-- Text Content - akan muncul di atas pada mobile -->

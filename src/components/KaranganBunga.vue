@@ -11,7 +11,7 @@ export default defineComponent({
 </script>
 
 <template>
-  <div class="mx-auto lg:pb-8 pb-16 md:py-12 text-end">
+  <div class="bg-white mx-auto lg:pb-8 pb-16 md:py-12 text-end">
     <div class="flex flex-col lg:flex-row gap-8 ps-8">
       <!-- Text Content - akan muncul di atas pada mobile -->
       <div class="lg:w-1/3 mb-8 lg:mb-0 pe-8">

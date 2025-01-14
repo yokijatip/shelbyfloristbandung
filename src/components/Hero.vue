@@ -1,5 +1,6 @@
 <script setup>
 import CommonButton from "./elements/button/CommonButton.vue";
+import {RouterLink} from "vue-router"
 </script>
 
 <template>
@@ -44,6 +45,9 @@ import CommonButton from "./elements/button/CommonButton.vue";
               Shelby Florist Bandung Memperkenalkan<br />
               Bunga Indah Untuk Momen Spesial Anda
             </p>
+            <RouterLink to="/AllProduct">
+            <CommonButton> Lihat Produk</CommonButton>
+            </RouterLink>
           </div>
 
           <!-- Mobile Stats -->
@@ -90,6 +94,9 @@ import CommonButton from "./elements/button/CommonButton.vue";
               Shelby Florist Bandung Memperkenalkan<br />
               Bunga Indah Untuk Momen Spesial Anda
             </p>
+            <RouterLink to="/AllProduct">
+            <CommonButton> Lihat Produk</CommonButton>
+            </RouterLink>
           </div>
 
           <!-- Desktop Stats -->

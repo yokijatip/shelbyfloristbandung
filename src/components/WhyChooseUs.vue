@@ -6,7 +6,7 @@ import SubTitleSection from "./elements/text/SubTitleSection.vue";
 </script>
 
 <template>
-  <section class="py-8 ">
+  <section class="py-8 bg-white ">
     <div>
       <div class="mx-auto px-2 md:px-4 lg:px-16">
         <SubTitleSection>
@@ -30,7 +30,7 @@ import SubTitleSection from "./elements/text/SubTitleSection.vue";
                 class="w-full h-full object-contain"
             >
           </div>
-          <HeadingSection>
+          <HeadingSection class="text-xl"> 
             Terpercaya
           </HeadingSection>
         </div>
@@ -44,7 +44,7 @@ import SubTitleSection from "./elements/text/SubTitleSection.vue";
                 class="w-full h-full object-contain"
             >
           </div>
-          <HeadingSection>
+          <HeadingSection class="text-xl">
             Harga Terjangkau
           </HeadingSection>
         </div>
@@ -58,7 +58,7 @@ import SubTitleSection from "./elements/text/SubTitleSection.vue";
                 class="w-full h-full object-contain"
             >
           </div>
-          <HeadingSection>
+          <HeadingSection class="text-xl">
             Gratis Pengiriman
           </HeadingSection>
         </div>
