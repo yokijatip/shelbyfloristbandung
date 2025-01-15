@@ -1,6 +1,14 @@
 <script setup>
 import CommonButton from "./elements/button/CommonButton.vue";
 import {RouterLink} from "vue-router"
+
+//Whatsapp
+const phoneNumber = "6281904520743";
+const message = "Hallo shelbyflorist Mau Pesan Bunga Buat Hari Ini";
+
+const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(
+  message
+)}`;
 </script>
 
 <template>
@@ -42,12 +50,18 @@ import {RouterLink} from "vue-router"
               <br />untuk anda
             </h1>
             <p class="text-white mb-8">
-              Shelby Florist Bandung Memperkenalkan<br />
-              Bunga Indah Untuk Momen Spesial Anda
+              Butuh bunga untuk acara spesialmu?<br />
+              Kami menyediakan berbagai macam bunga <br>
+              segar berkualitas dengan layanan <span class="font-semibold">pengiriman<br>
+              cepat</span> dan <span class="font-semibold">terpercaya</span>.
+              <br>Kunjungi toko kami atau hubungi kami sekarang!🚛💐🎉
             </p>
+            <div class="flex gap-4">
             <RouterLink to="/AllProduct">
             <CommonButton> Lihat Produk</CommonButton>
             </RouterLink>
+            
+            </div>
           </div>
 
           <!-- Mobile Stats -->
@@ -91,12 +105,18 @@ import {RouterLink} from "vue-router"
               <br />untuk anda
             </h1>
             <p class="text-lightBeige mb-8 w-full">
-              Shelby Florist Bandung Memperkenalkan<br />
-              Bunga Indah Untuk Momen Spesial Anda
+              Butuh bunga untuk acara spesialmu?<br />
+              Kami menyediakan berbagai macam bunga <br>
+              segar berkualitas dengan layanan <span class="font-semibold">pengiriman<br>
+              cepat</span> dan <span class="font-semibold">terpercaya</span>.
+              <br>Kunjungi toko kami atau hubungi kami sekarang!<br>🚛💐🎉
             </p>
+            <div class="flex gap-4">
             <RouterLink to="/AllProduct">
             <CommonButton> Lihat Produk</CommonButton>
             </RouterLink>
+            
+            </div>
           </div>
 
           <!-- Desktop Stats -->
