@@ -32,7 +32,8 @@ const handleOrder = () => {
   emit('order', {
     category: props.category,
     code: props.code,
-    price: props.price
+    price: props.price,
+    type: props.type,
   })
 }
 

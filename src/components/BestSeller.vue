@@ -1,23 +1,24 @@
 <script setup>
-import {onMounted, onUnmounted, ref} from "vue";
+import { onMounted, onUnmounted, ref } from "vue";
 import SubTitleSection from "./elements/text/SubTitleSection.vue";
 import TitleSection from "./elements/text/TitleSection.vue";
 import HeadingSection from "./elements/text/HeadingSection.vue";
 import Product from "./card/Product.vue";
-import handBouquet from "../assets/data/hand_bouquet.json"
-import tableBouquet from "../assets/data/table_bouquet.json"
-import KBdukaCita from "../assets/data/karangan_bunga_duka_cita.json"
-import KBselamatSukses from "../assets/data/karangan_bunga_selamat_dan_sukses.json"
-import KBhappyWedding from "../assets/data/karangan_bunga_happy_wedding.json"
+import handBouquet from "../assets/data/hand_bouquet.json";
+import tableBouquet from "../assets/data/table_bouquet.json";
+import KBdukaCita from "../assets/data/karangan_bunga_duka_cita.json";
+import KBselamatSukses from "../assets/data/karangan_bunga_selamat_dan_sukses.json";
+import KBhappyWedding from "../assets/data/karangan_bunga_happy_wedding.json";
 
-const products =[ ...handBouquet.products,
-...tableBouquet.products,
+const products = [
+  ...handBouquet.products,
+  ...tableBouquet.products,
   ...KBdukaCita.products,
   ...KBhappyWedding.products,
-  ...KBselamatSukses.products
- ]
+  ...KBselamatSukses.products,
+];
 
- const bestsellers = products.filter(product => product.bestseller);
+const bestsellers = products.filter((product) => product.bestseller);
 // Bagi products menjadi dua bagian
 // Bagi products menjadi dua bagian seimbang
 const firstHalf = bestsellers.slice(0, Math.ceil(bestsellers.length / 2));
@@ -37,9 +38,9 @@ const handleWheel = (event, ref) => {
 };
 
 const orderViaWA = (product) => {
-  const message = `Halo Admin, saya ingin memesan *${product.category}* kode *${product.code}* dengan harga tertera adalah *Rp ${product.price.toLocaleString("id-ID")}*`;
+  const message = `Halo Admin, saya ingin memesan *${product.category}* kode *${product.code}* `;
   const whatsappUrl = `https://wa.me/6281904520743?text=${encodeURIComponent(
-      message
+    message
   )}`;
   window.open(whatsappUrl, "_blank");
 };
@@ -82,34 +83,29 @@ const orderViaWA = (product) => {
 //   stopAutoScroll()
 // })
 //   Auto Scroll End
-
-
 </script>
 
 <template>
   <section class="bg-white">
-    <div class="min-h-screen max-w-0xl mx-auto px-0 sm:px-6 lg:px-0 bg-white py-8">
+    <div
+      class="min-h-screen max-w-0xl mx-auto px-0 sm:px-6 lg:px-0 bg-white py-8"
+    >
       <!--  Title  -->
       <div class="flex flex-col mb-8 md:mb-16 px-8">
-        <SubTitleSection>
-          Produk best seller
-        </SubTitleSection>
+        <SubTitleSection> Produk best seller </SubTitleSection>
         <TitleSection>
-          Top Bouquet, Karangan
-          Bunga &
-          Standing Flower
+          Top Bouquet, Karangan Bunga & Standing Flower
         </TitleSection>
         <HeadingSection>
-          Produk yang kami tawarkan berkualitas, indah sehingga memenuhi kebutuhan anda
+          Produk yang kami tawarkan berkualitas, indah sehingga memenuhi
+          kebutuhan anda
         </HeadingSection>
       </div>
 
       <!--  Best Seller Content  -->
-      <!-- Untuk Sementara pake data hand bouquet dulu -->
-      <!--  Best Seller Content  -->
       <div class="space-y-8">
         <!-- Top Row -->
-        <div 
+        <div
           ref="topRowRef"
           @wheel="(e) => handleWheel(e, topRowRef)"
           class="overflow-x-auto scroll-smooth group"
@@ -130,7 +126,7 @@ const orderViaWA = (product) => {
         </div>
 
         <!-- Bottom Row -->
-        <div 
+        <div
           ref="bottomRowRef"
           @wheel="(e) => handleWheel(e, bottomRowRef)"
           class="overflow-x-auto scroll-smooth group"
