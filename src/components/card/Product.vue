@@ -44,7 +44,7 @@ const isDragging = ref(false)
 const lastTouchDistance = ref(null)
 const lastTouchPosition = ref(null)
 const zoomContainer = ref(null)
-
+  
 const MIN_SCALE = 1
 const MAX_SCALE = 4
 
@@ -184,7 +184,7 @@ onUnmounted(() => {
     >
       <div v-if="showZoom" class="fixed inset-0 md:mt-14 z-50 flex items-center justify-center bg-black bg-opacity-75">
         <div 
-          class="relative max-w-4xl max-h-[90vh] overflow-hidden touch-none"
+          class="relative max-w-4xl max-h-[90vh] overflow-hidden  touch-none"
           @click.stop
         >
           <div 
@@ -201,7 +201,7 @@ onUnmounted(() => {
             <img 
               :src="imageUrl" 
               :alt="code"
-              class="w-full h-auto select-none"
+              class="w-full md:w-[620px] h-auto select-none"
               @dragstart.prevent
             />
           </div>
