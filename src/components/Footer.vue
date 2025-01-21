@@ -11,7 +11,7 @@ const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(mess
     <div class="max-w-0xl mx-auto px-0 sm:px-6 lg:px-0 bg-white">
       <footer class="footer footer-center bg-beige text-veryDarkBeige p-10">
         <aside>
-          <img src="/public/logoSF.png" alt="Shelby Florist Bandung Logo" class="ms-5">
+          <img src="/dist/logoSF.png" alt="Shelby Florist Bandung Logo" class="ms-5">
           <p class="font-bold">
             Shelby Florist
             <br />
