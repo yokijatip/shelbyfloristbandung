@@ -43,9 +43,9 @@ const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(mess
                   <summary><RouterLink to="/AllProduct">Produk Kami</RouterLink></summary>
                   <ul class="p-2 z-10">
                     <li>
-                      <RouterLink to="/AllKaranganBunga">Karangan Bunga</RouterLink>
+                      <RouterLink to="/KaranganBunga">Karangan Bunga</RouterLink>
                     </li>
-                    <li><RouterLink to="/AllBouquet">Bouquet</RouterLink></li>
+                    <li><RouterLink to="/Bouquet">Bouquet</RouterLink></li>
                     <li>
                       <RouterLink to="/StandingFlower">Standing Flower</RouterLink>
                     </li>
@@ -85,14 +85,14 @@ const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(mess
                 class="absolute hidden group-hover:block bg-white shadow-lg rounded-md w-48 z-[99] cursor-pointer"
               >
                 <li>
-                  <RouterLink to="/AllKaranganBunga"
+                  <RouterLink to="/KaranganBunga"
                     class="link-focus link-style block px-4 py-2 hover:bg-gray-100 "
                     active-class="link-active"
                     >Karangan Bunga</RouterLink
                   >
                 </li>
                 <li>
-                  <RouterLink to="/AllBouquet"
+                  <RouterLink to="/Bouquet"
                     class="link-focus link-style block px-4 py-2 hover:bg-gray-100"
                     active-class="link-active"
                     >Bouquet</RouterLink

@@ -16,12 +16,12 @@ const router = createRouter({
     },
 
     {
-      path: "/AllKaranganBunga",
+      path: "/KaranganBunga",
       name: "AllKaranganBunga",
       component: () => import("../views/AllKaranganBunga.vue"),
     },
     {
-      path: "/AllBouquet",
+      path: "/Bouquet",
       name: "AllBouquet",
       component: () => import("../views/AllBouquet.vue"),
     },
