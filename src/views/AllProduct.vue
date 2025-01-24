@@ -14,6 +14,8 @@ import TableBouquet from "../assets/data/table_bouquet.json";
 import StandingFlower from "../assets/data/standing_flower.json";
 import { RouterLink } from "vue-router";
 
+
+
 // Menggabungkan semua data produk
 const allProduct = ref([
   ...HandBouquet.products,
@@ -61,6 +63,19 @@ const orderViaWA = (product) => {
   )}`;
   window.open(whatsappUrl, "_blank");
 };
+
+//Meta tag
+import { useHead } from "@vueuse/head";
+useHead({
+  title: "Produk Kami | Shelby Florist",
+  meta: [
+    {
+      name: "description",
+      content:
+        "Pesan pilihan berbagai macam bunga terbaik di Bandung hanya di Toko Bunga Shelby Florist.",
+    },
+  ],
+})
 </script>
 
 <template>

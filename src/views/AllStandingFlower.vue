@@ -25,6 +25,19 @@ const orderViaWA = (product) => {
   window.open(whatsappUrl, "_blank");
 };
 
+//Meta tag
+import { useHead } from "@vueuse/head";
+useHead({
+  title: "Standing Flower | Shelby Florist",
+  meta: [
+    {
+      name: "description",
+      content:
+        "Pesan pilihan Standing Flower terbaik di Bandung hanya di Toko Bunga Shelby Florist.",
+    },
+  ],
+})
+
 </script>
 
 <template>

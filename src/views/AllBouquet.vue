@@ -74,6 +74,19 @@ const orderViaWA = (product) => {
   )}`;
   window.open(whatsappUrl, "_blank");
 };
+
+//Meta tag
+import { useHead } from "@vueuse/head";
+useHead({
+  title: "Bouquet | Shelby Florist",
+  meta: [
+    {
+      name: "description",
+      content:
+        "Pesan pilihan Bouquet terbaik di Bandung hanya di Toko Bunga Shelby Florist.",
+    },
+  ],
+})
 </script>
 
 <template>

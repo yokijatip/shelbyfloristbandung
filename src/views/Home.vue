@@ -33,6 +33,19 @@ const products = [
     price: 850000
   }
 ]
+
+//Meta tag
+import { useHead } from "@vueuse/head";
+useHead({
+  title: "Shelby Florist",
+  meta: [
+    {
+      name: "description",
+      content:
+        "Selamat datang di Shelby Florist, toko bunga terbaik di Bandung.",
+    },
+  ],
+})
 </script>
 
 <template>
