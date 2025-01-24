@@ -86,12 +86,12 @@ const orderViaWA = (product) => {
 
         <!-- Filter Categories -->
         <div class="mb-8 flex flex-wrap justify-center gap-3">
-          <RouterLink to="/AllBouquet">
+          <RouterLink to="/Bouquet">
             <CommonButton>
               Hand Bouquet
             </CommonButton>
           </RouterLink>
-          <RouterLink to="/AllKaranganBunga">
+          <RouterLink to="/KaranganBunga">
             <CommonButton>
               Karangan Bunga
             </CommonButton>
