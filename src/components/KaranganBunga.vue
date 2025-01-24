@@ -24,7 +24,7 @@ export default defineComponent({
             Kami dengan sepenuh hati menghadirkan karangan bunga yang dirancang khusus untuk menyampaikan perasaan Anda, baik dalam momen duka cita maupun suka cita. Setiap rangkaian bunga kami mencerminkan keindahan dan makna yang mendalam, menjadi simbol penghormatan dan cinta di setiap kesempatan spesial.
           </p>
           <CommonButton>
-            <RouterLink to="/AllKaranganBunga"> Lihat Semua </RouterLink>
+            <RouterLink to="/KaranganBunga"> Lihat Semua </RouterLink>
           </CommonButton>
         </div>
       </div>

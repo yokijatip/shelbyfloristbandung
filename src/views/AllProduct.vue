@@ -5,15 +5,14 @@ import Product from "../components/card/Product.vue";
 import HeadingSection from "../components/elements/text/HeadingSection.vue";
 
 // Mengambil data Json
-import {ref, computed} from "vue";
+import { ref, computed } from "vue";
 import HandBouquet from "../assets/data/hand_bouquet.json";
 import KBdukaCita from "../assets/data/karangan_bunga_duka_cita.json";
 import KBselamatSukses from "../assets/data/karangan_bunga_selamat_dan_sukses.json";
 import KBhappyWedding from "../assets/data/karangan_bunga_happy_wedding.json";
 import TableBouquet from "../assets/data/table_bouquet.json";
-import StandingFlower from "../assets/data/standing_flower.json"
+import StandingFlower from "../assets/data/standing_flower.json";
 import { RouterLink } from "vue-router";
-
 
 // Menggabungkan semua data produk
 const allProduct = ref([
@@ -49,7 +48,6 @@ const showMore = () => {
 
 // pagination end
 
-
 // Format price to IDR
 const formatPrice = (price) => {
   return price.toLocaleString("id-ID");
@@ -59,70 +57,60 @@ const formatPrice = (price) => {
 const orderViaWA = (product) => {
   const message = `Halo Admin, saya ingin memesan *${product.category}* kode *${product.code}* `;
   const whatsappUrl = `https://wa.me/6281904520743?text=${encodeURIComponent(
-      message
+    message
   )}`;
   window.open(whatsappUrl, "_blank");
 };
-
-
-
-
-
 </script>
 
 <template>
-
   <div class="bg-beige">
     <!-- Section Produk -->
     <section class="py-8 md:py-12 bg-beige px-2 md:px-0">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"> <!-- Container dengan padding yang responsive -->
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <!-- Container dengan padding yang responsive -->
         <div class="mb-12">
           <TitleSection class="text-center">Produk Kami</TitleSection>
           <HeadingSection class="text-gray-600 max-w-2xl mx-auto">
-            Temukan berbagai produk pilihan dengan kualitas terbaik untuk memenuhi
-            kebutuhan Anda
+            Temukan berbagai produk pilihan dengan kualitas terbaik untuk
+            memenuhi kebutuhan Anda
           </HeadingSection>
         </div>
 
         <!-- Filter Categories -->
         <div class="mb-8 flex flex-wrap justify-center gap-3">
           <RouterLink to="/Bouquet">
-            <CommonButton>
-              Hand Bouquet
-            </CommonButton>
+            <CommonButton> Hand Bouquet </CommonButton>
           </RouterLink>
           <RouterLink to="/KaranganBunga">
-            <CommonButton>
-              Karangan Bunga
-            </CommonButton>
+            <CommonButton> Karangan Bunga </CommonButton>
           </RouterLink>
           <RouterLink to="/StandingFlower">
-            <CommonButton>
-              Standing Flower
-            </CommonButton>
+            <CommonButton> Standing Flower </CommonButton>
           </RouterLink>
         </div>
 
         <!-- Grid Produk -->
-        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-6 justify-items-center">
+        <div
+          class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-6 justify-items-center"
+        >
           <!-- Card Produk -->
           <Product
-              v-for="product in displayedProducts"
-              :key="`first-${product.id}`"
-              :category="product.category"
-              :code="product.code"
-              :price="product.price"
-              :imageUrl="product.imageUrl"
-              :type="product.type"
-              class="w-full" justify-items-center
-              @order="orderViaWA"
+            v-for="product in displayedProducts"
+            :key="`first-${product.id}`"
+            :category="product.category"
+            :code="product.code"
+            :price="product.price"
+            :imageUrl="product.imageUrl"
+            :type="product.type"
+            class="w-full"
+            justify-items-center
+            @order="orderViaWA"
           />
         </div>
         <!-- Tombol Show More -->
         <div v-if="hasMore" class="my-8 text-center">
-          <CommonButton
-              @click="showMore"
-          >
+          <CommonButton @click="showMore">
             Tampilkan Lebih Banyak
           </CommonButton>
         </div>
@@ -130,7 +118,6 @@ const orderViaWA = (product) => {
     </section>
   </div>
 </template>
-
 
 <style scoped>
 @media (max-width: 640px) {

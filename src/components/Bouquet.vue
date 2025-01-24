@@ -23,7 +23,7 @@ import { RouterLink } from "vue-router";
             Kami dengan sepenuh hati menghadirkan rangkaian bunga yang indah untuk melengkapi kisah cinta Anda. Mulai dari pertunangan yang penuh makna hingga hari pernikahan yang Anda impikan, rangkaian bunga kami dirancang untuk mengabadikan keindahan di setiap momen berharga Anda.
           </p>
           <CommonButton>
-            <RouterLink to="/AllBouquet"> Lihat Semua </RouterLink>
+            <RouterLink to="/Bouquet"> Lihat Semua </RouterLink>
           </CommonButton>
         </div>
       </div>

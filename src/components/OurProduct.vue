@@ -33,7 +33,7 @@ import { RouterLink } from "vue-router";
 
     <div class="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-8">
       <!-- Kategori 1: Bouquet -->
-       <RouterLink to="/AllBouquet">
+       <RouterLink to="/Bouquet">
       <div class="category-section">
         <div class="overflow-hidden h-80 ">
           <img
@@ -51,7 +51,7 @@ import { RouterLink } from "vue-router";
       </RouterLink>
 
       <!-- Kategori 2: karangan bunga -->
-      <RouterLink to="/AllKaranganBunga">
+      <RouterLink to="/KaranganBunga">
       <div class="category-section">
         <div class="overflow-hidden h-80">
           <img
