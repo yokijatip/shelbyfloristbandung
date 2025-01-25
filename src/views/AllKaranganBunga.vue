@@ -79,7 +79,7 @@ const orderViaWA = (product) => {
 //Meta tag
 import { useHead } from "@vueuse/head";
 useHead({
-  title: "Karangan Bunga | Shelby Florist",
+  title: "Toko Bunga Karangan Bunga Bandung | Shelby Florist",
   meta: [
     {
       name: "description",

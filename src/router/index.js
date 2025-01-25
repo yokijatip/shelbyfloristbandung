@@ -8,7 +8,7 @@ const router = createRouter({
       name: "home",
       component: () => import("../views/Home.vue"),
       meta: {
-        title: "Shelby Florist",
+        title: "Toko Bunga Terbaik di Bandung Buka 24 jam | Shelby Florist",
         name: "description",
         content:
           "Selamat datang di Shelby Florist, toko bunga terbaik di Bandung.",
@@ -20,7 +20,7 @@ const router = createRouter({
       name: "AllProduct",
       component: () => import("../views/AllProduct.vue"),
       meta: {
-        title: "Produk Kami | Shelby Florist",
+        title: "Toko Bunga terbaik di Bandung | Shelby Florist",
         name: "description",
         content:
           "Pesan pilihan berbagai macam bunga terbaik di Bandung hanya di Toko Bunga Shelby Florist.",
@@ -32,7 +32,7 @@ const router = createRouter({
       name: "AllKaranganBunga",
       component: () => import("../views/AllKaranganBunga.vue"),
       meta: {
-        title: "Karangan Bunga | Shelby Florist",
+        title: "Toko Bunga Karangan Bunga Bandung  | Shelby Florist",
         name: "description",
         content:
           "Pesan pilihan Karangan Bunga terbaik di Bandung hanya di Toko Bunga Shelby Florist.",
@@ -43,7 +43,7 @@ const router = createRouter({
       name: "AllBouquet",
       component: () => import("../views/AllBouquet.vue"),
       meta: {
-        title: "Bouquet | Shelby Florist",
+        title: "Toko Bunga Bouquet Bandung | Shelby Florist",
         name: "description",
         content:
           "Pesan pilihan Bouquet terbaik di Bandung hanya di Toko Bunga Shelby Florist.",
@@ -54,7 +54,7 @@ const router = createRouter({
       name: "StandingFlower",
       component: () => import("../views/AllStandingFlower.vue"),
       meta: {
-        title: "Standing Flower | Shelby Florist",
+        title: "Toko Bunga Standing Flower Bandung | Shelby Florist",
         name: "description",
         content:
           "Pesan pilihan Standing Flower terbaik di Bandung hanya di Toko Bunga Shelby Florist.",

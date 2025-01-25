@@ -28,7 +28,7 @@ const orderViaWA = (product) => {
 //Meta tag
 import { useHead } from "@vueuse/head";
 useHead({
-  title: "Standing Flower | Shelby Florist",
+  title: " Toko Bunga Standing Flower Bandung| Shelby Florist",
   meta: [
     {
       name: "description",

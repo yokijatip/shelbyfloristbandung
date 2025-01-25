@@ -37,7 +37,7 @@ const products = [
 //Meta tag
 import { useHead } from "@vueuse/head";
 useHead({
-  title: "Shelby Florist",
+  title: "Toko Bunga Terbaik di Bandung Buka 24 jam | Shelby Florist",
   meta: [
     {
       name: "description",
