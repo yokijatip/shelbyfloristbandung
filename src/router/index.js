@@ -11,7 +11,7 @@ const router = createRouter({
         title: "Toko Bunga Terbaik di Bandung Buka 24 jam | Shelby Florist",
         name: "description",
         content:
-          "Selamat datang di Shelby Florist, toko bunga terbaik di Bandung.",
+          "Shleby Florist - Toko Bunga Terbaik di Bandung. Butuh bunga untuk acara spesialmu? Kami menyediakan berbagai macam bunga segar berkualitas dengan layanan pengiriman gratis dan cepat.",
       },
     },
 
