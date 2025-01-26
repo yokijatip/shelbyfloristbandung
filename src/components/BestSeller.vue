@@ -36,6 +36,23 @@ const handleWheel = (event, ref) => {
     event.preventDefault();
   }
 };
+// Fungsi scroll manual dengan button
+const scrollLeftAtas = () => {
+  topRowRef.value.scrollLeft -= 300;
+};
+
+const scrollRightAtas = () => {
+  topRowRef.value.scrollLeft += 300;
+};
+
+const scrollLeftBawah = () => {
+  bottomRowRef.value.scrollLeft -=300;
+}
+const scrollRightBawah = ()=>{
+  bottomRowRef.value.scrollLeft += 300
+}
+
+
 
 const orderViaWA = (product) => {
   const message = `Halo Admin, saya ingin memesan *${product.category}* kode *${product.code}* `;
@@ -44,45 +61,7 @@ const orderViaWA = (product) => {
   )}`;
   window.open(whatsappUrl, "_blank");
 };
-// Auto Scroll START
-// const topRowRef = ref(null)
-// const bottomRowRef = ref(null)
-// let topScrollInterval = null
-// let bottomScrollInterval = null
 
-// const startAutoScroll = () => {
-//   topScrollInterval = setInterval(() => {
-//     if (topRowRef.value) {
-//       topRowRef.value.scrollLeft += 1
-//       if (topRowRef.value.scrollLeft >= topRowRef.value.scrollWidth / 2) {
-//         topRowRef.value.scrollLeft = 0
-//       }
-//     }
-//   }, 20)
-
-//   bottomScrollInterval = setInterval(() => {
-//     if (bottomRowRef.value) {
-//       bottomRowRef.value.scrollLeft -= 1
-//       if (bottomRowRef.value.scrollLeft <= 0) {
-//         bottomRowRef.value.scrollLeft = bottomRowRef.value.scrollWidth / 2
-//       }
-//     }
-//   }, 20)
-// }
-
-// const stopAutoScroll = () => {
-//   clearInterval(topScrollInterval)
-//   clearInterval(bottomScrollInterval)
-// }
-
-// onMounted(() => {
-//   startAutoScroll()
-// })
-
-// onUnmounted(() => {
-//   stopAutoScroll()
-// })
-//   Auto Scroll End
 </script>
 
 <template>
@@ -105,10 +84,11 @@ const orderViaWA = (product) => {
       <!--  Best Seller Content  -->
       <div class="space-y-8">
         <!-- Top Row -->
+         <div class="relative">
         <div
           ref="topRowRef"
           @wheel="(e) => handleWheel(e, topRowRef)"
-          class="overflow-x-auto scroll-smooth group"
+          class=" overflow-x-auto scroll-smooth group"
         >
           <div class="flex gap-8 pb-6">
             <Product
@@ -124,8 +104,12 @@ const orderViaWA = (product) => {
             />
           </div>
         </div>
+        <button  @click="scrollLeftAtas" class="absolute left-0 top-1/2 transform -translate-y-1/2 z-10 p-2 ml-4 bg-black/40 text-white rounded-full text-xl">&lt;</button>
+        <button  @click="scrollRightAtas" class="absolute right-0 top-1/2 transform -translate-y-1/2 z-10 p-2 mr-4 bg-black/40 text-white rounded-full text-xl">&gt;</button>
+        </div>
 
         <!-- Bottom Row -->
+         <div class="relative">
         <div
           ref="bottomRowRef"
           @wheel="(e) => handleWheel(e, bottomRowRef)"
@@ -145,6 +129,13 @@ const orderViaWA = (product) => {
             />
           </div>
         </div>
+        <!-- Scroll Buttons -->
+        <button 
+          @click="scrollLeftBawah" class="absolute left-0 top-1/2 transform -translate-y-1/2 z-10 p-2 ml-4 bg-black/40 text-white rounded-full text-xl">&lt;</button>
+        <button 
+          @click="scrollRightBawah" class="absolute right-0 top-1/2 transform -translate-y-1/2 z-10 p-2 mr-4 bg-black/40 text-white rounded-full text-xl">&gt;</button>
+          
+        </div>
       </div>
     </div>
   </section>
@@ -154,7 +145,7 @@ const orderViaWA = (product) => {
 /* Custom scrollbar styling */
 .overflow-x-auto {
   scrollbar-width: thin;
-  scrollbar-color: #504d43 #ffffff;
+  scrollbar-color: #e2ba09 #504d43;
 }
 
 .overflow-x-auto::-webkit-scrollbar {
@@ -164,6 +155,7 @@ const orderViaWA = (product) => {
 .overflow-x-auto::-webkit-scrollbar-track {
   background: #f5f0e0;
   border-radius: 3px;
+  
 }
 
 .overflow-x-auto::-webkit-scrollbar-thumb {

@@ -68,12 +68,14 @@ const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(
           </div>
 
           <!-- Title & Logo -->
-          <a
+          <div
             class="text-xl md:text-2xl normal-case font-poppins font-semibold text-darkBeige text-nowrap w-full text-center lg:text-left flex items-center justify-center lg:justify-start gap-1"
           >
             <!-- Spacing antara emoji dan text -->
-            <span class="tracking-wider">SHELBY FLORIST💐</span>
-          </a>
+            <RouterLink to="/" class="tracking-wider"
+              >SHELBY FLORIST💐</RouterLink
+            >
+          </div>
         </div>
 
         <div class="navbar-center hidden lg:flex">
