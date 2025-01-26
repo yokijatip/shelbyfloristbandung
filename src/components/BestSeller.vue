@@ -145,7 +145,7 @@ const orderViaWA = (product) => {
 /* Custom scrollbar styling */
 .overflow-x-auto {
   scrollbar-width: thin;
-  scrollbar-color: #e2ba09 #504d43;
+  scrollbar-color: #504d43 #f5f0e0;
 }
 
 .overflow-x-auto::-webkit-scrollbar {
