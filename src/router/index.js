@@ -14,6 +14,10 @@ const router = createRouter({
           "Shleby Florist - Toko Bunga Terbaik di Bandung. Butuh bunga untuk acara spesialmu? Kami menyediakan berbagai macam bunga segar berkualitas dengan layanan pengiriman gratis dan cepat.",
       },
     },
+    {
+      path: "/home",
+      redirect: "/"
+    },
 
     {
       path: "/AllProduct",
