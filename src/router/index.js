@@ -60,6 +60,12 @@ const router = createRouter({
           "Pesan pilihan Standing Flower terbaik di Bandung hanya di Toko Bunga Shelby Florist.",
       },
     },
+
+    {
+      path: "/:catchall(.*)*",
+      name: '404',
+      component: () => import("../views/errors/404.vue")
+    }
   ],
   scrollBehavior(to, from, savedPosition) {
     if (to.hash) {
