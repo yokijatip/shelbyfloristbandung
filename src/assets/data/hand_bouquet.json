@@ -186,6 +186,78 @@
       "imageUrl": "https://res.cloudinary.com/dvffsa6kt/image/upload/v1736363164/1300_c8r8xc.jpg",
       "type": "Bouquet",
       "bestseller": true
+    },
+    {
+      "id": 24,
+      "price": 300000,
+      "code":"024",
+      "category":"Hand Bouquet",
+      "imageUrl": "https://res.cloudinary.com/dvffsa6kt/image/upload/v1738671284/b25_rvsy9e.jpg",
+      "type":"Bouquet"
+    },
+    {
+      "id": 25,
+      "price": 300000,
+      "code":"025",
+      "category":"Hand Bouquet",
+      "imageUrl": "https://res.cloudinary.com/dvffsa6kt/image/upload/v1738671285/b24_wdp2me.jpg",
+      "type":"Bouquet"
+    },
+    {
+      "id": 26,
+      "price": 350000,
+      "code":"026",
+      "category":"Hand Bouquet",
+      "imageUrl": "https://res.cloudinary.com/dvffsa6kt/image/upload/v1738671286/b26_bymmhj.jpg",
+      "type":"Bouquet"
+    },
+    {
+      "id": 27,
+      "price": 350000,
+      "code":"027",
+      "category":"Hand Bouquet",
+      "imageUrl": "https://res.cloudinary.com/dvffsa6kt/image/upload/v1738671285/b27_ivbmec.jpg",
+      "type":"Bouquet"
+    },
+    {
+      "id": 28,
+      "price": 400000,
+      "code":"028",
+      "category":"Hand Bouquet",
+      "imageUrl": "https://res.cloudinary.com/dvffsa6kt/image/upload/v1738671284/b29_ucx4uf.jpg",
+      "type":"Bouquet"
+    },
+    {
+      "id": 29,
+      "price": 400000,
+      "code":"029",
+      "category":"Hand Bouquet",
+      "imageUrl": "https://res.cloudinary.com/dvffsa6kt/image/upload/v1738671284/b28_ls3kwv.jpg",
+      "type":"Bouquet"
+    },
+    {
+      "id": 30,
+      "price": 500000,
+      "code":"030",
+      "category":"Hand Bouquet",
+      "imageUrl": "https://res.cloudinary.com/dvffsa6kt/image/upload/v1738671284/b30_txnsck.jpg",
+      "type":"Bouquet"
+    },
+    {
+      "id": 31,
+      "price": 500000,
+      "code":"031",
+      "category":"Hand Bouquet",
+      "imageUrl": "https://res.cloudinary.com/dvffsa6kt/image/upload/v1738671284/b31_lid9fq.jpg",
+      "type":"Bouquet"
+    },
+    {
+      "id": 32,
+      "price": 1200000,
+      "code":"032",
+      "category":"Hand Bouquet",
+      "imageUrl": "https://res.cloudinary.com/dvffsa6kt/image/upload/v1738671284/b32_trrhmm.jpg",
+      "type":"Bouquet"
     }
   ]
 }
