@@ -64,6 +64,17 @@ const router = createRouter({
           "Pesan pilihan Standing Flower terbaik di Bandung hanya di Toko Bunga Shelby Florist.",
       },
     },
+    {
+      path: "/FlashSale",
+      name: "FlashSale",
+      component: () => import("../views/FlashSale.vue"),
+      meta: {
+        title: "Toko Bunga Bandung | Shelby Florist",
+        name: "description",
+        content:
+          "Pesan pilihan Promo terbaik di Bandung hanya di Toko Bunga Shelby Florist.",
+      },
+    },
 
     {
       path: "/:catchall(.*)*",

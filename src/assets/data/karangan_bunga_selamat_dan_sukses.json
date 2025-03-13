@@ -189,6 +189,54 @@
       "category": "Selamat & Sukses",
       "imageUrl": "https://res.cloudinary.com/dvffsa6kt/image/upload/v1736576236/selamat3jt2_v7oi6y.jpg",
       "type": "Karangan Bunga"
+    },
+    {
+      "id": 24,
+      "price": 475000,
+      "code": "024",
+      "category": "Selamat & Sukses",
+      "imageUrl": "https://res.cloudinary.com/dvffsa6kt/image/upload/v1741880137/ss475_ultxs8.jpg",
+      "type": "Karangan Bunga"
+    },
+    {
+      "id": 25,
+      "price": 550000,
+      "code": "025",
+      "category": "Selamat & Sukses",
+      "imageUrl": "https://res.cloudinary.com/dvffsa6kt/image/upload/v1741880136/ss550_kfc1ud.jpg",
+      "type": "Karangan Bunga"
+    },
+    {
+      "id": 26,
+      "price": 650000,
+      "code": "026",
+      "category": "Selamat & Sukses",
+      "imageUrl": "https://res.cloudinary.com/dvffsa6kt/image/upload/v1741880137/ss650_fvrdsf.jpg",
+      "type": "Karangan Bunga"
+    },
+    {
+      "id": 27,
+      "price": 900000,
+      "code": "027",
+      "category": "Selamat & Sukses",
+      "imageUrl": "https://res.cloudinary.com/dvffsa6kt/image/upload/v1741880136/ss900_t24ajg.jpg",
+      "type": "Karangan Bunga"
+    },
+    {
+      "id": 28,
+      "price": 950000,
+      "code": "028",
+      "category": "Selamat & Sukses",
+      "imageUrl": "https://res.cloudinary.com/dvffsa6kt/image/upload/v1741880136/ss950_ihyhjj.jpg",
+      "type": "Karangan Bunga"
+    },
+    {
+      "id": 29,
+      "price": 2500000,
+      "code": "029",
+      "category": "Selamat & Sukses",
+      "imageUrl": "https://res.cloudinary.com/dvffsa6kt/image/upload/v1741880136/ss2500_npq9el.jpg",
+      "type": "Karangan Bunga"
     }
   ]
 }

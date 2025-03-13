@@ -170,6 +170,14 @@
       "category": "Duka Cita",
       "imageUrl": "https://res.cloudinary.com/dvffsa6kt/image/upload/v1736506795/1000_brpgv3.jpg",
       "type": "Karangan Bunga"
+    },
+    {
+      "id": 22,
+      "price": 600000,
+      "code": "022",
+      "category": "Duka Cita",
+      "imageUrl": "https://res.cloudinary.com/dvffsa6kt/image/upload/v1741880290/tbc600_jbdzog.jpg",
+      "type": "Karangan Bunga"
     }
   ]
 }
