@@ -1,13 +1,12 @@
 <script setup>
-import FlashSale from "../assets/data/flash_sale.json"
+import FlashSale from "../assets/data/flash_sale.json";
 import TitleSection from "../components/elements/text/TitleSection.vue";
 import HeadingSection from "../components/elements/text/HeadingSection.vue";
 import CommonButtonOrderWhatsapp from "../components/elements/button/CommonButtonOrderWhatsapp.vue";
 
-import { ref } from "vue"
+import { ref } from "vue";
 
-const flashSale = ref(FlashSale.products)
-
+const flashSale = ref(FlashSale.products);
 
 // Format harga ke IDR
 const formatPrice = (price) => {
@@ -16,34 +15,43 @@ const formatPrice = (price) => {
 
 // Handle WhatsApp order
 const orderViaWA = (product) => {
-  const message = `Halo Admin, saya ingin memesan *${product.category}* kode *${product.code}* `;
+  const message = `Halo Admin, saya ingin memesan produk Flash Sale *${product.category}* kode *${product.code}* `;
   const whatsappUrl = `https://wa.me/6281904520743?text=${encodeURIComponent(
-      message
+    message
   )}`;
   window.open(whatsappUrl, "_blank");
 };
 </script>
 
 <template>
-<div class="bg-beige">
-  <section class="py-8 md:py-12 bg-beige px-2 md:px-0">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="mb-12">
-      <TitleSection class="text-center mb-4 lg:mb-8"> Flash Sale </TitleSection>
-      <HeadingSection class="text-gray-600 max-w-2xl mx-auto">
-        Temukan berbagai produk pilihan dengan kualitas terbaik untuk memenuhi
-        kebutuhan Anda
-      </HeadingSection>
-    </div>
+  <div class="bg-beige">
+    <section class="py-8 md:py-12 bg-beige px-2 md:px-0">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="mb-12">
+          <TitleSection class="text-center mb-4 lg:mb-8">
+            Flash Sale
+          </TitleSection>
+          <HeadingSection class="text-gray-600 max-w-2xl mx-auto">
+            Temukan berbagai produk pilihan dengan kualitas terbaik untuk
+            memenuhi kebutuhan Anda
+          </HeadingSection>
+        </div>
 
-  <!-- Grid Produk -->
-  <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-6 justify-items-center">
-    <div v-for="product in flashSale" 
+        <!-- Grid Produk -->
+        <div
+          class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-6 justify-items-center"
+        >
+          <div
+            v-for="product in flashSale"
             :key="product.id"
-            class="bg-white rounded-lg shadow-md p-4 w-full max-w-sm text-center">
-
+            class="bg-white rounded-lg shadow-md p-4 w-full max-w-sm text-center"
+          >
             <!-- Gambar Produk -->
-            <img :src="product.imageUrl" :alt="product.category" class="w-full h-64 object-cover rounded-md" />
+            <img
+              :src="product.imageUrl"
+              :alt="product.category"
+              class="w-full h-64 object-cover rounded-md"
+            />
 
             <div class="mt-4">
               <h3 class="text-lg font-semibold">{{ product.category }}</h3>
@@ -57,21 +65,20 @@ const orderViaWA = (product) => {
                 <span class="text-grey-900 font-bold text-lg">
                   Rp {{ formatPrice(product.diskonPrice) }}
                 </span>
-                <CommonButtonOrderWhatsapp class="mt-2 md:mt-2 md:ml-12" @click="orderViaWA(product)">
-            Beli langsung
-          </CommonButtonOrderWhatsapp>
+                <CommonButtonOrderWhatsapp
+                  class="mt-2 md:mt-2 md:ml-12"
+                  @click="orderViaWA(product)"
+                >
+                  Beli langsung
+                </CommonButtonOrderWhatsapp>
               </div>
-               <!-- Tombol Beli Langsung via WhatsApp -->
+              <!-- Tombol Beli Langsung via WhatsApp -->
             </div>
-
-    </div>
-  </div> 
-
-    </div>
-  </section>
-</div>
-
-  
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
 </template>
 
 <style scoped>
