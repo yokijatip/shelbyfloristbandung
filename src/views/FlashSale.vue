@@ -4,27 +4,47 @@ import TitleSection from "../components/elements/text/TitleSection.vue";
 import HeadingSection from "../components/elements/text/HeadingSection.vue";
 import CommonButtonOrderWhatsapp from "../components/elements/button/CommonButtonOrderWhatsapp.vue";
 
-import { ref } from "vue";
+import { ref, onUnmounted, onMounted } from "vue";
 import VueEasyLightbox from "vue-easy-lightbox";
 
 const flashSale = ref(FlashSale.products);
 
-// const selectedImage = ref(null);
-
-// const openImage = (imageUrl) => {
-//   selectedImage.value = imageUrl;
-// };
-
-// const closeImage = () => {
-//   selectedImage.value = null;
-// };
 const showLightbox = ref(false);
-const lightboxImage = ref("");
+const lightboxIndex = ref(0);
+const lightboxImages = ref([]);
 
-const openLightbox = (imageUrl) => {
-  lightboxImage.value = imageUrl;
+// Fungsi untuk membuka lightbox
+const openLightbox = (imageUrl, index = 0) => {
+  lightboxImages.value = Array.isArray(imageUrl) ? imageUrl : [imageUrl];
+  lightboxIndex.value = index;
   showLightbox.value = true;
 };
+
+// Fungsi untuk menutup lightbox dengan pemulihan scroll
+const closeLightbox = () => {
+  showLightbox.value = false;
+
+  // Tambahkan timeout kecil untuk memastikan DOM diperbarui sebelum mengembalikan scroll
+  setTimeout(() => {
+    document.body.style.overflow = "";
+    document.body.style.position = "";
+    document.body.style.width = "";
+    document.body.style.height = "";
+  }, 100);
+};
+
+// Menangani pemulihan scroll saat komponen di-mount/unmount
+onMounted(() => {
+  // Simpan gaya scroll asli jika perlu
+});
+
+onUnmounted(() => {
+  // Reset semua gaya yang mungkin terpengaruh
+  document.body.style.overflow = "";
+  document.body.style.position = "";
+  document.body.style.width = "";
+  document.body.style.height = "";
+});
 
 // Format harga ke IDR
 const formatPrice = (price) => {
@@ -75,8 +95,10 @@ const orderViaWA = (product) => {
             <!-- Modal Zoom -->
             <VueEasyLightbox
               :visible="showLightbox"
-              :imgs="lightboxImage"
-              @hide="showLightbox = false"
+              :imgs="lightboxImages"
+              :index="lightboxIndex"
+              @hide="closeLightbox"
+              scrollDisabled
             />
 
             <div class="mt-4">
