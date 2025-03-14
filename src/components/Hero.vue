@@ -19,7 +19,7 @@ const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(
         <img
           src="https://res.cloudinary.com/dvffsa6kt/image/upload/v1741970604/bg-mobile_qx2vck.jpg"
           alt="Hero Image"
-          class="w-full h-full object-cover brightness-50 object-[60%]"
+          class="w-full h-full object-cover brightness-50 object-[50%]"
         />
       </div>
 

@@ -5,8 +5,26 @@ import HeadingSection from "../components/elements/text/HeadingSection.vue";
 import CommonButtonOrderWhatsapp from "../components/elements/button/CommonButtonOrderWhatsapp.vue";
 
 import { ref } from "vue";
+import VueEasyLightbox from "vue-easy-lightbox";
 
 const flashSale = ref(FlashSale.products);
+
+// const selectedImage = ref(null);
+
+// const openImage = (imageUrl) => {
+//   selectedImage.value = imageUrl;
+// };
+
+// const closeImage = () => {
+//   selectedImage.value = null;
+// };
+const showLightbox = ref(false);
+const lightboxImage = ref("");
+
+const openLightbox = (imageUrl) => {
+  lightboxImage.value = imageUrl;
+  showLightbox.value = true;
+};
 
 // Format harga ke IDR
 const formatPrice = (price) => {
@@ -50,7 +68,15 @@ const orderViaWA = (product) => {
             <img
               :src="product.imageUrl"
               :alt="product.category"
-              class="w-full h-64 object-cover rounded-md"
+              class="w-full h-auto lg:h-64 object-cover rounded-md cursor-pointer transition-transform duration-300 hover:scale-105"
+              @click="openLightbox(product.imageUrl)"
+            />
+
+            <!-- Modal Zoom -->
+            <VueEasyLightbox
+              :visible="showLightbox"
+              :imgs="lightboxImage"
+              @hide="showLightbox = false"
             />
 
             <div class="mt-4">
