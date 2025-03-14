@@ -17,7 +17,7 @@ const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(
       <!-- Background Image untuk Mobile -->
       <div class="md:hidden absolute inset-0">
         <img
-          src="https://res.cloudinary.com/dvffsa6kt/image/upload/v1736823975/hero2_pivvs6.jpg"
+          src="https://res.cloudinary.com/dvffsa6kt/image/upload/v1741970604/bg-mobile_qx2vck.jpg"
           alt="Hero Image"
           class="w-full h-full object-cover brightness-50 object-[60%]"
         />
