@@ -57,7 +57,7 @@ const orderViaWA = (product) => {
                 <span class="text-grey-900 font-bold text-lg">
                   Rp {{ formatPrice(product.diskonPrice) }}
                 </span>
-                <CommonButtonOrderWhatsapp class="mt-2 md:mt-2 md:ml-12" @click="orderViaWA">
+                <CommonButtonOrderWhatsapp class="mt-2 md:mt-2 md:ml-12" @click="orderViaWA(product)">
             Beli langsung
           </CommonButtonOrderWhatsapp>
               </div>
