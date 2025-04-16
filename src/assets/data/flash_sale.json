@@ -143,6 +143,123 @@
       "category": "Hand Bouquet",
       "imageUrl": "https://res.cloudinary.com/dvffsa6kt/image/upload/v1741879975/hb1500_tmyx7b.jpg",
       "type": "Flash Sale"
+    },
+    {
+      "id": 17,
+      "price": 750000,
+      "diskonPrice": 700000,
+      "code": "017",
+      "category": "Duka Cita",
+      "imageUrl": "https://res.cloudinary.com/dvffsa6kt/image/upload/v1736506796/750-2_r1gjuf.jpg",
+      "type": "Flash Sale"
+    },
+    {
+      "id": 18,
+      "price": 375000,
+      "diskonPrice": 350000,
+      "code": "018",
+      "category": "Hand Bouquet",
+      "imageUrl": "https://res.cloudinary.com/dvffsa6kt/image/upload/v1736363156/375_yzvxp0.jpg",
+      "type": "Flash Sale"
+    },
+    {
+      "id": 19,
+      "price": 170000,
+      "diskonPrice": 150000,
+      "code": "019",
+      "category": "Hand Bouquet",
+      "imageUrl": "https://res.cloudinary.com/dvffsa6kt/image/upload/v1736363165/170_ko9zdm.jpg",
+      "type": "Flash Sale"
+    },
+    {
+      "id": 20,
+      "price": 290000,
+      "diskonPrice": 240000,
+      "code": "020",
+      "category": "Hand Bouquet",
+      "imageUrl": "https://res.cloudinary.com/dvffsa6kt/image/upload/v1744817221/hb240_s1v9ei.jpg",
+      "type": "Flash Sale"
+    },
+    {
+      "id": 21,
+      "price": 190000,
+      "diskonPrice": 150000,
+      "code": "021",
+      "category": "Hand Bouquet",
+      "imageUrl": "https://res.cloudinary.com/dvffsa6kt/image/upload/v1744817221/hb150_olsobz.jpg",
+      "type": "Flash Sale"
+    },
+    {
+      "id": 22,
+      "price": 150000,
+      "diskonPrice": 100000,
+      "code": "022",
+      "category": "Hand Bouquet",
+      "imageUrl": "https://res.cloudinary.com/dvffsa6kt/image/upload/v1744817221/hb100_ieodrv.jpg",
+      "type": "Flash Sale"
+    },
+    {
+      "id": 23,
+      "price": 600000,
+      "diskonPrice": 550000,
+      "code": "023",
+      "category": "Happy Wedding",
+      "imageUrl": "https://res.cloudinary.com/dvffsa6kt/image/upload/v1744817772/hw550new_nwx7rp.jpg",
+      "type": "Flash Sale"
+    },
+    {
+      "id": 24,
+      "price": 600000,
+      "diskonPrice": 550000,
+      "code": "024",
+      "category": "Selamat & Sukses",
+      "imageUrl": "https://res.cloudinary.com/dvffsa6kt/image/upload/v1744817774/ss550new_qmwdee.jpg",
+      "type": "Flash Sale"
+    },
+    {
+      "id": 25,
+      "price": 600000,
+      "diskonPrice": 550000,
+      "code": "025",
+      "category": "Duka Cita",
+      "imageUrl": "https://res.cloudinary.com/dvffsa6kt/image/upload/v1736506800/600-2_yrcrde.jpg",
+      "type": "Flash Sale"
+    },
+    {
+      "id": 26,
+      "price": 650000,
+      "diskonPrice": 600000,
+      "code": "026",
+      "category": "Duka Cita",
+      "imageUrl": "https://res.cloudinary.com/dvffsa6kt/image/upload/v1736506801/600_u8ynqp.jpg",
+      "type": "Flash Sale"
+    },
+    {
+      "id": 27,
+      "price": 900000,
+      "diskonPrice": 850000,
+      "code": "027",
+      "category": "Selamat & Sukses",
+      "imageUrl": "https://res.cloudinary.com/dvffsa6kt/image/upload/v1736506829/850_gjvulv.jpg",
+      "type": "Flash Sale"
+    },
+    {
+      "id": 28,
+      "price": 900000,
+      "diskonPrice": 850000,
+      "code": "028",
+      "category": "Selamat & Sukses",
+      "imageUrl": "https://res.cloudinary.com/dvffsa6kt/image/upload/v1744817774/ss850_hb2sff.jpg",
+      "type": "Flash Sale"
+    },
+    {
+      "id": 29,
+      "price": 1000000,
+      "diskonPrice": 950000,
+      "code": "029",
+      "category": "Selamat & Sukses",
+      "imageUrl": "https://res.cloudinary.com/dvffsa6kt/image/upload/v1744817777/ss950new_ghheix.jpg",
+      "type": "Flash Sale"
     }
   ]
 }

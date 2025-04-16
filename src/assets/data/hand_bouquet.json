@@ -304,7 +304,7 @@
       "price": 600000,
       "code":"038",
       "category":"Hand Bouquet",
-      "imageUrl": "https://res.cloudinary.com/dvffsa6kt/image/upload/v1741879976/hb600_y04wzv.jpg",
+      "imageUrl": "https://res.cloudinary.com/dvffsa6kt/image/upload/v1744818880/hb600_y04wzv.jpg",
       "type":"Bouquet"
     },
     {
@@ -312,7 +312,7 @@
       "price": 750000,
       "code":"039",
       "category":"Hand Bouquet",
-      "imageUrl": "https://res.cloudinary.com/dvffsa6kt/image/upload/v1741879974/hb750_ywsfwn.jpg",
+      "imageUrl": "https://res.cloudinary.com/dvffsa6kt/image/upload/v1744819020/hb750_ywsfwn.jpg",
       "type":"Bouquet"
     },
     {
@@ -320,7 +320,7 @@
       "price": 1500000,
       "code":"040",
       "category":"Hand Bouquet",
-      "imageUrl": "https://res.cloudinary.com/dvffsa6kt/image/upload/v1741879975/hb1500_tmyx7b.jpg",
+      "imageUrl": "https://res.cloudinary.com/dvffsa6kt/image/upload/v1744818681/hb1500_tmyx7b.jpg",
       "type":"Bouquet"
     },
     {
@@ -329,6 +329,14 @@
       "code":"041",
       "category":"Hand Bouquet",
       "imageUrl": "https://res.cloudinary.com/dvffsa6kt/image/upload/v1741879974/hb1700_aos6qd.jpg",
+      "type":"Bouquet"
+    },
+    {
+      "id": 42,
+      "price": 500000,
+      "code":"042",
+      "category":"Hand Bouquet",
+      "imageUrl": "https://res.cloudinary.com/dvffsa6kt/image/upload/v1744818368/hb500_ruiw4l.jpg",
       "type":"Bouquet"
     }
   ]

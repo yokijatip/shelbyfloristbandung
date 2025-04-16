@@ -41,7 +41,7 @@ import { RouterLink } from "vue-router";
             <img
               src="https://res.cloudinary.com/dvffsa6kt/image/upload/v1736363161/850_jvoztc.jpg"
               alt="Bunga Papan"
-              class="inset-0 w-full h-full object-cover md:rounded-t-[200px] rounded-t-[200px] border-[1px] border-darkBeige"
+              class="inset-0 w-full h-full object-cover md:rounded-t-[100px] rounded-t-[100px] border-[1px] border-darkBeige"
             />
           </div>
           <div class="p-4">
@@ -57,9 +57,9 @@ import { RouterLink } from "vue-router";
         <div class="category-section">
           <div class="overflow-hidden h-80">
             <img
-              src="https://res.cloudinary.com/dvffsa6kt/image/upload/v1736504992/1000_i2ttzu.jpg"
+              src="https://res.cloudinary.com/dvffsa6kt/image/upload/v1741976829/ss2500_inlz0l.jpg"
               alt="Karangan Bunga"
-              class="inset-0 w-full h-full object-cover md:rounded-t-[200px] rounded-t-[200px] border-[1px] border-darkBeige"
+              class="inset-0 w-full h-full object-cover md:rounded-t-[100px] rounded-t-[100px] border-[1px] border-darkBeige"
             />
           </div>
           <div class="p-4">
@@ -77,7 +77,7 @@ import { RouterLink } from "vue-router";
             <img
               src="https://res.cloudinary.com/dvffsa6kt/image/upload/v1736576826/sf900_tqozqj.jpg"
               alt="Standing Flower"
-              class="inset-0 w-full h-full object-cover md:rounded-t-[200px] rounded-t-[200px] border-[1px] border-darkBeige"
+              class="inset-0 w-full h-full object-cover md:rounded-t-[100px] rounded-t-[100px] border-[1px] border-darkBeige"
             />
           </div>
           <div class="p-4">
