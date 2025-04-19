@@ -1,44 +1,44 @@
 {
-    "products":[
-      {
-        "id": 1,
-        "price": 850000,
-        "code": "001",
-        "category": "Standing Flower",
-        "imageUrl": "https://res.cloudinary.com/dvffsa6kt/image/upload/v1736576826/sf850_tw2fuk.jpg",
-        "type": "Standing Flower"
-      },
-      {
-        "id": 2,
-        "price": 850000,
-        "code": "002",
-        "category": "Standing Flower",
-        "imageUrl": "https://res.cloudinary.com/dvffsa6kt/image/upload/v1736576825/sf850b_mimyru.jpg",
-        "type": "Standing Flower"
-      },
-      {
-        "id": 3,
-        "price": 900000,
-        "code": "003",
-        "category": "Standing Flower",
-        "imageUrl": "https://res.cloudinary.com/dvffsa6kt/image/upload/v1736576826/sf900_tqozqj.jpg",
-        "type": "Standing Flower"
-      },
-      {
-        "id": 4,
-        "price": 900000,
-        "code": "004",
-        "category": "Standing Flower",
-        "imageUrl": "https://res.cloudinary.com/dvffsa6kt/image/upload/v1744820972/sf900new_hb0tub_4c3a50_7b7ca6.jpg",
-        "type": "Standing Flower"
-      },
-      {
-        "id": 5,
-        "price": 1300000,
-        "code": "005",
-        "category": "Standing Flower",
-        "imageUrl": "https://res.cloudinary.com/dvffsa6kt/image/upload/v1744821850/Untitled_design_gxyjsh_6a621c.jpg",
-        "type": "Standing Flower"
-      }
-    ]
+  "products": [
+    {
+      "id": 1,
+      "price": 850000,
+      "code": "001",
+      "category": "Standing Flower",
+      "imageUrl": "https://res.cloudinary.com/dvffsa6kt/image/upload/v1736576826/sf850_tw2fuk.jpg",
+      "type": "Standing Flower"
+    },
+    {
+      "id": 2,
+      "price": 850000,
+      "code": "002",
+      "category": "Standing Flower",
+      "imageUrl": "https://res.cloudinary.com/dvffsa6kt/image/upload/v1736576825/sf850b_mimyru.jpg",
+      "type": "Standing Flower"
+    },
+    {
+      "id": 3,
+      "price": 900000,
+      "code": "003",
+      "category": "Standing Flower",
+      "imageUrl": "https://res.cloudinary.com/dvffsa6kt/image/upload/v1736576826/sf900_tqozqj.jpg",
+      "type": "Standing Flower"
+    },
+    {
+      "id": 4,
+      "price": 900000,
+      "code": "004",
+      "category": "Standing Flower",
+      "imageUrl": "https://res.cloudinary.com/dvffsa6kt/image/upload/v1744820972/sf900new_hb0tub_4c3a50_7b7ca6.jpg",
+      "type": "Standing Flower"
+    },
+    {
+      "id": 5,
+      "price": 1300000,
+      "code": "005",
+      "category": "Standing Flower",
+      "imageUrl": "https://res.cloudinary.com/dvffsa6kt/image/upload/v1744821850/Untitled_design_gxyjsh_6a621c.jpg",
+      "type": "Standing Flower"
+    }
+  ]
 }

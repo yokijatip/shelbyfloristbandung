@@ -21,7 +21,11 @@ export default defineComponent({
             Ucapan Duka Cita & Suka Cita
           </TitleSection>
           <p class="text-gray-600 leading-relaxed my-6 text-end">
-            Kami dengan sepenuh hati menghadirkan karangan bunga yang dirancang khusus untuk menyampaikan perasaan Anda, baik dalam momen duka cita maupun suka cita. Setiap rangkaian bunga kami mencerminkan keindahan dan makna yang mendalam, menjadi simbol penghormatan dan cinta di setiap kesempatan spesial.
+            Kami dengan sepenuh hati menghadirkan karangan bunga yang dirancang
+            khusus untuk menyampaikan perasaan Anda, baik dalam momen duka cita
+            maupun suka cita. Setiap rangkaian bunga kami mencerminkan keindahan
+            dan makna yang mendalam, menjadi simbol penghormatan dan cinta di
+            setiap kesempatan spesial.
           </p>
           <CommonButton>
             <RouterLink to="/KaranganBunga"> Lihat Semua </RouterLink>
@@ -33,14 +37,14 @@ export default defineComponent({
       <div class="lg:w-2/3 grid grid-cols-2 gap-4 pe-0">
         <div class="aspect-[4/5] overflow-hidden">
           <img
-            src="https://res.cloudinary.com/dvffsa6kt/image/upload/v1736762607/kbhome_pmd8cw.jpg"
+            src="https://res.cloudinary.com/dvffsa6kt/image/upload/v1745082842/sshome_o9sbe1.jpg"
             alt="Wedding couple in desert landscape"
             class="w-full h-full object-cover"
           />
         </div>
         <div class="aspect-[4/5] overflow-hidden">
           <img
-            src="https://res.cloudinary.com/dvffsa6kt/image/upload/v1736762607/kbhome1_ltg31e.jpg"
+            src="https://res.cloudinary.com/dvffsa6kt/image/upload/v1745082842/bhome_g6b18w.jpg"
             alt="Wedding couple with trees"
             class="w-full h-full object-cover"
           />

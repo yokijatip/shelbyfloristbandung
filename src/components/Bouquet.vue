@@ -32,16 +32,16 @@ import { RouterLink } from "vue-router";
       <div class="lg:w-2/3 grid grid-cols-2 gap-4 pe-8 md:pe-8">
         <div class="aspect-[4/5] overflow-hidden">
           <img
-              src="https://luckybirdphoto.com/wp-content/uploads/2022/01/Amanda-Zac129-1024x684.jpg.webp"
+              src="https://res.cloudinary.com/dvffsa6kt/image/upload/v1745082842/newhome2_vizsrz.jpg"
               alt="Wedding couple in desert landscape"
-              class="w-full h-full object-cover"
+              class="w-full h-full object-container"
           />
         </div>
         <div class="aspect-[4/5] overflow-hidden">
           <img
-              src="https://res.cloudinary.com/interflora/f_auto,q_auto,t_pnopt19prodlp/products/p-floral-enchantment-bouquet-132891-m.jpg"
+              src="https://res.cloudinary.com/dvffsa6kt/image/upload/v1745082842/newhome_elrx53.jpg"
               alt="Wedding couple with trees"
-              class="w-full h-full object-cover"
+              class="w-full h-full object-container"
           />
         </div>
       </div>
