@@ -161,7 +161,7 @@ onUnmounted(() => {
       <img
         :src="imageUrl"
         :alt="category"
-        class="w-auto h-full object-center transition-transform duration-300 hover:scale-105"
+        class="w-full h-full object-contain transition-transform duration-300 hover:scale-105"
       />
     </div>
 
