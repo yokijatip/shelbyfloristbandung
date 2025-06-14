@@ -52,26 +52,26 @@
     },
     {
       "id": 7,
-      "price": 285000,
+      "price": 295000,
       "code": "007",
       "category": "Hand Bouquet",
-      "imageUrl": "https://res.cloudinary.com/dvffsa6kt/image/upload/v1736363148/285_ms3etx.jpg",
+      "imageUrl": "https://res.cloudinary.com/dvffsa6kt/image/upload/v1749885908/hb295_tdxa98.jpg",
       "type": "Bouquet"
     },
     {
       "id": 8,
-      "price": 290000,
+      "price": 350000,
       "code": "008",
       "category": "Hand Bouquet",
-      "imageUrl": "https://res.cloudinary.com/dvffsa6kt/image/upload/v1736363148/290_gqpgad.jpg",
+      "imageUrl": "https://res.cloudinary.com/dvffsa6kt/image/upload/v1749885908/hb350_svasy5.jpg",
       "type": "Bouquet"
     },
     {
       "id": 9,
-      "price": 295000,
+      "price": 450000,
       "code": "009",
       "category": "Hand Bouquet",
-      "imageUrl": "https://res.cloudinary.com/dvffsa6kt/image/upload/v1736363148/295_bkdhi5.jpg",
+      "imageUrl": "https://res.cloudinary.com/dvffsa6kt/image/upload/v1749885908/hb450_yfjala.jpg",
       "type": "Bouquet"
     },
     {
@@ -192,7 +192,7 @@
       "price": 300000,
       "code":"024",
       "category":"Hand Bouquet",
-      "imageUrl": "https://res.cloudinary.com/dvffsa6kt/image/upload/v1738671284/b25_rvsy9e.jpg",
+      "imageUrl": "https://res.cloudinary.com/dvffsa6kt/image/upload/v1749886337/hb300_zem5z9.jpg",
       "type":"Bouquet"
     },
     {
@@ -337,6 +337,22 @@
       "code":"042",
       "category":"Hand Bouquet",
       "imageUrl": "https://res.cloudinary.com/dvffsa6kt/image/upload/v1744818368/hb500_ruiw4l.jpg",
+      "type":"Bouquet"
+    },
+    {
+      "id": 43,
+      "price": 1000000,
+      "code":"043",
+      "category":"Hand Bouquet",
+      "imageUrl": "https://res.cloudinary.com/dvffsa6kt/image/upload/v1749886528/hb1000_uylrlg.jpg",
+      "type":"Bouquet"
+    },
+    {
+      "id": 44,
+      "price": 1200000,
+      "code":"044",
+      "category":"Hand Bouquet",
+      "imageUrl": "https://res.cloudinary.com/dvffsa6kt/image/upload/v1749886529/hb1200_yyfmts.jpg",
       "type":"Bouquet"
     }
   ]
