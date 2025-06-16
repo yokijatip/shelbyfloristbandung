@@ -155,13 +155,13 @@ onUnmounted(() => {
     class="w-full md:w-72 flex md:flex-col bg-white rounded-lg overflow-hidden hover:shadow-lg flex-row transition-shadow"
   >
     <div
-      class="md:w-full aspect-square overflow-hidden cursor-zoom-in"
+      class="md:w-full w-30 h-30 md:h-48 overflow-hidden cursor-zoom-in relative"
       @click="openZoomModal"
     >
       <img
         :src="imageUrl"
         :alt="category"
-        class="w-full h-full object-contain transition-transform duration-300 hover:scale-105"
+        class="w-full h-auto object-cover transition-transform duration-300 hover:scale-105"
       />
     </div>
 
