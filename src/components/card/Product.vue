@@ -156,7 +156,7 @@ onUnmounted(() => {
   >
     <!-- Image Container with Fixed Height -->
     <div
-      class="w-full h-48 md:h-56 overflow-hidden cursor-zoom-in relative items-center justify-center"
+      class="w-full h-64 md:h-56 overflow-hidden cursor-zoom-in relative items-center justify-center"
       @click="openZoomModal"
     >
       <img
