@@ -156,13 +156,13 @@ onUnmounted(() => {
   >
     <!-- Image Container with Fixed Height -->
     <div
-      class="w-full h-64 md:h-56 overflow-hidden cursor-zoom-in relative items-center justify-center"
+      class="w-full h-auto md:h-[280px] overflow-hidden cursor-zoom-in relative items-center justify-center"
       @click="openZoomModal"
     >
       <img
         :src="imageUrl"
         :alt="category"
-        class="w-full h-full object-contain object-center transition-transform duration-300 hover:scale-105"
+        class="w-full h-full object-cover object-center transition-transform duration-300 hover:scale-105"
       />
     </div>
 
@@ -179,10 +179,7 @@ onUnmounted(() => {
         <p class="text-darkBeige font-semibold text-sm">
           Rp {{ price.toLocaleString() }}
         </p>
-        <CommonButtonOrderWhatsapp 
-          class="flex-shrink-0" 
-          @click="handleOrder"
-        >
+        <CommonButtonOrderWhatsapp class="flex-shrink-0" @click="handleOrder">
           Beli langsung
         </CommonButtonOrderWhatsapp>
       </div>
