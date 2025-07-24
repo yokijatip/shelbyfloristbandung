@@ -152,36 +152,42 @@ onUnmounted(() => {
 
 <template>
   <div
-    class="w-full md:w-72 flex md:flex-col bg-white rounded-lg overflow-hidden hover:shadow-lg flex-row transition-shadow"
+    class="w-full md:w-72 bg-white rounded-lg overflow-hidden shadow-md flex md:flex-col flex-row hover:shadow-lg transition-shadow duration-300"
   >
+    <!-- Image Container with Fixed Height -->
     <div
-      class="md:w-full w-30 h-30 md:h-48 overflow-hidden cursor-zoom-in relative"
+      class="w-full h-48 md:h-56 overflow-hidden cursor-zoom-in relative items-center justify-center"
       @click="openZoomModal"
     >
       <img
         :src="imageUrl"
         :alt="category"
-        class="w-full h-auto object-cover transition-transform duration-300 hover:scale-105"
+        class="w-full h-full object-contain object-center transition-transform duration-300 hover:scale-105"
       />
     </div>
 
-    <div class="p-4 flex flex-col md:flex-none justify-between">
+    <!-- Content Container -->
+    <div class="p-4 flex flex-col justify-between min-h-[120px]">
       <div>
-        <h3 class="font-cormorant text-xl font-bold text-darkBeige text-nowrap">
+        <h3 class="font-cormorant text-xl font-bold text-darkBeige mb-1">
           {{ category }}
         </h3>
-        <p class="text-sm text-lightBeige">Code: {{ code }}</p>
+        <p class="text-sm text-lightBeige mb-3">Code: {{ code }}</p>
       </div>
 
-      <div class="flex flex-wrap justify-between items-center mt-4 md:mt-6">
+      <div class="flex flex-wrap justify-between items-center gap-2">
         <p class="text-darkBeige font-semibold text-sm">
           Rp {{ price.toLocaleString() }}
         </p>
-        <CommonButtonOrderWhatsapp class="mt-2 md:mt-0" @click="handleOrder">
+        <CommonButtonOrderWhatsapp 
+          class="flex-shrink-0" 
+          @click="handleOrder"
+        >
           Beli langsung
         </CommonButtonOrderWhatsapp>
       </div>
     </div>
+
     <!-- Zoom Modal with Transition -->
     <Transition
       enter-active-class="transition duration-300 ease-out"
