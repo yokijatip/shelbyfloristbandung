@@ -5,7 +5,7 @@
       "price": 450000,
       "code": "001",
       "category": "Duka Cita",
-      "imageUrl": "https://res.cloudinary.com/dvffsa6kt/image/upload/v1736506792/450_lhru4b.jpg",
+      "imageUrl": "https://res.cloudinary.com/dvffsa6kt/image/upload/v1760366734/kbdukacita01_xbkqmf.jpg",
       "type": "Karangan Bunga"
     },
     {
@@ -15,7 +15,7 @@
       "category": "Duka Cita",
       "imageUrl": "https://res.cloudinary.com/dvffsa6kt/image/upload/v1736506795/450-2_nkfxe3.jpg",
       "type": "Karangan Bunga",
-      "bestseller":true
+      "bestseller": true
     },
     {
       "id": 3,
@@ -24,7 +24,7 @@
       "category": "Duka Cita",
       "imageUrl": "https://res.cloudinary.com/dvffsa6kt/image/upload/v1736506796/550_a3qkb5.jpg",
       "type": "Karangan Bunga",
-      "bestseller":true
+      "bestseller": true
     },
     {
       "id": 4,
@@ -105,7 +105,7 @@
       "category": "Duka Cita",
       "imageUrl": "https://res.cloudinary.com/dvffsa6kt/image/upload/v1736506786/750_io2aec.jpg",
       "type": "Karangan Bunga",
-      "bestseller":true
+      "bestseller": true
     },
     {
       "id": 14,
@@ -120,7 +120,7 @@
       "price": 750000,
       "code": "015",
       "category": "Duka Cita",
-      "imageUrl": "https://res.cloudinary.com/dvffsa6kt/image/upload/v1736506784/750-3_mtpnqa.jpg",
+      "imageUrl": "https://res.cloudinary.com/dvffsa6kt/image/upload/v1760366732/kbdukacita15_kkzhdw.jpg",
       "type": "Karangan Bunga"
     },
     {
@@ -177,6 +177,38 @@
       "code": "022",
       "category": "Duka Cita",
       "imageUrl": "https://res.cloudinary.com/dvffsa6kt/image/upload/v1741880290/tbc600_jbdzog.jpg",
+      "type": "Karangan Bunga"
+    },
+    {
+      "id": 23,
+      "price": 800000,
+      "code": "023",
+      "category": "Duka Cita",
+      "imageUrl": "https://res.cloudinary.com/dvffsa6kt/image/upload/v1760366732/kbdukacita800_qcaitr.jpg",
+      "type": "Karangan Bunga"
+    },
+    {
+      "id": 24,
+      "price": 600000,
+      "code": "024",
+      "category": "Duka Cita",
+      "imageUrl": "https://res.cloudinary.com/dvffsa6kt/image/upload/v1760366731/kbdukacita600_tatoar.jpg",
+      "type": "Karangan Bunga"
+    },
+    {
+      "id": 25,
+      "price": 1500000,
+      "code": "025",
+      "category": "Duka Cita",
+      "imageUrl": "https://res.cloudinary.com/dvffsa6kt/image/upload/v1760366732/kbdukacita1500_hnr4xr.jpg",
+      "type": "Karangan Bunga"
+    },
+    {
+      "id": 26,
+      "price": 1850000,
+      "code": "026",
+      "category": "Duka Cita",
+      "imageUrl": "https://res.cloudinary.com/dvffsa6kt/image/upload/v1760366733/kbdukacita1850_mvmedi.jpg",
       "type": "Karangan Bunga"
     }
   ]
