@@ -60,9 +60,10 @@ const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(
                 </details>
               </li>
               <li>
-                <RouterLink to="/FlashSale">
-                Flash Sale
-                </RouterLink>
+                <RouterLink to="/FlashSale"> Flash Sale </RouterLink>
+              </li>
+              <li>
+                <RouterLink to="/PremiumBouquet"> Premium Bouquet </RouterLink>
               </li>
               <li>
                 <RouterLink :to="{ name: 'home', hash: '#contactUs' }"
@@ -131,6 +132,14 @@ const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(
                     class="link-focus link-style block px-4 py-2 hover:bg-gray-100"
                     active-class="link-active"
                     >Flash Sale</RouterLink
+                  >
+                </li>
+                <li>
+                  <RouterLink
+                    to="/PremiumBouquet"
+                    class="link-focus link-style block px-4 py-2 hover:bg-gray-100"
+                    active-class="link-active"
+                    >Premium Bouquet</RouterLink
                   >
                 </li>
               </ul>

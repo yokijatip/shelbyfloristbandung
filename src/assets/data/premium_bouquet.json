@@ -1,0 +1,76 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "price": 750000,
+      "code": "001",
+      "category": "Premium Bouquet",
+      "imageUrl": "https://res.cloudinary.com/dvffsa6kt/image/upload/v1760359154/pre-750_lozb4u.jpg",
+      "type": "Premium Bouquet"
+    },
+    {
+      "id": 2,
+      "price": 850000,
+      "code": "002",
+      "category": "Premium Bouquet",
+      "imageUrl": "https://res.cloudinary.com/dvffsa6kt/image/upload/v1760359155/pre-850_yonolq.jpg",
+      "type": "Premium Bouquet"
+    },
+    {
+      "id": 3,
+      "price": 900000,
+      "code": "003",
+      "category": "Premium Bouquet",
+      "imageUrl": "https://res.cloudinary.com/dvffsa6kt/image/upload/v1760359156/pre-900_is8ngb.jpg",
+      "type": "Premium Bouquet"
+    },
+    {
+      "id": 4,
+      "price": 975000,
+      "code": "004",
+      "category": "Premium Bouquet",
+      "imageUrl": "https://res.cloudinary.com/dvffsa6kt/image/upload/v1760359155/pre-975_mc3lbh.jpg",
+      "type": "Premium Bouquet"
+    },
+    {
+      "id": 5,
+      "price": 1000000,
+      "code": "005",
+      "category": "Premium Bouquet",
+      "imageUrl": "https://res.cloudinary.com/dvffsa6kt/image/upload/v1760359155/pre-1000_zyxuxg.jpg",
+      "type": "Premium Bouquet"
+    },
+    {
+      "id": 6,
+      "price": 1100000,
+      "code": "006",
+      "category": "Premium Bouquet",
+      "imageUrl": "https://res.cloudinary.com/dvffsa6kt/image/upload/v1760359155/pre-1100_pvbjfd.jpg",
+      "type": "Premium Bouquet"
+    },
+    {
+      "id": 7,
+      "price": 1200000,
+      "code": "007",
+      "category": "Premium Bouquet",
+      "imageUrl": "https://res.cloudinary.com/dvffsa6kt/image/upload/v1760359155/pre-1200_nkenzq.jpg",
+      "type": "Premium Bouquet"
+    },
+    {
+      "id": 8,
+      "price": 1500000,
+      "code": "008",
+      "category": "Premium Bouquet",
+      "imageUrl": "https://res.cloudinary.com/dvffsa6kt/image/upload/v1760359155/pre-1500-2_vsmdp0.jpg",
+      "type": "Premium Bouquet"
+    },
+    {
+      "id": 9,
+      "price": 1500000,
+      "code": "009",
+      "category": "Premium Bouquet",
+      "imageUrl": "https://res.cloudinary.com/dvffsa6kt/image/upload/v1741879974/hb1700_aos6qd.jpg",
+      "type": "Premium Bouquet"
+    }
+  ]
+}

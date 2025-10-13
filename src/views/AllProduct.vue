@@ -13,6 +13,7 @@ import KBhappyWedding from "../assets/data/karangan_bunga_happy_wedding.json";
 import TableBouquet from "../assets/data/table_bouquet.json";
 import StandingFlower from "../assets/data/standing_flower.json";
 import FlashSale from "../assets/data/flash_sale.json"
+import PremiumBouquet from "../assets/data/premium_bouquet.json";
 import { RouterLink } from "vue-router";
 
 
@@ -26,6 +27,7 @@ const allProduct = ref([
   ...KBhappyWedding.products,
   ...StandingFlower.products,
   ...FlashSale.products,
+  ...PremiumBouquet.products,
 ]);
 
 // untuk menampilkan beberapa halaman dulu
@@ -107,6 +109,9 @@ useHead({
           </RouterLink>
           <RouterLink to="/FlashSale">
             <CommonButton> Flash Sale </CommonButton>
+          </RouterLink>
+          <RouterLink to="/PremiumBouquet">
+            <CommonButton> Premium Bouquet </CommonButton>
           </RouterLink>
         </div>
 
