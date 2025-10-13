@@ -179,6 +179,22 @@
       "category": "Happy Wedding",
       "imageUrl": "https://res.cloudinary.com/dvffsa6kt/image/upload/v1753332876/hw-022-900_nwhzsu.jpg",
       "type": "Karangan Bunga"
+    },
+    {
+      "id": 23,
+      "price": 750000,
+      "code": "023",
+      "category": "Happy Wedding",
+      "imageUrl": "https://res.cloudinary.com/dvffsa6kt/image/upload/v1760367476/kbwedding750_ppogpt.jpg",
+      "type": "Karangan Bunga"
+    },
+    {
+      "id": 24,
+      "price": 900000,
+      "code": "024",
+      "category": "Happy Wedding",
+      "imageUrl": "https://res.cloudinary.com/dvffsa6kt/image/upload/v1760367476/kbwedding900_oaizjy.jpg",
+      "type": "Karangan Bunga"
     }
     
   ]
