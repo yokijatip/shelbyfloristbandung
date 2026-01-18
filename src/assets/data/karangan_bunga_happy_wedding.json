@@ -13,7 +13,7 @@
       "price": 450000,
       "code": "002",
       "category": "Happy Wedding",
-      "imageUrl": "https://res.cloudinary.com/dvffsa6kt/image/upload/v1736504984/450-2_bax1jn.jpg",
+      "imageUrl": "https://res.cloudinary.com/dvffsa6kt/image/upload/v1768748746/kbwedding02-new_ygdhkq.jpg",
       "type": "Karangan Bunga"
     },
     {
@@ -23,7 +23,7 @@
       "category": "Happy Wedding",
       "imageUrl": "https://res.cloudinary.com/dvffsa6kt/image/upload/v1736504986/550_ju2oo9.jpg",
       "type": "Karangan Bunga",
-      "bestseller":true
+      "bestseller": true
     },
     {
       "id": 4,
@@ -32,7 +32,7 @@
       "category": "Happy Wedding",
       "imageUrl": "https://res.cloudinary.com/dvffsa6kt/image/upload/v1736504992/550-2_xjeujn.jpg",
       "type": "Karangan Bunga",
-      "bestseller":true
+      "bestseller": true
     },
     {
       "id": 5,
@@ -41,7 +41,7 @@
       "category": "Happy Wedding",
       "imageUrl": "https://res.cloudinary.com/dvffsa6kt/image/upload/v1736504988/550-3_k0uqdf.jpg",
       "type": "Karangan Bunga",
-      "bestseller":true
+      "bestseller": true
     },
     {
       "id": 6,
@@ -90,7 +90,7 @@
       "category": "Happy Wedding",
       "imageUrl": "https://res.cloudinary.com/dvffsa6kt/image/upload/v1736504993/1200_msi9xb.jpg",
       "type": "Karangan Bunga",
-      "bestseller":true
+      "bestseller": true
     },
     {
       "id": 12,
@@ -196,6 +196,5 @@
       "imageUrl": "https://res.cloudinary.com/dvffsa6kt/image/upload/v1760367476/kbwedding900_oaizjy.jpg",
       "type": "Karangan Bunga"
     }
-    
   ]
 }
