@@ -13,7 +13,7 @@
         "price": 600000,
         "code": "002",
         "category": "Table Bouquet",
-        "imageUrl": "https://res.cloudinary.com/dvffsa6kt/image/upload/v1736576787/tb600_i4nlo8.jpg",
+        "imageUrl": "https://res.cloudinary.com/dvffsa6kt/image/upload/v1768738369/tb02-new_ihtl3r.jpg",
         "type": "Bouquet"
       },
       {
@@ -38,7 +38,7 @@
         "price": 950000,
         "code": "005",
         "category": "Table Bouquet",
-        "imageUrl": "https://res.cloudinary.com/dvffsa6kt/image/upload/v1736576791/tb950_hzshq0.jpg",
+        "imageUrl": "https://res.cloudinary.com/dvffsa6kt/image/upload/v1768738597/tb05-new_o06mpq.jpg",
         "type": "Bouquet"
       },
       {
@@ -46,7 +46,7 @@
         "price": 1000000,
         "code": "006",
         "category": "Table Bouquet",
-        "imageUrl": "https://res.cloudinary.com/dvffsa6kt/image/upload/v1736576789/tb1000_bpsvjp.jpg",
+        "imageUrl": "https://res.cloudinary.com/dvffsa6kt/image/upload/v1768738598/tb06_xixy3w.jpg",
         "type": "Bouquet",
         "bestseller": true
       },
@@ -55,7 +55,15 @@
         "price": 1200000,
         "code": "007",
         "category": "Table Bouquet",
-        "imageUrl": "https://res.cloudinary.com/dvffsa6kt/image/upload/v1736576785/tb1200_c3upad.jpg",
+        "imageUrl": "https://res.cloudinary.com/dvffsa6kt/image/upload/v1768738597/tb07-new_bfeml5.jpg",
+        "type": "Bouquet"
+      },
+      {
+        "id": 8,
+        "price": 850000,
+        "code": "008",
+        "category": "Table Bouquet",
+        "imageUrl": "https://res.cloudinary.com/dvffsa6kt/image/upload/v1768738597/tb03-new850_zihdvm.jpg",
         "type": "Bouquet"
       }
     ]

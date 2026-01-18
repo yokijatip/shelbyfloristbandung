@@ -39,7 +39,7 @@ import { RouterLink } from "vue-router";
         <div class="category-section">
           <div class="overflow-hidden h-80">
             <img
-              src="https://res.cloudinary.com/dvffsa6kt/image/upload/v1736363161/850_jvoztc.jpg"
+              src="https://res.cloudinary.com/dvffsa6kt/image/upload/v1768728666/home-bouquet_wbiaon.jpg"
               alt="Bunga Papan"
               class="inset-0 w-full h-full object-cover md:rounded-t-[200px] rounded-t-[200px] border-[1px] border-darkBeige"
             />
@@ -75,7 +75,7 @@ import { RouterLink } from "vue-router";
         <div class="category-section">
           <div class="overflow-hidden h-80">
             <img
-              src="https://res.cloudinary.com/dvffsa6kt/image/upload/v1736576826/sf900_tqozqj.jpg"
+              src="https://res.cloudinary.com/dvffsa6kt/image/upload/v1768728667/home-standing_nvdztd.jpg"
               alt="Standing Flower"
               class="inset-0 w-full h-full object-cover md:rounded-t-[200px] rounded-t-[200px] border-[1px] border-darkBeige"
             />
