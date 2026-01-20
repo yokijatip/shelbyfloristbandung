@@ -18,7 +18,12 @@ const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(
         <div class="navbar-start">
           <!--  Navbar sm atau untuk ukuran mobile  -->
           <div class="dropdown">
-            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+            <div
+              tabindex="0"
+              aria-label="Buka menu navigasi"
+              role="button"
+              class="btn btn-ghost lg:hidden"
+            >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 class="h-5 w-5"
@@ -167,6 +172,7 @@ const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(
           <div>
             <a
               :href="whatsappUrl"
+              aria-label="kontak whatsapp"
               target="_blank"
               class="btn btn-success text-white md:btn-sm rounded-full md:rounded-full invisible md:visible"
             >
@@ -189,6 +195,7 @@ const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(
           <div>
             <a
               href="tel:+6281904520743"
+              aria-label="kontak whatsapp"
               target="_blank"
               class="btn bg-darkBeige text-white md:btn-md rounded-full md:rounded-full ms-4 md:hidden"
             >
