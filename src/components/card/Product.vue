@@ -24,6 +24,11 @@ const props = defineProps({
     type: String,
     required: true,
   },
+  size: {
+    type: String,
+    required: false, // ubah ke false karena tidak semua produk punya size
+    default: null,
+  },
 });
 
 const emit = defineEmits(["order"]);
@@ -34,6 +39,7 @@ const handleOrder = () => {
     code: props.code,
     price: props.price,
     type: props.type,
+    size: props.size,
   });
 };
 
@@ -167,12 +173,20 @@ onUnmounted(() => {
     </div>
 
     <!-- Content Container -->
+    <!-- Content Container -->
     <div class="p-4 flex flex-col justify-between min-h-[120px]">
       <div>
         <h3 class="font-cormorant text-xl font-bold text-darkBeige mb-1">
           {{ category }}
         </h3>
-        <p class="text-sm text-lightBeige mb-3">Code: {{ code }}</p>
+        <div class="flex flex-wrap gap-2 items-center mb-3">
+          <p class="text-sm text-lightBeige">Code: {{ code }}</p>
+          <!-- Tampilkan Size jika ada -->
+        </div>
+        <span v-if="size" class="text-sm text-gray-600">
+          <span class="text-lightBeige">•</span>
+          <span class="ml-1">{{ size }}</span>
+        </span>
       </div>
 
       <div class="flex flex-wrap justify-between items-center gap-2">

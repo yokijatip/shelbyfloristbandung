@@ -6,7 +6,8 @@
       "code": "001",
       "category": "Happy Wedding",
       "imageUrl": "https://res.cloudinary.com/dvffsa6kt/image/upload/v1753373277/450_kp1dyd.jpg",
-      "type": "Karangan Bunga"
+      "type": "Karangan Bunga",
+      "size": "2x1 m"
     },
     {
       "id": 2,
@@ -14,7 +15,8 @@
       "code": "002",
       "category": "Happy Wedding",
       "imageUrl": "https://res.cloudinary.com/dvffsa6kt/image/upload/v1768748746/kbwedding02-new_ygdhkq.jpg",
-      "type": "Karangan Bunga"
+      "type": "Karangan Bunga",
+      "size": "2x1 m"
     },
     {
       "id": 3,
@@ -23,7 +25,8 @@
       "category": "Happy Wedding",
       "imageUrl": "https://res.cloudinary.com/dvffsa6kt/image/upload/v1736504986/550_ju2oo9.jpg",
       "type": "Karangan Bunga",
-      "bestseller": true
+      "bestseller": true,
+      "size": "2x1 m"
     },
     {
       "id": 4,
@@ -32,7 +35,8 @@
       "category": "Happy Wedding",
       "imageUrl": "https://res.cloudinary.com/dvffsa6kt/image/upload/v1736504992/550-2_xjeujn.jpg",
       "type": "Karangan Bunga",
-      "bestseller": true
+      "bestseller": true,
+      "size": "2x1 m"
     },
     {
       "id": 5,
@@ -41,7 +45,8 @@
       "category": "Happy Wedding",
       "imageUrl": "https://res.cloudinary.com/dvffsa6kt/image/upload/v1736504988/550-3_k0uqdf.jpg",
       "type": "Karangan Bunga",
-      "bestseller": true
+      "bestseller": true,
+      "size": "2x1 m"
     },
     {
       "id": 6,
@@ -49,7 +54,8 @@
       "code": "006",
       "category": "Happy Wedding",
       "imageUrl": "https://res.cloudinary.com/dvffsa6kt/image/upload/v1736504984/600_ekowk9.jpg",
-      "type": "Karangan Bunga"
+      "type": "Karangan Bunga",
+      "size": "2x1.25 m"
     },
     {
       "id": 7,
@@ -57,7 +63,8 @@
       "code": "007",
       "category": "Happy Wedding",
       "imageUrl": "https://res.cloudinary.com/dvffsa6kt/image/upload/v1736504985/600-2_uh73n8.jpg",
-      "type": "Karangan Bunga"
+      "type": "Karangan Bunga",
+      "size": "2x1.25 m"
     },
     {
       "id": 8,
@@ -65,7 +72,8 @@
       "code": "008",
       "category": "Happy Wedding",
       "imageUrl": "https://res.cloudinary.com/dvffsa6kt/image/upload/v1736504989/600-3_iwwna5.jpg",
-      "type": "Karangan Bunga"
+      "type": "Karangan Bunga",
+      "size": "2x1.25 m"
     },
     {
       "id": 9,
@@ -73,7 +81,8 @@
       "code": "009",
       "category": "Happy Wedding",
       "imageUrl": "https://res.cloudinary.com/dvffsa6kt/image/upload/v1736504990/750_f36vzr.jpg",
-      "type": "Karangan Bunga"
+      "type": "Karangan Bunga",
+      "size": "2x1.25 m"
     },
     {
       "id": 10,
@@ -81,7 +90,8 @@
       "code": "010",
       "category": "Happy Wedding",
       "imageUrl": "https://res.cloudinary.com/dvffsa6kt/image/upload/v1736504992/1000_i2ttzu.jpg",
-      "type": "Karangan Bunga"
+      "type": "Karangan Bunga",
+      "size": "2x1.50 m"
     },
     {
       "id": 11,
@@ -90,7 +100,8 @@
       "category": "Happy Wedding",
       "imageUrl": "https://res.cloudinary.com/dvffsa6kt/image/upload/v1736504993/1200_msi9xb.jpg",
       "type": "Karangan Bunga",
-      "bestseller": true
+      "bestseller": true,
+      "size": "2x1.25 m"
     },
     {
       "id": 12,
@@ -98,7 +109,8 @@
       "code": "012",
       "category": "Happy Wedding",
       "imageUrl": "https://res.cloudinary.com/dvffsa6kt/image/upload/v1736576466/happyw15jt_gcnm6k.jpg",
-      "type": "Karangan Bunga"
+      "type": "Karangan Bunga",
+      "size": "2x4 m"
     },
     {
       "id": 13,
@@ -106,7 +118,8 @@
       "code": "013",
       "category": "Happy Wedding",
       "imageUrl": "https://res.cloudinary.com/dvffsa6kt/image/upload/v1741976019/hw550_kewt5k.jpg",
-      "type": "Karangan Bunga"
+      "type": "Karangan Bunga",
+      "size": "2x1 m"
     },
     {
       "id": 14,
@@ -114,7 +127,8 @@
       "code": "014",
       "category": "Happy Wedding",
       "imageUrl": "https://res.cloudinary.com/dvffsa6kt/image/upload/v1741880072/hw750_qozulx.jpg",
-      "type": "Karangan Bunga"
+      "type": "Karangan Bunga",
+      "size": "2x1.25 m"
     },
     {
       "id": 15,
@@ -122,7 +136,8 @@
       "code": "015",
       "category": "Happy Wedding",
       "imageUrl": "https://res.cloudinary.com/dvffsa6kt/image/upload/v1741880075/hw750-2_cyrshh.jpg",
-      "type": "Karangan Bunga"
+      "type": "Karangan Bunga",
+      "size": "2x1.25 m"
     },
     {
       "id": 16,
@@ -130,7 +145,8 @@
       "code": "016",
       "category": "Happy Wedding",
       "imageUrl": "https://res.cloudinary.com/dvffsa6kt/image/upload/v1741880075/hw750-3_nyadph.jpg",
-      "type": "Karangan Bunga"
+      "type": "Karangan Bunga",
+      "size": "2x1.25 m"
     },
     {
       "id": 17,
@@ -138,7 +154,8 @@
       "code": "017",
       "category": "Happy Wedding",
       "imageUrl": "https://res.cloudinary.com/dvffsa6kt/image/upload/v1741976502/hw750-4_a7myza.jpg",
-      "type": "Karangan Bunga"
+      "type": "Karangan Bunga",
+      "size": "2x1.25 m"
     },
     {
       "id": 18,
@@ -146,7 +163,8 @@
       "code": "018",
       "category": "Happy Wedding",
       "imageUrl": "https://res.cloudinary.com/dvffsa6kt/image/upload/v1741880073/hw750-5_yxuz0v.jpg",
-      "type": "Karangan Bunga"
+      "type": "Karangan Bunga",
+      "size": "2x1.25 m"
     },
     {
       "id": 19,
@@ -154,7 +172,8 @@
       "code": "019",
       "category": "Happy Wedding",
       "imageUrl": "https://res.cloudinary.com/dvffsa6kt/image/upload/v1741880075/hw750-6_bpvo9n.jpg",
-      "type": "Karangan Bunga"
+      "type": "Karangan Bunga",
+      "size": "2x1.25 m"
     },
     {
       "id": 20,
@@ -162,7 +181,8 @@
       "code": "020",
       "category": "Happy Wedding",
       "imageUrl": "https://res.cloudinary.com/dvffsa6kt/image/upload/v1741880074/hw1000-2_bxuali.jpg",
-      "type": "Karangan Bunga"
+      "type": "Karangan Bunga",
+      "size": "2x1.25 m"
     },
     {
       "id": 21,
@@ -170,7 +190,8 @@
       "code": "021",
       "category": "Happy Wedding",
       "imageUrl": "https://res.cloudinary.com/dvffsa6kt/image/upload/v1741880076/hw1000_nxeaho.jpg",
-      "type": "Karangan Bunga"
+      "type": "Karangan Bunga",
+      "size": "2x1.50 m"
     },
     {
       "id": 22,
@@ -178,7 +199,8 @@
       "code": "022",
       "category": "Happy Wedding",
       "imageUrl": "https://res.cloudinary.com/dvffsa6kt/image/upload/v1753332876/hw-022-900_nwhzsu.jpg",
-      "type": "Karangan Bunga"
+      "type": "Karangan Bunga",
+      "size": "2x1.50 m"
     },
     {
       "id": 23,
@@ -186,7 +208,8 @@
       "code": "023",
       "category": "Happy Wedding",
       "imageUrl": "https://res.cloudinary.com/dvffsa6kt/image/upload/v1760367476/kbwedding750_ppogpt.jpg",
-      "type": "Karangan Bunga"
+      "type": "Karangan Bunga",
+      "size": "2x1.25 m"
     },
     {
       "id": 24,
@@ -194,7 +217,8 @@
       "code": "024",
       "category": "Happy Wedding",
       "imageUrl": "https://res.cloudinary.com/dvffsa6kt/image/upload/v1760367476/kbwedding900_oaizjy.jpg",
-      "type": "Karangan Bunga"
+      "type": "Karangan Bunga",
+      "size": "2x1.50 m"
     }
   ]
 }

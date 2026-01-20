@@ -130,6 +130,7 @@ useHead({
               :price="product.price"
               :imageUrl="product.imageUrl"
               :type="product.type"
+              :size="product.size"
               class="w-full" justify-items-center
               @order="orderViaWA"
           />
