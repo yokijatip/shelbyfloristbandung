@@ -1,7 +1,8 @@
 <script setup>
 // Define props untuk komponen
 import CommonButtonOrderWhatsapp from "../elements/button/CommonButtonOrderWhatsapp.vue";
-import { ref, onMounted, onUnmounted } from "vue";
+import { ref, onMounted, onUnmounted, computed } from "vue";
+import { optimizeCloudinaryUrl, generateSrcSet } from "@/utils/cloudinary"; // Import helper
 
 const props = defineProps({
   category: {
@@ -30,6 +31,32 @@ const props = defineProps({
     default: null,
   },
 });
+
+// Optimasi URL gambar
+const thumbnailUrl = computed(() =>
+  optimizeCloudinaryUrl(props.imageUrl, {
+    width: 400,
+    quality: "auto:eco", // Untuk thumbnail gunakan quality lebih rendah
+  })
+);
+
+const fullImageUrl = computed(() =>
+  optimizeCloudinaryUrl(props.imageUrl, {
+    width: 800,
+    quality: "auto:good", // Untuk full size gunakan quality lebih baik
+  })
+);
+
+const zoomImageUrl = computed(() =>
+  optimizeCloudinaryUrl(props.imageUrl, {
+    width: 1200,
+    quality: "auto:best", // Untuk zoom gunakan quality terbaik
+  })
+);
+
+const imageSrcSet = computed(() =>
+  generateSrcSet(props.imageUrl, [400, 800, 1200])
+);
 
 const emit = defineEmits(["order"]);
 
@@ -166,9 +193,14 @@ onUnmounted(() => {
       @click="openZoomModal"
     >
       <img
-        :src="imageUrl"
-        :alt="category"
+        :src="thumbnailUrl"
+        :srcset="imageSrcSet"
+        sizes="(max-width: 768px) 100vw, 300px"
+        :alt="`Karangan Bunga ${category} - ${code}`"
         class="w-full h-full object-contain object-center transition-transform duration-300 hover:scale-105"
+        loading="lazy"
+        width="400"
+        height="280"
       />
     </div>
 
@@ -227,9 +259,10 @@ onUnmounted(() => {
             @touchmove="handleTouchMove"
             @touchend="handleTouchEnd"
           >
+            <!-- Gunakan zoomImageUrl untuk modal -->
             <img
-              :src="imageUrl"
-              :alt="code"
+              :src="zoomImageUrl"
+              :alt="`Karangan Bunga ${category} - ${code} - Zoom`"
               class="w-full md:w-[620px] h-auto select-none"
               @dragstart.prevent
             />
