@@ -1,7 +1,9 @@
 /* ./src/index.css */
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600;700&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
 
 .link-style {
   @apply text-sm cursor-pointer transition-all duration-300 ease-in-out hover:text-darkBeige hover:border-b-2 hover:border-darkBeige;

@@ -1,221 +1,195 @@
 <script setup>
-import { RouterLink } from "vue-router";
+import { RouterLink, useRoute } from "vue-router";
+import { computed } from "vue";
 
 const phoneNumber = "6281904520743";
-const message = "Hallo shelbyflorist Mau Pesan Bunga Buat Hari Ini";
+const message = "Hallo shelbyflorist Mau Pesan Bunga Buat Hari Ini";
+const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
 
-const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(
-  message
-)}`;
+const route = useRoute();
+
+// Navbar transparan hanya di homepage
+const isHome = computed(() => route.name === "home" || route.path === "/");
 </script>
 
 <template>
-  <section class="bg-beige">
-    <nav
-      class="border-b border-lightBeige max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"
-    >
-      <div class="navbar">
-        <div class="navbar-start">
-          <!--  Navbar sm atau untuk ukuran mobile  -->
-          <div class="dropdown">
-            <div
-              tabindex="0"
-              aria-label="Buka menu navigasi"
-              role="button"
-              class="btn btn-ghost lg:hidden"
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                class="h-5 w-5"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M4 6h16M4 12h8m-8 6h16"
-                />
-              </svg>
-            </div>
-            <ul
-              tabindex="0"
-              class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[10] mt-3 w-52 p-2 shadow"
-            >
-              <li><RouterLink to="/">Beranda</RouterLink></li>
-              <li>
-                <details>
-                  <summary>
-                    <RouterLink to="/AllProduct">Produk Kami</RouterLink>
-                  </summary>
-                  <ul class="p-2 z-10">
-                    <li>
-                      <RouterLink to="/KaranganBunga"
-                        >Karangan Bunga</RouterLink
-                      >
-                    </li>
-                    <li><RouterLink to="/Bouquet">Bouquet</RouterLink></li>
-                    <li>
-                      <RouterLink to="/StandingFlower"
-                        >Standing Flower</RouterLink
-                      >
-                    </li>
-                  </ul>
-                </details>
-              </li>
-              <li>
-                <RouterLink to="/FlashSale"> Flash Sale </RouterLink>
-              </li>
-              <li>
-                <RouterLink to="/PremiumBouquet"> Premium Bouquet </RouterLink>
-              </li>
-              <li>
-                <RouterLink :to="{ name: 'home', hash: '#contactUs' }"
-                  >Kontak Kami</RouterLink
-                >
-              </li>
-            </ul>
-          </div>
+  <nav
+    :class="[
+      'fixed top-0 left-0 right-0 z-50 transition-all duration-300',
+      isHome
+        ? 'bg-transparent'
+        : 'bg-white/95 backdrop-blur-md border-b border-[#e8ddd0] shadow-sm'
+    ]"
+  >
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-16">
 
-          <!-- Title & Logo -->
+        <!-- HAMBURGER mobile -->
+        <div class="dropdown lg:hidden">
           <div
-            class="text-xl md:text-2xl normal-case font-poppins font-semibold text-darkBeige text-nowrap w-full text-center lg:text-left flex items-center justify-center lg:justify-start gap-1"
+            tabindex="0"
+            role="button"
+            aria-label="Buka menu navigasi"
+            class="btn btn-ghost btn-sm p-1"
           >
-            <!-- Spacing antara emoji dan text -->
-            <RouterLink to="/" class="tracking-wider"
-              >SHELBY FLORIST💐</RouterLink
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-6 w-6"
+              :class="isHome ? 'text-white' : 'text-[#3d2c1e]'"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
             >
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16"/>
+            </svg>
           </div>
-        </div>
-
-        <div class="navbar-center hidden lg:flex">
-          <ul class="flex gap-8">
+          <ul
+            tabindex="0"
+            class="menu menu-sm dropdown-content bg-white rounded-box z-[100] mt-3 w-56 p-2 shadow-xl border border-[#e8ddd0]"
+          >
+            <li><RouterLink to="/" class="font-semibold text-[#3d2c1e]">Beranda</RouterLink></li>
             <li>
-              <RouterLink to="/" class="link-style" active-class="link-active"
-                >Beranda</RouterLink
-              >
+              <details>
+                <summary class="font-semibold text-[#3d2c1e]">Produk Kami</summary>
+                <ul class="p-2 z-10">
+                  <li><RouterLink to="/AllProduct">Semua Produk</RouterLink></li>
+                  <li><RouterLink to="/KaranganBunga">Karangan Bunga</RouterLink></li>
+                  <li><RouterLink to="/Bouquet">Bouquet</RouterLink></li>
+                  <li><RouterLink to="/StandingFlower">Standing Flower</RouterLink></li>
+                  <li><RouterLink to="/FlashSale">Flash Sale</RouterLink></li>
+                  <li><RouterLink to="/PremiumBouquet">Premium Bouquet</RouterLink></li>
+                </ul>
+              </details>
             </li>
-            <li class="relative group">
-              <RouterLink
-                to="/AllProduct"
-                class="link-style"
-                active-class="link-active"
-                >Produk Kami</RouterLink
-              >
-              <!-- Dropdown menu -->
-              <ul
-                class="absolute hidden group-hover:block bg-white shadow-lg rounded-md w-48 z-[99] cursor-pointer"
-              >
-                <li>
-                  <RouterLink
-                    to="/KaranganBunga"
-                    class="link-focus link-style block px-4 py-2 hover:bg-gray-100"
-                    active-class="link-active"
-                    >Karangan Bunga</RouterLink
-                  >
-                </li>
-                <li>
-                  <RouterLink
-                    to="/Bouquet"
-                    class="link-focus link-style block px-4 py-2 hover:bg-gray-100"
-                    active-class="link-active"
-                    >Bouquet</RouterLink
-                  >
-                </li>
-                <li>
-                  <RouterLink
-                    to="/StandingFlower"
-                    class="link-focus link-style block px-4 py-2 hover:bg-gray-100"
-                    active-class="link-active"
-                    >Standing Flower</RouterLink
-                  >
-                </li>
-                <li>
-                  <RouterLink
-                    to="/FlashSale"
-                    class="link-focus link-style block px-4 py-2 hover:bg-gray-100"
-                    active-class="link-active"
-                    >Flash Sale</RouterLink
-                  >
-                </li>
-                <li>
-                  <RouterLink
-                    to="/PremiumBouquet"
-                    class="link-focus link-style block px-4 py-2 hover:bg-gray-100"
-                    active-class="link-active"
-                    >Premium Bouquet</RouterLink
-                  >
-                </li>
-              </ul>
-            </li>
-            <li>
-              <RouterLink
-                :to="{ name: 'home', hash: '#contactUs' }"
-                class="link-focus link-style"
-                >Kontak</RouterLink
-              >
-            </li>
-            <li>
-              <RouterLink
-                :to="{ name: 'home', hash: '#aboutUs' }"
-                class="link-focus link-style"
-                >Tentang Kami</RouterLink
-              >
+            <li><RouterLink :to="{ name: 'home', hash: '#contactUs' }" class="text-[#3d2c1e]">Kontak Kami</RouterLink></li>
+            <li><RouterLink :to="{ name: 'home', hash: '#aboutUs' }" class="text-[#3d2c1e]">Tentang Kami</RouterLink></li>
+            <li class="mt-2">
+              <a :href="whatsappUrl" target="_blank" class="flex items-center gap-2 bg-[#c9a96e] text-white font-bold rounded-full px-4 py-2">
+                <svg viewBox="0 0 24 24" fill="white" class="w-4 h-4 flex-shrink-0">
+                  <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/>
+                  <path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm.029 18.88a9.945 9.945 0 01-4.788-1.22L2.92 19.01l1.384-4.184A9.961 9.961 0 012.04 12C2.04 6.477 6.517 2 12.04 2c5.523 0 9.96 4.477 9.96 10s-4.477 10-10 10h-.011z"/>
+                </svg>
+                Order via WhatsApp
+              </a>
             </li>
           </ul>
         </div>
 
-        <!--  Button Whatsapp  -->
-        <div class="navbar-end">
-          <!--  Button Whatsapp  -->
-          <div>
-            <a
-              :href="whatsappUrl"
-              aria-label="kontak whatsapp"
-              target="_blank"
-              class="btn btn-success text-white md:btn-sm rounded-full md:rounded-full invisible md:visible"
-            >
-              <!-- WhatsApp Icon -->
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                class="h-5 w-5"
-                viewBox="0 0 24 24"
-                fill="white"
-              >
-                <path
-                  d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"
-                />
-              </svg>
-              <!-- Teks yang hanya muncul di desktop -->
-              <span class="hidden md:inline-flex">Whatsapp</span>
-            </a>
+        <!-- LOGO -->
+        <RouterLink to="/" class="flex items-center gap-2 flex-shrink-0">
+          <span
+            class="font-cormorant italic text-3xl font-bold leading-none"
+            :class="isHome ? 'text-white' : 'text-[#3d2c1e]'"
+          >S</span>
+          <div :class="isHome ? 'text-white' : 'text-[#3d2c1e]'" class="leading-tight">
+            <div class="text-xs font-bold tracking-[3px]">HELBY</div>
+            <div class="text-[10px] tracking-[4px] font-light">FLORIST</div>
           </div>
+          <svg class="w-5 h-5 ml-0.5" viewBox="0 0 24 24" fill="#c9a96e">
+            <path d="M12 2C8 2 5 5 5 9c0 5 7 13 7 13s7-8 7-13c0-4-3-7-7-7z" opacity="0.85"/>
+          </svg>
+        </RouterLink>
 
-          <div>
-            <a
-              href="tel:+6281904520743"
-              aria-label="kontak whatsapp"
-              target="_blank"
-              class="btn bg-darkBeige text-white md:btn-md rounded-full md:rounded-full ms-4 md:hidden"
+        <!-- MENU DESKTOP -->
+        <ul class="hidden lg:flex items-center gap-7">
+          <li>
+            <RouterLink
+              to="/"
+              class="nav-link text-sm font-semibold tracking-wide transition-colors"
+              :class="isHome ? 'text-white/90 hover:text-white' : 'text-[#5a3e2b] hover:text-[#c9a96e]'"
+              active-class="!text-[#c9a96e]"
+            >Beranda</RouterLink>
+          </li>
+          <li class="relative group">
+            <RouterLink
+              to="/AllProduct"
+              class="nav-link text-sm font-semibold tracking-wide transition-colors flex items-center gap-1"
+              :class="isHome ? 'text-white/90 hover:text-white' : 'text-[#5a3e2b] hover:text-[#c9a96e]'"
+              active-class="!text-[#c9a96e]"
             >
-              <!-- WhatsApp Icon -->
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                class="h-5 w-5"
-                viewBox="0 0 20 20"
-                fill="white"
-              >
-                <path
-                  d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"
-                />
+              Produk Kami
+              <svg class="w-3.5 h-3.5 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/>
               </svg>
-            </a>
-          </div>
+            </RouterLink>
+            <ul class="absolute top-full left-0 hidden group-hover:block bg-white shadow-xl rounded-xl w-52 z-[99] border border-[#e8ddd0] py-2 mt-1">
+              <li><RouterLink to="/AllProduct" class="block px-4 py-2.5 text-sm font-semibold text-[#3d2c1e] hover:bg-[#fdf8f0] hover:text-[#c9a96e] transition-colors">Semua Produk</RouterLink></li>
+              <div class="mx-4 my-1 border-t border-[#ece8e0]"></div>
+              <li><RouterLink to="/KaranganBunga" class="dropdown-item">Karangan Bunga</RouterLink></li>
+              <li><RouterLink to="/Bouquet" class="dropdown-item">Bouquet</RouterLink></li>
+              <li><RouterLink to="/StandingFlower" class="dropdown-item">Standing Flower</RouterLink></li>
+              <li><RouterLink to="/FlashSale" class="dropdown-item">Flash Sale</RouterLink></li>
+              <li><RouterLink to="/PremiumBouquet" class="dropdown-item">Premium Bouquet</RouterLink></li>
+            </ul>
+          </li>
+          <li>
+            <RouterLink
+              :to="{ name: 'home', hash: '#contactUs' }"
+              class="nav-link text-sm font-semibold tracking-wide transition-colors"
+              :class="isHome ? 'text-white/90 hover:text-white' : 'text-[#5a3e2b] hover:text-[#c9a96e]'"
+            >Kontak</RouterLink>
+          </li>
+          <li>
+            <RouterLink
+              :to="{ name: 'home', hash: '#aboutUs' }"
+              class="nav-link text-sm font-semibold tracking-wide transition-colors"
+              :class="isHome ? 'text-white/90 hover:text-white' : 'text-[#5a3e2b] hover:text-[#c9a96e]'"
+            >Tentang Kami</RouterLink>
+          </li>
+        </ul>
+
+        <!-- RIGHT ACTIONS -->
+        <div class="flex items-center gap-2">
+          <!-- Telepon mobile only -->
+          <a
+            href="tel:+6281904520743"
+            aria-label="Hubungi via telepon"
+            class="lg:hidden w-9 h-9 rounded-full flex items-center justify-center transition"
+            :class="isHome ? 'bg-black/40 hover:bg-black/60' : 'bg-[#f0e8dc] hover:bg-[#e8ddd0]'"
+          >
+            <svg viewBox="0 0 20 20" fill="currentColor" class="w-4 h-4" :class="isHome ? 'text-white' : 'text-[#3d2c1e]'">
+              <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"/>
+            </svg>
+          </a>
+          <!-- WhatsApp -->
+          <a
+            :href="whatsappUrl"
+            target="_blank"
+            aria-label="Order via WhatsApp"
+            class="flex items-center gap-2 bg-[#c9a96e] hover:bg-[#a07840] text-white text-sm font-bold rounded-full px-4 py-2 transition shadow-md"
+          >
+            <svg viewBox="0 0 24 24" fill="white" class="w-4 h-4 flex-shrink-0">
+              <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/>
+              <path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm.029 18.88a9.945 9.945 0 01-4.788-1.22L2.92 19.01l1.384-4.184A9.961 9.961 0 012.04 12C2.04 6.477 6.517 2 12.04 2c5.523 0 9.96 4.477 9.96 10s-4.477 10-10 10h-.011z"/>
+            </svg>
+            <span class="hidden sm:inline">Order Now</span>
+          </a>
         </div>
+
       </div>
-    </nav>
-  </section>
+    </div>
+  </nav>
 </template>
 
-<style scoped></style>
+<style scoped>
+.dropdown-item {
+  @apply block px-4 py-2.5 text-sm text-[#5a3e2b] hover:bg-[#fdf8f0] hover:text-[#c9a96e] transition-colors;
+}
+.nav-link {
+  position: relative;
+}
+.nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: #c9a96e;
+  transition: width 0.25s ease;
+}
+.nav-link:hover::after,
+.router-link-active::after {
+  width: 100%;
+}
+</style>
