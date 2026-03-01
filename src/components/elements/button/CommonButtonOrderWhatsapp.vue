@@ -3,7 +3,7 @@
 </script>
 
 <template>
-  <button class="btn btn-md w-full md:w-fit bg-darkBeige text-white font-medium hover:bg-lightBeige rounded-md outline-0 flex items-center gap-2 text-nowrap">
+  <button class="btn btn-md w-full md:w-fit bg-gold text-white font-medium hover:bg-darkgold rounded-md outline-0 flex items-center gap-2 text-nowrap">
     <!-- WhatsApp Icon -->
     <svg
         xmlns="http://www.w3.org/2000/svg"

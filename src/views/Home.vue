@@ -7,7 +7,6 @@ import KaranganBunga from "../components/KaranganBunga.vue";
 import StandingFlower from "../components/StandingFlower.vue"
 import FloatingActionButtonWhatsapp from "../components/elements/button/FloatingActionButtonWhatsapp.vue";
 import ContactUs from "../components/ContactUs.vue";
-import WhyChooseUs from "../components/WhyChooseUs.vue";
 import AboutUs from "../components/AboutUs.vue";
 
 const products = [
@@ -57,9 +56,8 @@ useHead({
     <KaranganBunga/>
     <StandingFlower/>
     <AboutUs/>
-    <WhyChooseUs/>
     <ContactUs/>
-    
+
     <!-- FAB WhatsApp -->
     <FloatingActionButtonWhatsapp/>
   </div>

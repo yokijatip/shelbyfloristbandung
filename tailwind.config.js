@@ -11,6 +11,8 @@ export default {
         veryDarkBeige: '#3a3931',
         golden: '#a17137',
         white: '#ffffff',
+        gold: '#c9a96e',
+        darkgold: '#5a3e2b',
       },
       fontFamily: {
         cormorant: ['Cormorant Garamond', 'serif'],
