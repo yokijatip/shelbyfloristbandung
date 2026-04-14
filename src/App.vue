@@ -1,8 +1,9 @@
 <script setup>
-import { RouterView, defineAsyncComponent } from 'vue-router';
-import Navbar from "./components/Navbar.vue"; // ✅ Tetap eager (visible langsung)
+import { RouterView } from 'vue-router';
+import { defineAsyncComponent } from 'vue'; // ✅ FIX DI SINI
+import Navbar from "./components/Navbar.vue";
 
-// ✅ Lazy load komponen yang tidak perlu langsung render
+// Lazy load
 const Footer = defineAsyncComponent(() => import("./components/Footer.vue"));
 const FloatingActionButtonWhatsapp = defineAsyncComponent(() =>
   import("./components/elements/button/FloatingActionButtonWhatsapp.vue")
