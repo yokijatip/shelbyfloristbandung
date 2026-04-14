@@ -32,7 +32,7 @@ import { RouterLink } from "vue-router";
       <div class="lg:w-2/3 grid grid-cols-2 gap-4 pe-8">
         <div class="aspect-[4/5] overflow-hidden">
           <img
-              src="https://res.cloudinary.com/dvffsa6kt/image/upload/v1736779984/sfhome_aeuibr.jpg"
+              src="https://res.cloudinary.com/dvffsa6kt/image/upload/q_auto/f_auto/v1736779984/sfhome_aeuibr.jpg"
               alt="Wedding couple in desert landscape"
               class="w-full h-full object-cover"
           />

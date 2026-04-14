@@ -19,7 +19,7 @@ const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(
       <!-- Top Section -->
       <div
         class="overlay-bg bg-cover bg-center bg-no-repeat flex items-start py-8 md:py-12"
-        style="background-image: url('/image-aboutus.png')"
+        style="background-image: url('https://res.cloudinary.com/dvffsa6kt/image/upload/q_auto/f_auto/v1776171906/image-aboutus_i9ueor.png')"
       >
         <div
           class="relative z-10 max-w-0xl px-8 items-center md:px-0 py-8 max-w-7xl lg:px-7 xl:px-32"

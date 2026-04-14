@@ -1,8 +1,8 @@
 <script setup>
-import CommonButton from "./elements/button/CommonButton.vue";
-import SubTitleSection from "./elements/text/SubTitleSection.vue";
-import TitleSection from "./elements/text/TitleSection.vue";
-import { RouterLink } from "vue-router";
+import CommonButton from './elements/button/CommonButton.vue';
+import SubTitleSection from './elements/text/SubTitleSection.vue';
+import TitleSection from './elements/text/TitleSection.vue';
+import { RouterLink } from 'vue-router';
 </script>
 
 <template>
@@ -57,7 +57,7 @@ import { RouterLink } from "vue-router";
         <div class="category-section">
           <div class="overflow-hidden h-80">
             <img
-              src="https://res.cloudinary.com/dvffsa6kt/image/upload/v1745082842/home_ogropx.jpg"
+              src="https://res.cloudinary.com/dvffsa6kt/image/upload/q_auto/f_auto/v1745082842/home_ogropx.jpg"
               alt="Karangan Bunga"
               class="inset-0 w-full h-full object-cover md:rounded-t-[200px] rounded-t-[200px] border-[1px] border-darkBeige"
             />
