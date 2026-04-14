@@ -9,29 +9,6 @@ import FloatingActionButtonWhatsapp from "../components/elements/button/Floating
 import ContactUs from "../components/ContactUs.vue";
 import AboutUs from "../components/AboutUs.vue";
 
-const products = [
-  {
-    id: 1,
-    image: "https://res.cloudinary.com/dvffsa6kt/image/upload/v1736506831/450_zn4wux.jpg",
-    title: "Sunflower Basket",
-    subtitle: "Birthday Special",
-    price: 850000
-  },
-  {
-    id: 2,
-    image: "https://res.cloudinary.com/dvffsa6kt/image/upload/v1736506829/850_gjvulv.jpg",
-    title: "Orchid Vase",
-    subtitle: "Birthday Special",
-    price: 850000
-  },
-  {
-    id: 3,
-    image: "https://res.cloudinary.com/dvffsa6kt/image/upload/v1736506828/800-2_xqzkvs.jpg",
-    title: "Lavender Basket",
-    subtitle: "Birthday Special",
-    price: 850000
-  }
-]
 
 //Meta tag
 import { useHead } from "@vueuse/head";

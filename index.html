@@ -1,23 +1,103 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="id">
   <head>
-    <!-- Google Tag Manager -->
+    <!-- ✅ Charset & viewport HARUS paling atas -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- ✅ Preconnect sedini mungkin -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://www.googletagmanager.com" />
+    <link rel="preconnect" href="https://res.cloudinary.com" />
+
+    <!-- ✅ Preload hero image (LCP element) — sesuaikan URL-nya -->
+    <link
+      rel="preload"
+      as="image"
+      href="https://res.cloudinary.com/dvffsa6kt/image/upload/f_auto,q_auto,w_800/v1772043318/background-hero2_pqr3wp.jpg"
+      media="(max-width: 767px)"
+    />
+    <link
+      rel="preload"
+      as="image"
+      href="https://res.cloudinary.com/dvffsa6kt/image/upload/f_auto,q_auto,w_1920/v1772043318/background-hero_fygry3.jpg"
+      media="(min-width: 768px)"
+    />
+
+    <!-- ✅ Font: hanya weight yang benar-benar dipakai -->
+    <!-- Cormorant: bold untuk heading, Dancing Script untuk aksen -->
+    <link
+      rel="preload"
+      as="style"
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@700;800&family=Dancing+Script:wght@600;700&family=Poppins:wght@400;500;600&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@700;800&family=Dancing+Script:wght@600;700&family=Poppins:wght@400;500;600&display=swap"
+      media="print"
+      onload="this.media = 'all'"
+    />
+    <noscript>
+      <link
+        rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@700;800&family=Dancing+Script:wght@600;700&family=Poppins:wght@400;500;600&display=swap"
+      />
+    </noscript>
+
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+
+    <!-- SEO -->
+    <title>Toko Bunga Terbaik di Bandung Buka 24 jam | Shelby Florist</title>
+    <meta
+      name="description"
+      content="Shelby Florist - Toko Bunga Terbaik di Bandung. Butuh bunga untuk acara spesialmu? Kami menyediakan berbagai macam bunga segar berkualitas dengan layanan pengiriman gratis dan cepat."
+    />
+    <meta
+      name="keywords"
+      content="Shelby Florist, toko bunga Bandung, bunga segar, toko bunga terbaik, florist Bandung, kirim bunga cepat"
+    />
+    <meta name="author" content="Shelby Florist" />
+
+    <!-- ✅ GTM di-defer via script tag biasa, tidak blocking -->
     <script>
-      (function (w, d, s, l, i) {
-        w[l] = w[l] || [];
-        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
-        var f = d.getElementsByTagName(s)[0],
-          j = d.createElement(s),
-          dl = l != "dataLayer" ? "&l=" + l : "";
-        j.async = true;
-        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
-        f.parentNode.insertBefore(j, f);
-      })(window, document, "script", "dataLayer", "GTM-TVBDG9J9");
+      // Delay GTM sampai setelah halaman interaktif
+      window.addEventListener('load', function () {
+        setTimeout(function () {
+          (function (w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' });
+            var f = d.getElementsByTagName(s)[0],
+              j = d.createElement(s),
+              dl = l != 'dataLayer' ? '&l=' + l : '';
+            j.async = true;
+            j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+            f.parentNode.insertBefore(j, f);
+          })(window, document, 'script', 'dataLayer', 'GTM-TVBDG9J9');
+        }, 2000); // ✅ Delay 2 detik setelah load
+      });
     </script>
-    <!-- End Google Tag Manager -->
-    <!-- Google tag (gtag.js) -->
+  </head>
+  <body>
+    <!-- ✅ GTM noscript tetap di sini -->
+    <noscript>
+      <iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-TVBDG9J9"
+        height="0"
+        width="0"
+        style="display: none; visibility: hidden"
+      ></iframe>
+    </noscript>
+
+    <div id="app"></div>
+
+    <!-- ✅ gtag.js dipindah ke body + defer, tidak blocking render -->
     <script
-      async
+      defer
       src="https://www.googletagmanager.com/gtag/js?id=AW-11225570020"
     ></script>
     <script>
@@ -25,45 +105,10 @@
       function gtag() {
         dataLayer.push(arguments);
       }
-      gtag("js", new Date());
-
-      gtag("config", "AW-11225570020");
+      gtag('js', new Date());
+      gtag('config', 'AW-11225570020');
     </script>
-    <meta charset="UTF-8" />
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
-    <link rel="manifest" href="/site.webmanifest" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-      rel="stylesheet"
-    />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Toko Bunga Terbaik di Bandung Buka 24 jam | Shelby Florist</title>
-    <meta
-      name="description"
-      content="Shleby Florist - Toko Bunga Terbaik di Bandung. Butuh bunga untuk acara spesialmu? Kami menyediakan berbagai macam bunga segar berkualitas dengan layanan pengiriman gratis dan cepat. "
-    />
-    <meta
-      name="keyword"
-      content="Shelby Florist, toko bunga Bandung, bunga segar, toko bunga terbaik, florist Bandung, kirim bunga cepat"
-    />
-    <meta name="author" content="Shelby Florist" />
-  </head>
-  <body>
-    <div id="app"></div>
-    <!-- Google Tag Manager (noscript) -->
-    <noscript
-      ><iframe
-        src="https://www.googletagmanager.com/ns.html?id=GTM-TVBDG9J9"
-        height="0"
-        width="0"
-        style="display: none; visibility: hidden"
-      ></iframe
-    ></noscript>
-    <!-- End Google Tag Manager (noscript) -->
+
     <script type="module" src="/src/main.js"></script>
   </body>
 </html>

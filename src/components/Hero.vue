@@ -12,7 +12,12 @@ const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(mess
     <!-- Mobile BG -->
     <div class="md:hidden absolute inset-0 z-0">
       <img
-        src="https://res.cloudinary.com/dvffsa6kt/image/upload/v1772043318/background-hero2_pqr3wp.jpg"
+        src="https://res.cloudinary.com/dvffsa6kt/image/upload/f_auto,q_auto,w_800/v1772043318/background-hero2_pqr3wp.jpg"
+        role="presentation"
+        width="800"
+        height="1067"
+        fetchpriority="high"
+        decoding="sync"
         alt="Background"
         class="w-full h-full object-cover object-center"
       />
@@ -24,7 +29,12 @@ const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(mess
     <!-- Desktop BG -->
     <div class="hidden md:block absolute inset-0 z-0">
       <img
-        src="https://res.cloudinary.com/dvffsa6kt/image/upload/v1772043318/background-hero_fygry3.jpg"
+        src="https://res.cloudinary.com/dvffsa6kt/image/upload/f_auto,q_auto,w_1920/v1772043318/background-hero_fygry3.jpg"
+        role="presentation"
+        width="1920"
+        height="1080"
+        fetchpriority="high"
+        decoding="sync"
         alt="Background"
         class="w-full h-full object-cover object-[70%_35%]"
       />
