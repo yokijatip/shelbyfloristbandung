@@ -65,21 +65,25 @@
 
     <!-- ✅ GTM di-defer via script tag biasa, tidak blocking -->
     <script>
-      // Delay GTM sampai setelah halaman interaktif
-      window.addEventListener('load', function () {
-        setTimeout(function () {
-          (function (w, d, s, l, i) {
-            w[l] = w[l] || [];
-            w[l].push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' });
-            var f = d.getElementsByTagName(s)[0],
-              j = d.createElement(s),
-              dl = l != 'dataLayer' ? '&l=' + l : '';
-            j.async = true;
-            j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
-            f.parentNode.insertBefore(j, f);
-          })(window, document, 'script', 'dataLayer', 'GTM-TVBDG9J9');
-        }, 2000); // ✅ Delay 2 detik setelah load
-      });
+      function loadGTM() {
+        if (window.gtmLoaded) return;
+        window.gtmLoaded = true;
+
+        (function (w, d, s, l, i) {
+          w[l] = w[l] || [];
+          w[l].push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' });
+          var f = d.getElementsByTagName(s)[0],
+            j = d.createElement(s),
+            dl = l != 'dataLayer' ? '&l=' + l : '';
+          j.async = true;
+          j.src =
+            'https://www.googletagmanager.com/gtm.js?id=GTM-TVBDG9J9' + dl;
+          f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-TVBDG9J9');
+      }
+
+      window.addEventListener('scroll', loadGTM);
+      window.addEventListener('click', loadGTM);
     </script>
   </head>
   <body>
@@ -94,21 +98,19 @@
     </noscript>
 
     <div id="app"></div>
-
-    <!-- ✅ gtag.js dipindah ke body + defer, tidak blocking render -->
-    <script
-      defer
-      src="https://www.googletagmanager.com/gtag/js?id=AW-11225570020"
-    ></script>
     <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
+      function initTracking() {
+        window.dataLayer = window.dataLayer || [];
+        function gtag() {
+          dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+        gtag('config', 'AW-11225570020');
       }
-      gtag('js', new Date());
-      gtag('config', 'AW-11225570020');
-    </script>
 
+      window.addEventListener('scroll', initTracking);
+      window.addEventListener('click', initTracking);
+    </script>
     <script type="module" src="/src/main.js"></script>
   </body>
 </html>

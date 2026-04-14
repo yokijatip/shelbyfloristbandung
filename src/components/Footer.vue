@@ -1,6 +1,6 @@
 <script setup>
-const phoneNumber = "6281904520743";
-const message = "Hallo shelbyflorist Mau Pesan Bunga Buat Hari Ini";
+const phoneNumber = '6281904520743';
+const message = 'Hallo shelbyflorist Mau Pesan Bunga Buat Hari Ini';
 
 const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(
   message
@@ -10,11 +10,13 @@ const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(
 <template>
   <section class="bg-white">
     <div class="max-w-0xl mx-auto px-0 sm:px-6 lg:px-0 bg-white">
-      <footer class="footer footer-center bg-beige text-veryDarkBeige p-10">
+      <footer class="footer footer-center bg-beige text-veryDarkBeige p-10 min-h-[200px]">
         <aside>
           <img
-            src="/public/logoSF.png"
+            src="/logoSF.png"
             alt="Shelby Florist Bandung Logo"
+            width="240"
+            height="240"
             class="ms-5"
           />
           <p class="font-bold">
