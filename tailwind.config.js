@@ -11,7 +11,7 @@ export default {
         veryDarkBeige: '#3a3931',
         golden: '#a17137',
         white: '#ffffff',
-        gold: '#c9a96e',
+        gold: '#ac8236',
         darkgold: '#5a3e2b',
       },
       fontFamily: {

@@ -310,7 +310,7 @@ onUnmounted(() => {
             :href="whatsappUrl"
             target="_blank"
             aria-label="Order via WhatsApp"
-            class="flex items-center gap-2 bg-[#c9a96e] hover:bg-[#a07840] text-white text-sm font-bold rounded-full px-4 py-2 transition shadow-md"
+            class="flex items-center gap-2 bg-[#ac8236] hover:bg-[#a07840] text-white text-sm font-bold rounded-full px-4 py-2 transition shadow-md"
           >
             <svg viewBox="0 0 24 24" fill="white" class="w-4 h-4 flex-shrink-0">
               <path

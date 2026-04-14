@@ -82,7 +82,7 @@ const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(mess
             <a
               :href="whatsappUrl"
               target="_blank"
-              class="flex items-center gap-2 bg-[#c9a96e] hover:bg-[#a07840] text-white rounded-full px-5 py-3 transition"
+              class="flex items-center gap-2 bg-[#ac8236] hover:bg-[#a07840] text-white rounded-full px-5 py-3 transition"
             >
               <svg
                 viewBox="0 0 24 24"
@@ -98,7 +98,7 @@ const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(mess
               </svg>
               <div class="text-left leading-tight">
                 <div class="font-bold text-sm">Pesan via WhatsApp</div>
-                <div class="text-[11px] opacity-85">Respon Cepat</div>
+                <div class="text-[12px]">Respon Cepat</div>
               </div>
             </a>
             <RouterLink

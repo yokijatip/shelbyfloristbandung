@@ -10,7 +10,9 @@ const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(
 <template>
   <section class="bg-white">
     <div class="max-w-0xl mx-auto px-0 sm:px-6 lg:px-0 bg-white">
-      <footer class="footer footer-center bg-beige text-veryDarkBeige p-10 min-h-[200px]">
+      <footer
+        class="footer footer-center bg-beige text-veryDarkBeige p-10 min-h-[200px]"
+      >
         <aside>
           <img
             src="/logoSF.png"
@@ -30,6 +32,7 @@ const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(
           <div class="grid grid-flow-col gap-4">
             <a
               href="https://www.instagram.com/shelby.florist/"
+              alt="instagram"
               target="_blank"
               class="cursor-pointer hover:transform hover:scale-110"
             >
@@ -46,6 +49,7 @@ const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(
             </a>
             <a
               :href="whatsappUrl"
+              alt="whatsapp"
               target="_blank"
               class="cursor-pointer hover:transform hover:scale-110"
             >
