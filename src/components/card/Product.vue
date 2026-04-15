@@ -1,37 +1,67 @@
 <script setup>
-import CommonButtonOrderWhatsapp from '../elements/button/CommonButtonOrderWhatsapp.vue';
-import { ref, onMounted, onUnmounted, computed } from 'vue';
-import { optimizeCloudinaryUrl, generateSrcSet } from '@/utils/cloudinary';
+// Define props untuk komponen
+import CommonButtonOrderWhatsapp from "../elements/button/CommonButtonOrderWhatsapp.vue";
+import { ref, onMounted, onUnmounted, computed } from "vue";
+import { optimizeCloudinaryUrl, generateSrcSet } from "@/utils/cloudinary"; // Import helper
 
 const props = defineProps({
-  category: { type: String, required: true },
-  code: { type: String, required: true },
-  price: { type: Number, required: true },
-  imageUrl: { type: String, required: true },
-  type: { type: String, required: true },
-  size: { type: String, required: false, default: null },
+  category: {
+    type: String,
+    required: true,
+  },
+  code: {
+    type: String,
+    required: true,
+  },
+  price: {
+    type: Number,
+    required: true,
+  },
+  imageUrl: {
+    type: String,
+    required: true,
+  },
+  type: {
+    type: String,
+    required: true,
+  },
+  size: {
+    type: String,
+    required: false, // ubah ke false karena tidak semua produk punya size
+    default: null,
+  },
 });
 
+// Optimasi URL gambar
 const thumbnailUrl = computed(() =>
-  optimizeCloudinaryUrl(props.imageUrl, { width: 400, quality: 'auto:eco' })
+  optimizeCloudinaryUrl(props.imageUrl, {
+    width: 400,
+    quality: "auto:eco", // Untuk thumbnail gunakan quality lebih rendah
+  })
 );
 
-const imageSrcSet = computed(() => generateSrcSet(props.imageUrl, [400, 800]));
+const fullImageUrl = computed(() =>
+  optimizeCloudinaryUrl(props.imageUrl, {
+    width: 800,
+    quality: "auto:good", // Untuk full size gunakan quality lebih baik
+  })
+);
 
-// ✅ Zoom image hanya di-compute saat modal dibuka (lazy)
-const showZoom = ref(false);
 const zoomImageUrl = computed(() =>
-  showZoom.value
-    ? optimizeCloudinaryUrl(props.imageUrl, {
-        width: 1200,
-        quality: 'auto:best',
-      })
-    : ''
+  optimizeCloudinaryUrl(props.imageUrl, {
+    width: 1200,
+    quality: "auto:best", // Untuk zoom gunakan quality terbaik
+  })
 );
 
-const emit = defineEmits(['order']);
+const imageSrcSet = computed(() =>
+  generateSrcSet(props.imageUrl, [400, 800, 1200])
+);
+
+const emit = defineEmits(["order"]);
+
 const handleOrder = () => {
-  emit('order', {
+  emit("order", {
     category: props.category,
     code: props.code,
     price: props.price,
@@ -39,6 +69,8 @@ const handleOrder = () => {
     size: props.size,
   });
 };
+
+const showZoom = ref(false);
 
 const scale = ref(1);
 const position = ref({ x: 0, y: 0 });
@@ -52,53 +84,67 @@ const MAX_SCALE = 4;
 
 const openZoomModal = () => {
   showZoom.value = true;
-  document.body.style.overflow = 'hidden';
+  document.body.style.overflow = "hidden";
+  // Reset zoom state
   scale.value = 1;
   position.value = { x: 0, y: 0 };
 };
 
 const closeZoomModal = () => {
   showZoom.value = false;
-  document.body.style.overflow = '';
+  document.body.style.overflow = "auto";
 };
 
-const getTouchDistance = (t1, t2) => {
-  const dx = t1.clientX - t2.clientX;
-  const dy = t1.clientY - t2.clientY;
-  return Math.sqrt(dx * dx + dy * dy);
-};
-
-const handleTouchStart = (e) => {
-  if (e.touches.length === 2) {
-    lastTouchDistance.value = getTouchDistance(e.touches[0], e.touches[1]);
-  } else if (e.touches.length === 1) {
+const handleTouchStart = (event) => {
+  if (event.touches.length === 2) {
+    // Pinch gesture started
+    const touch1 = event.touches[0];
+    const touch2 = event.touches[1];
+    lastTouchDistance.value = getTouchDistance(touch1, touch2);
+    isDragging.value = true;
+  } else if (event.touches.length === 1) {
+    // Pan gesture started
     lastTouchPosition.value = {
-      x: e.touches[0].clientX,
-      y: e.touches[0].clientY,
+      x: event.touches[0].clientX,
+      y: event.touches[0].clientY,
     };
+    isDragging.value = true;
   }
-  isDragging.value = true;
 };
 
-const handleTouchMove = (e) => {
+const handleTouchMove = (event) => {
   if (!isDragging.value) return;
-  if (e.touches.length === 2) {
-    const currentDistance = getTouchDistance(e.touches[0], e.touches[1]);
+
+  if (event.touches.length === 2) {
+    // Handle pinch zoom
+    const touch1 = event.touches[0];
+    const touch2 = event.touches[1];
+    const currentDistance = getTouchDistance(touch1, touch2);
+
     if (lastTouchDistance.value) {
       const delta = currentDistance - lastTouchDistance.value;
       const newScale = scale.value * (1 + delta / 200);
       scale.value = Math.min(Math.max(newScale, MIN_SCALE), MAX_SCALE);
     }
+
     lastTouchDistance.value = currentDistance;
-  } else if (e.touches.length === 1 && scale.value > 1) {
-    const touch = e.touches[0];
+  } else if (event.touches.length === 1 && scale.value > 1) {
+    // Handle pan when zoomed in
+    const touch = event.touches[0];
     if (lastTouchPosition.value) {
+      const deltaX = touch.clientX - lastTouchPosition.value.x;
+      const deltaY = touch.clientY - lastTouchPosition.value.y;
+
       position.value = {
-        x: position.value.x + (touch.clientX - lastTouchPosition.value.x),
-        y: position.value.y + (touch.clientY - lastTouchPosition.value.y),
+        x: position.value.x + deltaX,
+        y: position.value.y + deltaY,
       };
     }
-    lastTouchPosition.value = { x: touch.clientX, y: touch.clientY };
+
+    lastTouchPosition.value = {
+      x: touch.clientX,
+      y: touch.clientY,
+    };
   }
 };
 
@@ -106,13 +152,34 @@ const handleTouchEnd = () => {
   isDragging.value = false;
   lastTouchDistance.value = null;
   lastTouchPosition.value = null;
-  if (scale.value <= 1) position.value = { x: 0, y: 0 };
+
+  // Reset position if scale is 1
+  if (scale.value === 1) {
+    position.value = { x: 0, y: 0 };
+  }
 };
 
-// ✅ Hanya pasang listener saat modal zoom aktif, bukan global
-onMounted(() => {});
+const getTouchDistance = (touch1, touch2) => {
+  const dx = touch1.clientX - touch2.clientX;
+  const dy = touch1.clientY - touch2.clientY;
+  return Math.sqrt(dx * dx + dy * dy);
+};
+
+// Prevent default zoom behavior on double tap
+const preventDefaultZoom = (event) => {
+  if (event.touches.length > 1) {
+    event.preventDefault();
+  }
+};
+
+onMounted(() => {
+  document.addEventListener("touchmove", preventDefaultZoom, {
+    passive: false,
+  });
+});
+
 onUnmounted(() => {
-  document.body.style.overflow = '';
+  document.removeEventListener("touchmove", preventDefaultZoom);
 });
 </script>
 
@@ -120,32 +187,33 @@ onUnmounted(() => {
   <div
     class="w-full md:w-72 bg-white rounded-lg overflow-hidden shadow-md flex md:flex-col flex-row hover:shadow-lg transition-shadow duration-300"
   >
-    <!-- ✅ Image Container: height fixed di semua breakpoint → fix CLS -->
+    <!-- Image Container with Fixed Height -->
     <div
-      class="w-32 h-32 md:w-full md:h-[280px] flex-shrink-0 overflow-hidden cursor-zoom-in relative"
+      class="w-full h-auto md:h-[280px] overflow-hidden cursor-zoom-in relative items-center justify-center"
       @click="openZoomModal"
     >
       <img
         :src="thumbnailUrl"
         :srcset="imageSrcSet"
-        sizes="(max-width: 768px) 128px, 288px"
+        sizes="(max-width: 768px) 100vw, 300px"
         :alt="`Karangan Bunga ${category} - ${code}`"
-        class="w-full h-full object-cover object-center transition-transform duration-300 hover:scale-105"
+        class="w-full h-full object-contain object-center transition-transform duration-300 hover:scale-105"
         loading="lazy"
-        decoding="async"
         width="400"
-        height="400"
+        height="280"
       />
     </div>
 
     <!-- Content Container -->
-    <div class="p-4 flex flex-col justify-between flex-1 min-h-[120px]">
+    <!-- Content Container -->
+    <div class="p-4 flex flex-col justify-between min-h-[120px]">
       <div>
         <h3 class="font-cormorant text-xl font-bold text-darkBeige mb-1">
           {{ category }}
         </h3>
-        <div class="flex flex-wrap gap-2 items-center mb-1">
+        <div class="flex flex-wrap gap-2 items-center mb-3">
           <p class="text-sm text-lightBeige">Code: {{ code }}</p>
+          <!-- Tampilkan Size jika ada -->
         </div>
         <span v-if="size" class="text-sm text-gray-600">
           <span class="text-lightBeige">•</span>
@@ -153,67 +221,62 @@ onUnmounted(() => {
         </span>
       </div>
 
-      <div class="flex flex-wrap justify-between items-center gap-2 mt-2">
+      <div class="flex flex-wrap justify-between items-center gap-2">
         <p class="text-darkBeige font-semibold text-sm">
-          Rp {{ price.toLocaleString('id-ID') }}
+          Rp {{ price.toLocaleString() }}
         </p>
-        <CommonButtonOrderWhatsapp
-          class="flex-shrink-0"
-          @click.stop="handleOrder"
-        >
+        <CommonButtonOrderWhatsapp class="flex-shrink-0" @click="handleOrder">
           Beli langsung
         </CommonButtonOrderWhatsapp>
       </div>
     </div>
 
-    <!-- ✅ Zoom Modal: gambar hanya load saat modal terbuka -->
-    <Teleport to="body">
-      <Transition
-        enter-active-class="transition duration-300 ease-out"
-        enter-from-class="opacity-0 scale-95"
-        enter-to-class="opacity-100 scale-100"
-        leave-active-class="transition duration-200 ease-in"
-        leave-from-class="opacity-100 scale-100"
-        leave-to-class="opacity-0 scale-95"
+    <!-- Zoom Modal with Transition -->
+    <Transition
+      enter-active-class="transition duration-300 ease-out"
+      enter-from-class="opacity-0 scale-95"
+      enter-to-class="opacity-100 scale-100"
+      leave-active-class="transition duration-200 ease-in"
+      leave-from-class="opacity-100 scale-100"
+      leave-to-class="opacity-0 scale-95"
+    >
+      <div
+        v-if="showZoom"
+        class="fixed inset-0 md:mt-14 z-50 flex items-center justify-center bg-black bg-opacity-75"
       >
         <div
-          v-if="showZoom"
-          class="fixed inset-0 z-50 flex items-center justify-center bg-black/75"
-          @click="closeZoomModal"
+          class="relative max-w-4xl max-h-[90vh] overflow-hidden touch-none"
+          @click.stop
         >
           <div
-            class="relative max-w-4xl max-h-[90vh] overflow-hidden touch-none"
-            @click.stop
+            ref="zoomContainer"
+            class="transform-gpu"
+            :style="{
+              transform: `scale(${scale}) translate(${position.x}px, ${position.y}px)`,
+              transition: isDragging ? 'none' : 'transform 0.2s ease-out',
+            }"
+            @touchstart="handleTouchStart"
+            @touchmove="handleTouchMove"
+            @touchend="handleTouchEnd"
           >
-            <div
-              ref="zoomContainer"
-              class="transform-gpu"
-              :style="{
-                transform: `scale(${scale}) translate(${position.x}px, ${position.y}px)`,
-                transition: isDragging ? 'none' : 'transform 0.2s ease-out',
-              }"
-              @touchstart="handleTouchStart"
-              @touchmove.prevent="handleTouchMove"
-              @touchend="handleTouchEnd"
-            >
-              <img
-                v-if="showZoom"
-                :src="zoomImageUrl"
-                :alt="`Karangan Bunga ${category} - ${code}`"
-                class="w-full md:w-[620px] h-auto select-none"
-                @dragstart.prevent
-              />
-            </div>
-            <button
-              @click="closeZoomModal"
-              class="absolute top-4 right-4 text-white bg-black/50 rounded-full p-2 hover:bg-black/75 transition"
-              aria-label="Tutup zoom"
-            >
-              <span class="text-xl leading-none">&times;</span>
-            </button>
+            <!-- Gunakan zoomImageUrl untuk modal -->
+            <img
+              :src="zoomImageUrl"
+              :alt="`Karangan Bunga ${category} - ${code} - Zoom`"
+              class="w-full md:w-[620px] h-auto select-none"
+              @dragstart.prevent
+            />
           </div>
+          <button
+            @click="closeZoomModal"
+            class="absolute top-4 right-4 text-white bg-black bg-opacity-50 rounded-full p-2 hover:bg-opacity-75"
+          >
+            <span class="text-xl">&times;</span>
+          </button>
         </div>
-      </Transition>
-    </Teleport>
+      </div>
+    </Transition>
   </div>
 </template>
+
+<style scoped></style>
